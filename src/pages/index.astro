@@ -1,11 +1,25 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import ContadorVue from "../components/ContadorVue.vue";
 ---
 
 <Layout>
-	<Welcome />
+  <h1 slot="Header">HEADER</h1>
+  <h1>Soy un titulo</h1>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic temporibus
+    quasi quas deserunt quisquam voluptatum repudiandae explicabo totam eligendi
+    delectus dolores officiis magnam, aut, et nulla perferendis ducimus mollitia
+    sequi.
+  </p>
+
+  <ContadorVue  />
 </Layout>
+
+<style>
+  h1 {
+    color: #a51ac4;
+    font-size: 2.9rem;
+    margin-bottom: 1rem;
+  }
+</style>
