@@ -1,5 +1,6 @@
 ---
 import Header from "./Header.astro";
+
 import "../styles/global.css";
 ---
 
@@ -16,7 +17,9 @@ import "../styles/global.css";
   <body>
     <Header />
     <!-- El contenido del hijo del componente -->
-    <slot />
+    <main class="pt-16">
+      <slot />
+    </main>
   </body>
 </html>
 

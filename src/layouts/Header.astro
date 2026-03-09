@@ -1,123 +1,124 @@
 ---
-import Btn from "../components/Btn.astro";
-import Contador from "../components/BtnReact";
+import {
+  Bars3Icon,
+  MoonIcon,
+  SunIcon,
+  XMarkIcon,
+} from "@heroicons/react/24/outline";
+import { Image } from "astro:assets";
+
+import imgWordmark from "../assets/svgs/Wordmark.svg";
 ---
 
-<header class="header">
-  <nav class="nav">
-    <a href="/" class="logo">Mi Sitio</a>
-    <button class="menu-toggle" aria-label="Abrir menú" onclick="toggleMenu()"
-      >☰</button
+<header
+  class="bg-neutral-50 dark:bg-neutral-950 flex items-center justify-center shadow
+  z-20 fixed top w-full left-0 right-0"
+>
+  <div
+    class="container flex items-center justify-between gap-4 p-4 lg:p-0 lg:py-4 md:px-0"
+  >
+    <div class="lg:hidden">
+      <Bars3Icon
+        id="menu-icon"
+        className="text-neutral-900 dark:text-neutral-50 size-8 lg:hidden"
+      />
+      <XMarkIcon
+        id="close-icon"
+        className="text-neutral-900 dark:text-neutral-50 hidden size-8 lg:hidden"
+      />
+    </div>
+
+    <div class="flex w-full lg:w-auto">
+      <Image
+        class="place-self-start h-8 dark:hidden"
+        src={imgWordmark}
+        alt="Jonathan Bello"
+      />
+    </div>
+
+    <nav
+      id="navigator-menu"
+      class="fixed -top-full left-0 right-0 lg:top-0 lg:left-auto lg:right-auto
+      flex flex-col items-center justify-center shadow lg:shadow-none p-6 py-8 lg:p-0 lg:py-0
+      transition-[top] duration-300 ease-in-out lg:transition-none
+      lg:static lg:flex-1 lg:flex lg:items-center lg:gap-4 lg:pt-1
+      bg-neutral-50 dark:bg-neutral-950"
+      aria-label="Main navigation"
     >
-    <ul class="nav-links">
-      <li><a href="/blog">Blog</a></li>
-      <li><a href="/contacto">Contacto</a></li>
-      <Btn />
-      <Contador client:load />
-
-      <!-- <li>
-        <BtnReact
-          client:only="react"
-          label="Boton React"
-          color="blue"
-          size="medium"
-        >
-          <Boton slot="astroComponent"> boton astro </Boton>
-        </BtnReact>
+      <ul
+        class="h-full container flex flex-col lg:flex-row items-start justify-end gap-8 lg:gap-8
+      [&>li]:text-neutral-950 dark:[&>li]:text-neutral-50 lg:[&>li]:text-center [&>li>a]:relative
+         font-text font-medium text-xl lg:text-lg"
+      >
         <li>
-          <BtnVue
-            client:only="vue"
-            onClick={() => alert("Hola")}
-            label="Boton"
-            color="green"
-            size="medium"
-          />
-        </li> -->
-    </ul>
-  </nav>
-</header>
+          <a href="">Inicio</a>
+        </li>
+        <li>
+          <a href="GDD">GDD</a>
+        </li>
+        <li>
+          <a href="Sobre-Nosotros">Sobre Nosotros</a>
+        </li>
+        <li>
+          <a href="Contacto">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 
-<style>
-  .header {
-    background-color: #4b4848;
-    padding: 1rem;
-    color: white;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
+  <style>
+    @reference "../styles/global.css";
 
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-  }
-
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-    margin: 0;
-    padding: 0;
-  }
-
-  .nav-links li a {
-    padding: 1rem;
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-  }
-
-  .nav-links li a:hover {
-    text-decoration: underline;
-  }
-
-  .menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
-
-  @media (max-width: 768px) {
-    .menu-toggle {
-      display: block;
-    }
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      background: #4b4848;
+    /* Colocar linea color roja del link activo por debajo del link, pero en desktop colocar la linea encima del link */
+    #navigator-menu a:is(.active)::after {
+      content: "";
       position: absolute;
-      top: 60px;
-      right: 0;
-      width: 100%;
-      padding: 1rem 0;
+      bottom: -0.5rem;
+      left: 0;
+      width: 80%;
+      height: 2px;
+      @apply bg-primary-700 lg:w-full lg:-top-1;
     }
-    .nav-links.active {
-      display: flex;
-    }
-  }
-</style>
+  </style>
 
-<script>
-  const menuToogle = document.querySelector(".menu-toggle");
-  if (menuToogle) {
-    menuToogle.addEventListener("click", toggleMenu);
+  <script>
+    // Verificar que el DOM este completamente cargado antes de ejecutar el script con la validacion de viewtransiottions de astro
+    // con astro-load-page
 
-    function toggleMenu() {
-      const navLinks = document.querySelector(".nav-links");
-      navLinks.classList.toggle("active");
-    }
-  }
-</script>
+    document.addEventListener("astro:page-load", () => {
+      // Toggle navigation menu
+      const barsIcon = document.querySelector("#menu-icon");
+      const closeIcon = document.querySelector("#close-icon");
+      const navigatorMenu = document.querySelector("#navigator-menu");
+      const navigatorLinks = document.querySelector("#navigator-menu ul");
+
+      if (navigatorMenu === null || barsIcon === null || closeIcon === null) {
+        throw new Error("Element not found");
+      }
+
+      barsIcon.addEventListener("click", () => {
+        barsIcon.classList.toggle("hidden");
+        closeIcon.classList.toggle("hidden");
+        navigatorMenu.classList.toggle("top-16");
+      });
+
+      closeIcon.addEventListener("click", () => {
+        closeIcon.classList.toggle("hidden");
+        barsIcon.classList.toggle("hidden");
+        navigatorMenu.classList.toggle("top-16");
+      });
+
+      // Agregar logoica  de que se muestre una linea roja debajo del link activo
+      // si el link concuerda con el path actual
+      const path = window.location.pathname;
+      const links = navigatorLinks?.querySelectorAll("a");
+
+      links?.forEach((link) => {
+        if (link.pathname === path) {
+          console.log(link.pathname);
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
+</header>
