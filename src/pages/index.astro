@@ -1,6 +1,9 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import ContadorVue from "../components/ContadorVue.vue";
+
+import imgFigma from "../assets/imgs/figma.jpg";
 ---
 
 <Layout>
@@ -13,7 +16,10 @@ import ContadorVue from "../components/ContadorVue.vue";
     sequi.
   </p>
 
-  <ContadorVue  />
+  <!-- <p>{imgFigma.src}</p> -->
+  <Image src={imgFigma} alt="Astro Logo" />
+
+  <ContadorVue />
 </Layout>
 
 <style>
