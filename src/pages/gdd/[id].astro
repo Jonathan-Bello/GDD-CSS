@@ -1,0 +1,26 @@
+---
+import { getCollection, render } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  const entradas = await getCollection("general");
+  return entradas.map((entrada) => ({
+    params: { id: entrada.id },
+    props: {
+      entrada,
+    },
+  }));
+}
+
+const { entrada } = Astro.props;
+const { Content } = await render(entrada);
+---
+
+<Layout title={`GDD - ${entrada.data.title}`}>
+  <h1>{entrada.data.title}</h1>
+  <p class="entry-date">
+    Publicado el {entrada.data.date.toLocaleDateString("es-ES")}
+  </p>
+
+  <Content />
+</Layout>
