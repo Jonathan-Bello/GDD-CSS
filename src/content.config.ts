@@ -27,7 +27,22 @@ const entradasCollection = defineCollection({
   }),
 });
 
+const sistemaJuegoCollection = defineCollection({
+  loader: glob({
+    base: "./src/content/sistema-juego",
+    pattern: "**/*.md",
+  }),
+  schema: z.object({
+    id: z.string(),
+    title: z.string(),
+    description: z.string(),
+    date: z.date(),
+    author: reference("authors"),
+  }),
+});
+
 export const collections = {
   authors: authorsCollection,
   general: entradasCollection,
+  "sistema-juego": sistemaJuegoCollection,
 };

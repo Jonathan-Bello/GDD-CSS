@@ -1,0 +1,29 @@
+---
+export const prerender = false;
+import Layout from "../../layouts/Layout.astro";
+
+import { getEntry, render } from "astro:content";
+const { id } = Astro.params;
+if (!id) {
+  return Astro.redirect("/404");
+}
+
+const entrada = await getEntry("sistema-juego", id);
+
+if (!entrada) {
+  return Astro.redirect("/404");
+}
+
+const { Content } = await render(entrada);
+---
+
+<Layout>
+  <h1>{entrada.data.title}</h1>
+  <p class="entry-date">
+    Publicado el {entrada.data.date.toLocaleDateString("es-ES")}
+  </p>
+
+  <Content />
+</Layout>
+
+<style></style>
