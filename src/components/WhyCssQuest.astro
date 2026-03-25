@@ -1,0 +1,77 @@
+---
+import {
+  BoltIcon,
+  CpuChipIcon,
+  PlayIcon,
+  TrophyIcon,
+} from "@heroicons/react/24/outline";
+
+const features = [
+  {
+    title: "Aprende Jugando",
+    description:
+      "Supera retos interactivos, desbloquea niveles y conviértete en mejor desarrollador mientras avanzas dentro del juego.",
+    icon: PlayIcon,
+  },
+  {
+    title: "IA Personalizada",
+    description:
+      "Recibe retroalimentación instantánea y sugerencias alineadas con tu progreso para mejorar cada ejercicio.",
+    icon: CpuChipIcon,
+  },
+  {
+    title: "Objetivos Claros",
+    description:
+      "Cada misión tiene metas concretas para que construyas habilidades CSS de forma ordenada y medible.",
+    icon: TrophyIcon,
+  },
+  {
+    title: "Progreso Rápido",
+    description:
+      "Visualiza tus avances desde el primer día con una experiencia pensada para mantener el ritmo y la motivación.",
+    icon: BoltIcon,
+  },
+];
+---
+
+<section class="bg-neutral-900 py-20 sm:py-24">
+  <div class="container mx-auto px-4 md:px-6">
+    <div class="mx-auto max-w-3xl text-center">
+      <span
+        class="font-text text-sm font-semibold uppercase tracking-[0.3em] text-primary-300"
+      >
+        ¿Por qué CSS Quest AI?
+      </span>
+      <h2
+        class="mt-4 font-title text-3xl font-extrabold text-neutral-50 sm:text-4xl md:text-5xl"
+      >
+        Una forma más dinámica de dominar CSS
+      </h2>
+      <p class="mt-6 font-text text-lg leading-8 text-neutral-200 sm:text-xl">
+        Diseñamos una experiencia que combina videojuego, acompañamiento
+        inteligente y objetivos bien definidos para que aprender CSS se sienta
+        retador, útil y emocionante.
+      </p>
+    </div>
+
+    <div class="mt-14 grid gap-6 lg:grid-cols-4 md:grid-cols-2">
+      {
+        features.map(({ icon: Icon, title, description }) => (
+          <article class="group rounded-3xl border border-primary-400/20 bg-primary-950/35 p-8 shadow-[0_18px_50px_rgba(74,6,5,0.25)] backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-primary-300/40 hover:bg-primary-950/50">
+            <div class="flex h-16 w-16 items-center justify-center rounded-2xl bg-primary-500 shadow-[0_12px_30px_rgba(253,56,54,0.35)] transition duration-300 group-hover:scale-105 group-hover:bg-primary-400">
+              <Icon className="h-8 w-8 text-neutral-50" />
+            </div>
+
+            <h3 class="mt-6 font-title text-2xl font-bold text-neutral-50">
+              {title}
+            </h3>
+
+            <p class="mt-4 font-text text-lg leading-8 text-neutral-200">
+              {description}
+            </p>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>

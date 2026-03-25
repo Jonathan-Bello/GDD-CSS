@@ -1,30 +1,24 @@
 ---
-import {
-  Bars3Icon,
-  MoonIcon,
-  SunIcon,
-  XMarkIcon,
-} from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Image } from "astro:assets";
 
 import imgWordmark from "../assets/svgs/Wordmark.svg";
 ---
 
 <header
-  class="bg-neutral-50 dark:bg-neutral-950 flex items-center justify-center shadow
-  z-20 fixed top w-full left-0 right-0"
+  class="bg-neutral-50 dark:bg-neutral-950 fixed top-0 left-0 right-0 z-20 flex items-center justify-center shadow"
 >
   <div
-    class="container flex items-center justify-between gap-4 p-4 lg:p-0 lg:py-4 md:px-0"
+    class="container flex items-center justify-between gap-4 p-4 md:px-0 lg:p-0 lg:py-4"
   >
     <div class="lg:hidden">
       <Bars3Icon
         id="menu-icon"
-        className="text-neutral-900 dark:text-neutral-50 size-8 lg:hidden"
+        className="size-8 text-neutral-900 dark:text-neutral-50 lg:hidden"
       />
       <XMarkIcon
         id="close-icon"
-        className="text-neutral-900 dark:text-neutral-50 hidden size-8 lg:hidden"
+        className="hidden size-8 text-neutral-900 dark:text-neutral-50 lg:hidden"
       />
     </div>
 
@@ -38,29 +32,23 @@ import imgWordmark from "../assets/svgs/Wordmark.svg";
 
     <nav
       id="navigator-menu"
-      class="fixed -top-full left-0 right-0 lg:top-0 lg:left-auto lg:right-auto
-      flex flex-col items-center justify-center shadow lg:shadow-none p-6 py-8 lg:p-0 lg:py-0
-      transition-[top] duration-300 ease-in-out lg:transition-none
-      lg:static lg:flex-1 lg:flex lg:items-center lg:gap-4 lg:pt-1
-      bg-neutral-50 dark:bg-neutral-950"
+      class="fixed -top-full left-0 right-0 flex flex-col items-center justify-center bg-neutral-50 p-6 py-8 shadow transition-[top] duration-300 ease-in-out dark:bg-neutral-950 lg:static lg:left-auto lg:right-auto lg:top-0 lg:flex lg:flex-1 lg:items-center lg:gap-4 lg:bg-transparent lg:p-0 lg:pt-1 lg:py-0 lg:shadow-none lg:transition-none"
       aria-label="Main navigation"
     >
       <ul
-        class="h-full container flex flex-col lg:flex-row items-start justify-end gap-8 lg:gap-8
-      [&>li]:text-neutral-950 dark:[&>li]:text-neutral-50 lg:[&>li]:text-center [&>li>a]:relative
-         font-text font-medium text-xl lg:text-lg"
+        class="container flex h-full flex-col items-start justify-end gap-8 font-text text-xl font-medium lg:flex-row lg:gap-8 lg:text-lg [&>li]:text-neutral-950 [&>li>a]:relative dark:[&>li]:text-neutral-50 lg:[&>li]:text-center"
       >
         <li>
           <a href="/">Inicio</a>
         </li>
         <li>
-          <a href="gdd">GDD</a>
+          <a href="/gdd">GDD</a>
         </li>
         <li>
-          <a href="sobre-nosotros">Sobre Nosotros</a>
+          <a href="/sobre-nosotros">Sobre Nosotros</a>
         </li>
         <li>
-          <a href="contacto">Contacto</a>
+          <a href="/contacto">Contacto</a>
         </li>
       </ul>
     </nav>
@@ -69,7 +57,6 @@ import imgWordmark from "../assets/svgs/Wordmark.svg";
   <style>
     @reference "../styles/global.css";
 
-    /* Colocar linea color roja del link activo por debajo del link, pero en desktop colocar la linea encima del link */
     #navigator-menu a:is(.active)::after {
       content: "";
       position: absolute;
@@ -82,11 +69,7 @@ import imgWordmark from "../assets/svgs/Wordmark.svg";
   </style>
 
   <script>
-    // Verificar que el DOM este completamente cargado antes de ejecutar el script con la validacion de viewtransiottions de astro
-    // con astro-load-page
-
     document.addEventListener("astro:page-load", () => {
-      // Toggle navigation menu
       const barsIcon = document.querySelector("#menu-icon");
       const closeIcon = document.querySelector("#close-icon");
       const navigatorMenu = document.querySelector("#navigator-menu");
@@ -108,14 +91,11 @@ import imgWordmark from "../assets/svgs/Wordmark.svg";
         navigatorMenu.classList.toggle("top-16");
       });
 
-      // Agregar logoica  de que se muestre una linea roja debajo del link activo
-      // si el link concuerda con el path actual
       const path = window.location.pathname;
       const links = navigatorLinks?.querySelectorAll("a");
 
       links?.forEach((link) => {
         if (link.pathname === path) {
-          console.log(link.pathname);
           link.classList.add("active");
         }
       });
