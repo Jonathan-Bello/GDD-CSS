@@ -1,143 +1,218 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
+import GddSidebar from "../components/gdd/GddSidebar.astro";
 
-const generalEntradas = await getCollection("general");
+const generalEntries = (await getCollection("general")).sort((a, b) => {
+  if (a.data.order !== b.data.order) {
+    return a.data.order - b.data.order;
+  }
+  return a.data.date.getTime() - b.data.date.getTime();
+});
+
+const sistemaJuegoEntries = (await getCollection("sistema-juego")).sort(
+  (a, b) => {
+    if (a.data.order !== b.data.order) {
+      return a.data.order - b.data.order;
+    }
+    return a.data.date.getTime() - b.data.date.getTime();
+  },
+);
+
+const narrativaEntries = (await getCollection("narrativa")).sort((a, b) => {
+  if (a.data.order !== b.data.order) {
+    return a.data.order - b.data.order;
+  }
+  return a.data.date.getTime() - b.data.date.getTime();
+});
+
+const progresionEntries = (await getCollection("progresion")).sort((a, b) => {
+  if (a.data.order !== b.data.order) {
+    return a.data.order - b.data.order;
+  }
+  return a.data.date.getTime() - b.data.date.getTime();
+});
+
+const interfazEntries = (await getCollection("interfaz")).sort((a, b) => {
+  if (a.data.order !== b.data.order) {
+    return a.data.order - b.data.order;
+  }
+  return a.data.date.getTime() - b.data.date.getTime();
+});
+
+const collections = [
+  {
+    name: "general",
+    label: "General",
+    path: "/gdd/",
+    entries: generalEntries.map((entry) => ({
+      id: entry.id,
+      data: {
+        title: entry.data.title,
+        description: entry.data.description,
+        order: entry.data.order,
+      },
+    })),
+  },
+  {
+    name: "sistema-juego",
+    label: "Sistema de Juego",
+    path: "/sistema-juego/",
+    entries: sistemaJuegoEntries.map((entry) => ({
+      id: entry.id,
+      data: {
+        title: entry.data.title,
+        description: entry.data.description,
+        order: entry.data.order,
+      },
+    })),
+  },
+  {
+    name: "narrativa",
+    label: "Narrativa",
+    path: "/narrativa/",
+    entries: narrativaEntries.map((entry) => ({
+      id: entry.id,
+      data: {
+        title: entry.data.title,
+        description: entry.data.description,
+        order: entry.data.order,
+      },
+    })),
+  },
+  {
+    name: "progresion",
+    label: "Progresión",
+    path: "/progresion/",
+    entries: progresionEntries.map((entry) => ({
+      id: entry.id,
+      data: {
+        title: entry.data.title,
+        description: entry.data.description,
+        order: entry.data.order,
+      },
+    })),
+  },
+  {
+    name: "interfaz",
+    label: "Interfaz",
+    path: "/interfaz/",
+    entries: interfazEntries.map((entry) => ({
+      id: entry.id,
+      data: {
+        title: entry.data.title,
+        description: entry.data.description,
+        order: entry.data.order,
+      },
+    })),
+  },
+];
+
+const featuredEntry = generalEntries[0];
 ---
 
-<Layout title="GDD - Documentación">
-  <main>
-    <h1>Game Design Document</h1>
-    <p class="intro">Documentación y referencias del proyecto</p>
+<Layout title="GDD | CSS Quest AI">
+  <section
+    class="bg-[linear-gradient(180deg,rgba(74,6,5,0.95)_0%,rgba(135,22,21,0.88)_48%,rgba(26,26,26,1)_100%)] px-4 py-10 md:px-6 md:py-14"
+  >
+    <div class="container mx-auto space-y-8">
+      <div class="max-w-4xl space-y-5">
+        <span
+          class="inline-flex items-center rounded-full border border-primary-300/35 bg-primary-700/25 px-4 py-2 font-text text-sm font-semibold text-primary-100"
+        >
+          Game Design Document
+        </span>
+        <div class="space-y-4">
+          <h1
+            class="font-title text-4xl font-extrabold text-neutral-50 md:text-5xl lg:text-6xl"
+          >
+            Explora la documentación completa del juego.
+          </h1>
+          <p
+            class="max-w-3xl font-text text-lg leading-8 text-neutral-100/90 md:text-xl"
+          >
+            Navega por todas las colecciones del GDD: General, Sistema de Juego,
+            Narrativa, Progresión e Interfaz. Cada sección contiene
+            documentación detallada ordenada por importancia.
+          </p>
+        </div>
+      </div>
 
-    <!-- Sección General -->
-    {
-      generalEntradas.length > 0 && (
-        <section class="collection-section">
-          <h2>General</h2>
-          <div class="cards-grid">
-            {generalEntradas.map((entrada) => (
-              <a href={`/gdd/${entrada.id}`} class="card">
-                <div class="card-content">
-                  <h3>{entrada.data.title}</h3>
-                  <p class="description">{entrada.data.description}</p>
-                  <div class="card-footer">
-                    <time>
-                      {entrada.data.date.toLocaleDateString("es-ES")}
-                    </time>
+      <div class="grid gap-6 xl:grid-cols-[320px_minmax(0,1fr)] xl:items-start">
+        <GddSidebar collections={collections} />
+
+        <section
+          class="overflow-hidden rounded-[2rem] border border-primary-300/20 bg-neutral-50/6 shadow-[0_28px_90px_rgba(26,26,26,0.25)] backdrop-blur"
+        >
+          <div class="border-b border-primary-300/15 px-6 py-6 md:px-8 md:py-7">
+            <p
+              class="font-text text-sm font-semibold uppercase tracking-[0.24em] text-primary-300"
+            >
+              Inicio de la documentación
+            </p>
+            <h2
+              class="mt-3 font-title text-3xl font-bold text-neutral-50 md:text-4xl"
+            >
+              Selecciona una entrada del menú lateral para navegar por el GDD.
+            </h2>
+            <p
+              class="mt-4 max-w-3xl font-text text-base leading-8 text-neutral-200/90 md:text-lg"
+            >
+              Cada entrada se renderiza con una plantilla preparada para
+              contenido, metadatos e imagen destacada. La colección actual es <strong
+                >General</strong
+              > y ya está lista para crecer con más secciones después.
+            </p>
+          </div>
+
+          {
+            featuredEntry && (
+              <div class="grid gap-6 p-6 md:p-8 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] lg:p-10">
+                <div class="space-y-4">
+                  <span class="inline-flex rounded-full border border-neutral-50/10 bg-neutral-50/5 px-3 py-1 font-text text-xs font-semibold uppercase tracking-[0.22em] text-primary-200">
+                    Primera entrada sugerida
+                  </span>
+                  <h3 class="font-title text-3xl font-bold text-neutral-50">
+                    {featuredEntry.data.title}
+                  </h3>
+                  <p class="font-text text-base leading-8 text-neutral-200/90">
+                    {featuredEntry.data.description}
+                  </p>
+                  <div class="flex flex-wrap gap-3 pt-2 font-text text-sm text-neutral-200/85">
+                    <span class="rounded-full border border-neutral-50/10 bg-neutral-50/5 px-4 py-2">
+                      Orden {featuredEntry.data.order}
+                    </span>
+                    <span class="rounded-full border border-neutral-50/10 bg-neutral-50/5 px-4 py-2">
+                      {featuredEntry.data.date.toLocaleDateString("es-MX", {
+                        day: "2-digit",
+                        month: "long",
+                        year: "numeric",
+                      })}
+                    </span>
                   </div>
                 </div>
-              </a>
-            ))}
-          </div>
+
+                <div class="flex items-center justify-center rounded-[1.75rem] border border-dashed border-primary-200/25 bg-[radial-gradient(circle_at_top,_rgba(253,56,54,0.18),_transparent_52%),rgba(255,255,255,0.03)] p-8 text-center">
+                  <div class="space-y-3">
+                    <p class="font-text text-xs font-semibold uppercase tracking-[0.22em] text-primary-200">
+                      Plantilla de entrada
+                    </p>
+                    <p class="font-title text-2xl font-bold text-neutral-50">
+                      Lista para portada y contenido enriquecido
+                    </p>
+                    <a
+                      href={`/gdd/${featuredEntry.id}`}
+                      class="inline-flex rounded-xl bg-primary-500 px-5 py-3 font-text text-sm font-semibold text-neutral-50 transition hover:bg-primary-400"
+                    >
+                      Abrir entrada
+                    </a>
+                  </div>
+                </div>
+              </div>
+            )
+          }
         </section>
-      )
-    }
-
-    
-  </main>
+      </div>
+    </div>
+  </section>
 </Layout>
-
-<style>
-  main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 3rem 2rem;
-  }
-
-  h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-    text-align: center;
-  }
-
-  .intro {
-    text-align: center;
-    color: #666;
-    margin-bottom: 3rem;
-    font-size: 1.1rem;
-  }
-
-  .collection-section {
-    margin-bottom: 4rem;
-  }
-
-  .collection-section h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid #e0e0e0;
-  }
-
-  .cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
-  }
-
-  .card {
-    background: #fff;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 1.5rem;
-    text-decoration: none;
-    color: inherit;
-    transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .card:hover {
-    border-color: #333;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transform: translateY(-4px);
-  }
-
-  .card-content {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-  }
-
-  .card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 0.75rem;
-    margin-top: 0;
-  }
-
-  .description {
-    color: #666;
-    margin-bottom: 1rem;
-    flex: 1;
-    line-height: 1.5;
-  }
-
-  .card-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: auto;
-    padding-top: 1rem;
-    border-top: 1px solid #f0f0f0;
-  }
-
-  .card-footer time {
-    color: #999;
-    font-size: 0.9rem;
-  }
-
-  @media (max-width: 768px) {
-    main {
-      padding: 2rem 1rem;
-    }
-
-    h1 {
-      font-size: 2rem;
-    }
-
-    .cards-grid {
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
-  }
-</style>

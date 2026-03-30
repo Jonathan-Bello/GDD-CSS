@@ -1,9 +1,11 @@
 ---
-id: "2"
+id: "combate"
 title: "Combate"
-description: "Lorem"
+description: "Sistema de combate por turnos con estrategia y habilidades especiales."
 date: 2026-02-21
 author: "jonathan-bello"
+order: 4
+coverImage: "/combat.jpg"
 ---
 
 # Sistema de Combate

@@ -1,17 +1,23 @@
 ---
 id: "1"
-title: "Introduccion GDD"
-description: "Lorem"
+title: "Introducción al GDD"
+description: "Panorama inicial del documento de diseño, su objetivo y la manera en que sirve como base para las decisiones del proyecto."
 date: 2026-02-20
 author: "jonathan-bello"
+order: 1
+coverImage: "/figma.jpg"
 ---
 
 # Introducción
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus iure repellat dolor ab vitae, eveniet magni reiciendis sequi quidem corrupti dignissimos quod eos! Cum et asperiores neque quo enim laboriosam.
+Esta entrada reúne la visión general del **Game Design Document** y explica cómo se usa como fuente viva de referencia para CSS Quest AI.
 
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti ipsam enim dolor vero, rerum velit sed, est quia illum consectetur id, vitae natus ea pariatur officiis amet sunt beatae ratione.
+## ¿Para qué sirve este apartado?
 
-- Astro
-- Astro
-- Astro
+El GDD concentra decisiones, objetivos y contexto del proyecto para que el equipo tenga una fuente clara y fácil de consultar.
+
+## Qué debe comunicar
+
+- El propósito del juego.
+- La relación entre diseño, desarrollo y aprendizaje.
+- La base sobre la que crecerán las siguientes colecciones del documento.

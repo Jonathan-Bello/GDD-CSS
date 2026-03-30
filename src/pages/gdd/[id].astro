@@ -1,28 +1,80 @@
 ---
-export const prerender = true;
-
 import { getCollection, render } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
+import GddSidebar from "../../components/gdd/GddSidebar.astro";
+import GddEntryView from "../../components/gdd/GddEntryView.astro";
+
+const generalEntries = (await getCollection("general")).sort((a, b) => {
+  if (a.data.order !== b.data.order) {
+    return a.data.order - b.data.order;
+  }
+
+  return a.data.date.getTime() - b.data.date.getTime();
+});
 
 export async function getStaticPaths() {
-  const entradas = await getCollection("general");
-  return entradas.map((entrada) => ({
-    params: { id: entrada.id },
+  const entries = (await getCollection("general")).sort((a, b) => {
+    if (a.data.order !== b.data.order) {
+      return a.data.order - b.data.order;
+    }
+
+    return a.data.date.getTime() - b.data.date.getTime();
+  });
+
+  return entries.map((entry) => ({
+    params: { id: entry.id },
     props: {
-      entrada,
+      entry,
+      entries: entries.map((item) => ({
+        id: item.id,
+        data: item.data,
+      })),
     },
   }));
 }
 
-const { entrada } = Astro.props;
-const { Content } = await render(entrada);
+const { entry, entries = generalEntries } = Astro.props;
+
+// Obtener la entrada: primero del props, luego búsquedla en la colección
+function getCurrentEntry() {
+  if (entry) return entry;
+  if (Astro.params.id) {
+    return generalEntries.find((e) => e.id === Astro.params.id) || null;
+  }
+  return null;
+}
+
+const currentEntry = getCurrentEntry();
+
+if (!currentEntry) {
+  return Astro.redirect("/404");
+}
+
+const { Content } = await render(currentEntry);
 ---
 
-<Layout title={`GDD - ${entrada.data.title}`}>
-  <h1>{entrada.data.title}</h1>
-  <p class="entry-date">
-    Publicado el {entrada.data.date.toLocaleDateString("es-ES")}
-  </p>
+<Layout title={`GDD | ${currentEntry.data.title}`}>
+  <section
+    class="bg-[linear-gradient(180deg,rgba(74,6,5,0.95)_0%,rgba(135,22,21,0.88)_48%,rgba(26,26,26,1)_100%)] px-4 py-10 md:px-6 md:py-14"
+  >
+    <div
+      class="container mx-auto grid gap-6 xl:grid-cols-[320px_minmax(0,1fr)] xl:items-start"
+    >
+      <GddSidebar
+        entries={entries.map((item) => ({
+          id: item.id,
+          data: {
+            title: item.data.title,
+            description: item.data.description,
+            order: item.data.order,
+          },
+        }))}
+        currentId={currentEntry.id}
+      />
 
-  <Content />
+      <GddEntryView entry={currentEntry}>
+        <Content />
+      </GddEntryView>
+    </div>
+  </section>
 </Layout>

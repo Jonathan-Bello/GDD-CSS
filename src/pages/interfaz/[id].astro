@@ -8,7 +8,7 @@ if (!id) {
   return Astro.redirect("/404");
 }
 
-const entrada = await getEntry("sistema-juego", id);
+const entrada = await getEntry("interfaz", id);
 
 if (!entrada) {
   return Astro.redirect("/404");
@@ -23,7 +23,7 @@ const { Content } = await render(entrada);
   >
     <div class="container mx-auto">
       <a
-        href="/sistema-juego"
+        href="/interfaz"
         class="inline-flex items-center gap-2 rounded-full border border-primary-300/35 bg-primary-700/25 px-4 py-2 font-text text-sm font-semibold text-primary-100 transition-all hover:border-primary-300/60 hover:bg-primary-700/40"
       >
         <svg
@@ -38,7 +38,7 @@ const { Content } = await render(entrada);
             stroke-width="2"
             d="M15 19l-7-7 7-7"></path>
         </svg>
-        Volver a Sistema de Juego
+        Volver a Interfaz
       </a>
 
       <div class="mt-8 max-w-4xl space-y-5">
@@ -111,7 +111,7 @@ const { Content } = await render(entrada);
         class="mt-16 flex items-center justify-between border-t border-primary-300/15 pt-8"
       >
         <a
-          href="/sistema-juego"
+          href="/interfaz"
           class="inline-flex items-center gap-2 rounded-lg border border-primary-300/35 bg-primary-700/25 px-6 py-3 font-text font-semibold text-primary-100 transition-all hover:border-primary-300/60 hover:bg-primary-700/40"
         >
           <svg
@@ -130,7 +130,7 @@ const { Content } = await render(entrada);
         </a>
 
         <a
-          href="/sistema-juego"
+          href="/interfaz"
           class="inline-flex items-center gap-2 rounded-lg border border-primary-300/35 bg-primary-700/25 px-6 py-3 font-text font-semibold text-primary-100 transition-all hover:border-primary-300/60 hover:bg-primary-700/40"
         >
           Ver todas
@@ -152,8 +152,7 @@ const { Content } = await render(entrada);
   </section>
 </Layout>
 
-<style>
-  @reference "../../styles/global.css";
+<style is:global>
   .prose {
     --tw-prose-body: rgb(229, 231, 235);
     --tw-prose-headings: rgb(249, 250, 251);

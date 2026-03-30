@@ -1,0 +1,123 @@
+---
+interface EntryData {
+  title: string;
+  description: string;
+  date: Date;
+  order: number;
+  coverImage?: string;
+}
+
+interface Props {
+  entry: {
+    id: string;
+    data: EntryData;
+  };
+  children?: unknown;
+}
+
+const { entry } = Astro.props;
+---
+
+<article
+  class="overflow-hidden rounded-[2rem] border border-primary-300/20 bg-neutral-50/6 shadow-[0_28px_90px_rgba(26,26,26,0.25)] backdrop-blur"
+>
+  <div class="grid gap-0 xl:grid-cols-[1.25fr_0.95fr]">
+    <div class="space-y-6 p-6 md:p-8 lg:p-10">
+      <div class="flex flex-wrap items-center gap-3">
+        <span
+          class="rounded-full border border-primary-300/35 bg-primary-700/25 px-3 py-1 font-text text-xs font-semibold uppercase tracking-[0.22em] text-primary-100"
+        >
+          General
+        </span>
+        <span
+          class="rounded-full border border-neutral-50/10 bg-neutral-50/5 px-3 py-1 font-text text-xs font-medium text-neutral-200"
+        >
+          Orden {entry.data.order}
+        </span>
+      </div>
+
+      <div class="space-y-4">
+        <h1
+          class="font-title text-3xl font-extrabold text-neutral-50 md:text-4xl xl:text-5xl"
+        >
+          {entry.data.title}
+        </h1>
+        <p
+          class="max-w-3xl font-text text-base leading-8 text-neutral-200 md:text-lg"
+        >
+          {entry.data.description}
+        </p>
+      </div>
+
+      <div class="flex flex-wrap gap-3 font-text text-sm text-neutral-200/85">
+        <span
+          class="rounded-full border border-neutral-50/10 bg-neutral-50/5 px-4 py-2"
+        >
+          Publicado: {
+            entry.data.date.toLocaleDateString("es-MX", {
+              day: "2-digit",
+              month: "long",
+              year: "numeric",
+            })
+          }
+        </span>
+        <span
+          class="rounded-full border border-neutral-50/10 bg-neutral-50/5 px-4 py-2"
+        >
+          ID: {entry.id}
+        </span>
+      </div>
+    </div>
+
+    <div class="border-t border-primary-300/15 xl:border-t-0 xl:border-l">
+      {
+        entry.data.coverImage ? (
+          <div class="relative h-full min-h-[280px] xl:min-h-full">
+            <img
+              transition:name="img1"
+              src={entry.data.coverImage}
+              alt={`Imagen principal de ${entry.data.title}`}
+              class="absolute inset-0 h-full w-full object-cover"
+            />
+            <div class="absolute inset-0 bg-gradient-to-br from-primary-950/30 via-primary-900/10 to-neutral-950/75" />
+            <div class="absolute bottom-0 left-0 right-0 p-6">
+              <div class="rounded-2xl border border-neutral-50/10 bg-neutral-950/35 p-4 backdrop-blur-sm">
+                <p class="font-text text-xs font-semibold uppercase tracking-[0.22em] text-primary-200">
+                  Imagen destacada
+                </p>
+                <p class="mt-2 font-text text-sm leading-6 text-neutral-100/90">
+                  Espacio preparado para la imagen principal de esta entrada del
+                  GDD.
+                </p>
+              </div>
+            </div>
+          </div>
+        ) : (
+          <div class="flex h-full min-h-[280px] items-center justify-center bg-[radial-gradient(circle_at_top,_rgba(253,56,54,0.22),_transparent_55%),linear-gradient(180deg,rgba(74,6,5,0.5),rgba(26,26,26,0.35))] p-6">
+            <div class="w-full max-w-sm rounded-[1.75rem] border border-dashed border-primary-200/30 bg-neutral-950/20 p-8 text-center">
+              <p class="font-text text-xs font-semibold uppercase tracking-[0.24em] text-primary-200">
+                Imagen pendiente
+              </p>
+              <h2 class="mt-4 font-title text-2xl font-bold text-neutral-50">
+                Aquí irá la portada
+              </h2>
+              <p class="mt-3 font-text text-sm leading-7 text-neutral-200/85">
+                La plantilla ya reserva este espacio para que después agregues
+                grids, composiciones visuales o la imagen predilecta de cada
+                entrada.
+              </p>
+            </div>
+          </div>
+        )
+      }
+    </div>
+  </div>
+
+  <div class="border-t border-primary-300/15 p-6 md:p-8 lg:p-10">
+    <div
+      class="gdd-content prose prose-invert max-w-none prose-headings:font-title prose-headings:text-neutral-50 prose-p:font-text prose-p:text-neutral-100 prose-li:font-text prose-li:text-neutral-100 prose-strong:text-primary-100 prose-a:text-primary-200"
+    >
+      <slot />
+    </div>
+  </div>
+</article>

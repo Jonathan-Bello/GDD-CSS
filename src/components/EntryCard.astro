@@ -1,0 +1,76 @@
+---
+import { Image } from "astro:assets";
+
+interface Props {
+  id: string;
+  title: string;
+  description: string;
+  coverImage?: string;
+  order?: number;
+}
+
+const { id, title, description, coverImage, order } = Astro.props;
+---
+
+<a
+  href={`/sistema-juego/${id}`}
+  class="group relative overflow-hidden rounded-xl border border-primary-300/20 bg-neutral-50/6 shadow-[0_28px_90px_rgba(26,26,26,0.25)] backdrop-blur transition-all duration-300 hover:border-primary-300/40 hover:shadow-[0_28px_90px_rgba(74,6,5,0.35)]"
+>
+  <!-- Cover Image with ViewTransition -->
+  {
+    coverImage && (
+      <div class="relative h-48 w-full overflow-hidden bg-gradient-to-br from-primary-700/20 to-neutral-900/40">
+        <img
+          src={coverImage}
+          alt={title}
+          transition:name={`card-image-${id}`}
+          class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 to-transparent opacity-60" />
+      </div>
+    )
+  }
+
+  <!-- Content -->
+  <div class="space-y-4 p-6">
+    {
+      order !== undefined && (
+        <span class="inline-flex rounded-full border border-neutral-50/10 bg-neutral-50/5 px-3 py-1 font-text text-xs font-semibold uppercase tracking-[0.22em] text-primary-200">
+          Entrada {order}
+        </span>
+      )
+    }
+
+    <div class="space-y-2">
+      <h3
+        class="font-title text-xl font-bold text-neutral-50 transition-colors duration-300 group-hover:text-primary-200"
+      >
+        {title}
+      </h3>
+      <p class="line-clamp-3 font-text text-sm leading-6 text-neutral-200/80">
+        {description}
+      </p>
+    </div>
+
+    <!-- Arrow indicator -->
+    <div class="flex items-center gap-2 pt-2">
+      <span
+        class="font-text text-xs font-semibold uppercase tracking-[0.22em] text-primary-200"
+      >
+        Ver más
+      </span>
+      <svg
+        class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M9 5l7 7-7 7"></path>
+      </svg>
+    </div>
+  </div>
+</a>

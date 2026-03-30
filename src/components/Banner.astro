@@ -1,7 +1,9 @@
 ---
 import { Image } from "astro:assets";
+import Contador from "./Contador";
 
 import imgFigma from "../assets/imgs/figma.jpg";
+import videoIguano from "../assets/videos/iguano.mp4";
 ---
 
 <section
@@ -47,12 +49,17 @@ import imgFigma from "../assets/imgs/figma.jpg";
         </div>
       </div>
 
-      <div>
-        <Image
+      <div class="flex flex-col gap-6 items-center">
+        <!-- <Image
+          transition:name="img1"
           src={imgFigma}
           alt="Dispositivos de trabajo para aprendizaje digital"
           class="h-full max-h-[500px] w-full rounded-3xl object-cover shadow-2xl ring-1 ring-neutral-50/15"
-        />
+        /> -->
+        <video transition:name="video" autoplay transition:persist muted loop>
+          <source src={videoIguano} type="video/mp4" />
+        </video>
+        <Contador client:load transition:name="contador" transition:persist />
       </div>
     </div>
   </div>
