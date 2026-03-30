@@ -69,36 +69,36 @@ import imgWordmark from "../assets/svgs/Wordmark.svg";
   </style>
 
   <script>
-    // document.addEventListener("astro:page-load", () => {
-    const barsIcon = document.querySelector("#menu-icon");
-    const closeIcon = document.querySelector("#close-icon");
-    const navigatorMenu = document.querySelector("#navigator-menu");
-    const navigatorLinks = document.querySelector("#navigator-menu ul");
+    document.addEventListener("astro:page-load", () => {
+      const barsIcon = document.querySelector("#menu-icon");
+      const closeIcon = document.querySelector("#close-icon");
+      const navigatorMenu = document.querySelector("#navigator-menu");
+      const navigatorLinks = document.querySelector("#navigator-menu ul");
 
-    if (navigatorMenu === null || barsIcon === null || closeIcon === null) {
-      throw new Error("Element not found");
-    }
-
-    barsIcon.addEventListener("click", () => {
-      barsIcon.classList.toggle("hidden");
-      closeIcon.classList.toggle("hidden");
-      navigatorMenu.classList.toggle("top-16");
-    });
-
-    closeIcon.addEventListener("click", () => {
-      closeIcon.classList.toggle("hidden");
-      barsIcon.classList.toggle("hidden");
-      navigatorMenu.classList.toggle("top-16");
-    });
-
-    const path = window.location.pathname;
-    const links = navigatorLinks?.querySelectorAll("a");
-
-    links?.forEach((link) => {
-      if (link.pathname === path) {
-        link.classList.add("active");
+      if (navigatorMenu === null || barsIcon === null || closeIcon === null) {
+        throw new Error("Element not found");
       }
+
+      barsIcon.addEventListener("click", () => {
+        barsIcon.classList.toggle("hidden");
+        closeIcon.classList.toggle("hidden");
+        navigatorMenu.classList.toggle("top-16");
+      });
+
+      closeIcon.addEventListener("click", () => {
+        closeIcon.classList.toggle("hidden");
+        barsIcon.classList.toggle("hidden");
+        navigatorMenu.classList.toggle("top-16");
+      });
+
+      const path = window.location.pathname;
+      const links = navigatorLinks?.querySelectorAll("a");
+
+      links?.forEach((link) => {
+        if (link.pathname === path) {
+          link.classList.add("active");
+        }
+      });
     });
-    // });
   </script>
 </header>
