@@ -14,12 +14,12 @@ const { id, title, description, coverImage, order } = Astro.props;
 
 <a
   href={`/sistema-juego/${id}`}
-  class="group relative overflow-hidden rounded-xl border border-primary-300/20 bg-neutral-50/6 shadow-[0_28px_90px_rgba(26,26,26,0.25)] backdrop-blur transition-all duration-300 hover:border-primary-300/40 hover:shadow-[0_28px_90px_rgba(74,6,5,0.35)]"
+  class="group relative overflow-hidden rounded-xl border border-border-organic/20 bg-neutral-50/6 shadow-[0_28px_90px_rgba(26,26,26,0.25)] backdrop-blur transition-all duration-300 hover:border-border-organic/40 hover:shadow-[0_28px_90px_rgba(74,6,5,0.35)]"
 >
   <!-- Cover Image with ViewTransition -->
   {
     coverImage && (
-      <div class="relative h-48 w-full overflow-hidden bg-gradient-to-br from-primary-700/20 to-neutral-900/40">
+      <div class="relative h-48 w-full overflow-hidden bg-gradient-to-br from-bg-elevated/20 to-neutral-900/40">
         <img
           src={coverImage}
           alt={title}
@@ -35,7 +35,7 @@ const { id, title, description, coverImage, order } = Astro.props;
   <div class="space-y-4 p-6">
     {
       order !== undefined && (
-        <span class="inline-flex rounded-full border border-neutral-50/10 bg-neutral-50/5 px-3 py-1 font-text text-xs font-semibold uppercase tracking-[0.22em] text-primary-200">
+        <span class="inline-flex rounded-full border border-neutral-50/10 bg-neutral-50/5 px-3 py-1 font-text text-xs font-semibold uppercase tracking-[0.22em] text-accent-strong">
           Entrada {order}
         </span>
       )
@@ -43,7 +43,7 @@ const { id, title, description, coverImage, order } = Astro.props;
 
     <div class="space-y-2">
       <h3
-        class="font-title text-xl font-bold text-neutral-50 transition-colors duration-300 group-hover:text-primary-200"
+        class="font-title text-xl font-bold text-neutral-50 transition-colors duration-300 group-hover:text-accent-strong"
       >
         {title}
       </h3>
@@ -55,7 +55,7 @@ const { id, title, description, coverImage, order } = Astro.props;
     <!-- Arrow indicator -->
     <div class="flex items-center gap-2 pt-2">
       <span
-        class="font-text text-xs font-semibold uppercase tracking-[0.22em] text-primary-200"
+        class="font-text text-xs font-semibold uppercase tracking-[0.22em] text-accent-strong"
       >
         Ver más
       </span>

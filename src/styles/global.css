@@ -6,17 +6,77 @@
   --font-title: Poppins, sans-serif;
   --font-text: Manrope, sans-serif;
 
-  --color-primary-50: #fff1f1;
-  --color-primary-100: #ffe0e0;
-  --color-primary-200: #ffc7c6;
-  --color-primary-300: #ff9f9e;
-  --color-primary-400: #ff6866;
-  --color-primary-500: #fd3836;
-  --color-primary-600: #ea1a18;
-  --color-primary-700: #be110f;
-  --color-primary-800: #a31311;
-  --color-primary-900: #871615;
-  --color-primary-950: #4a0605;
+  --color-canopy-50: #eef9f0;
+  --color-canopy-100: #d7f0dc;
+  --color-canopy-200: #b1e1bc;
+  --color-canopy-300: #85cc95;
+  --color-canopy-400: #58b06b;
+  --color-canopy-500: #3f9553;
+  --color-canopy-600: #2e7741;
+  --color-canopy-700: #275f36;
+  --color-canopy-800: #224c2d;
+  --color-canopy-900: #1d3f27;
+  --color-canopy-950: #0d2315;
+
+  --color-solar-50: #fff8e8;
+  --color-solar-100: #ffefc4;
+  --color-solar-200: #ffde89;
+  --color-solar-300: #ffc74d;
+  --color-solar-400: #ffb620;
+  --color-solar-500: #f29e07;
+  --color-solar-600: #d67800;
+  --color-solar-700: #b25204;
+  --color-solar-800: #91400b;
+  --color-solar-900: #77350c;
+  --color-solar-950: #441902;
+
+  --color-vine-50: #f2f2ff;
+  --color-vine-100: #e8e5ff;
+  --color-vine-200: #d5ceff;
+  --color-vine-300: #b9a9ff;
+  --color-vine-400: #9a7bff;
+  --color-vine-500: #8353fa;
+  --color-vine-600: #7330ee;
+  --color-vine-700: #6022cf;
+  --color-vine-800: #4e1fa8;
+  --color-vine-900: #421d87;
+  --color-vine-950: #280f57;
+
+  --color-metal-50: #f4f7fa;
+  --color-metal-100: #e7ebf0;
+  --color-metal-200: #ced7e1;
+  --color-metal-300: #adbccc;
+  --color-metal-400: #8599ae;
+  --color-metal-500: #677d93;
+  --color-metal-600: #52657a;
+  --color-metal-700: #445262;
+  --color-metal-800: #3c4653;
+  --color-metal-900: #363e48;
+  --color-metal-950: #242a31;
+
+  --color-fog-50: #f8fafc;
+  --color-fog-100: #f1f5f9;
+  --color-fog-200: #e2e8f0;
+  --color-fog-300: #cbd5e1;
+  --color-fog-400: #94a3b8;
+  --color-fog-500: #64748b;
+  --color-fog-600: #475569;
+  --color-fog-700: #334155;
+  --color-fog-800: #1e293b;
+  --color-fog-900: #0f172a;
+  --color-fog-950: #020617;
+
+  --color-bg-base: var(--color-fog-900);
+  --color-bg-elevated: var(--color-fog-800);
+  --color-bg-overlay: var(--color-fog-950);
+
+  --color-text-primary: var(--color-fog-50);
+  --color-text-secondary: var(--color-fog-200);
+  --color-text-inverse: var(--color-fog-950);
+
+  --color-accent: var(--color-solar-500);
+  --color-accent-strong: var(--color-solar-400);
+  --color-border-organic: var(--color-canopy-300);
 
   --color-neutral-50: #f6f6f6;
   --color-neutral-100: #e7e7e7;

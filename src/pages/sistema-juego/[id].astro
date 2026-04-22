@@ -24,7 +24,7 @@ const { Content } = await render(entrada);
     <div class="container mx-auto">
       <a
         href="/sistema-juego"
-        class="inline-flex items-center gap-2 rounded-full border border-primary-300/35 bg-primary-700/25 px-4 py-2 font-text text-sm font-semibold text-primary-100 transition-all hover:border-primary-300/60 hover:bg-primary-700/40"
+        class="inline-flex items-center gap-2 rounded-full border border-border-organic/35 bg-bg-elevated/25 px-4 py-2 font-text text-sm font-semibold text-text-primary transition-all hover:border-border-organic/60 hover:bg-bg-elevated/40"
       >
         <svg
           class="h-4 w-4"
@@ -84,7 +84,7 @@ const { Content } = await render(entrada);
     entrada.data.coverImage && (
       <section class="px-4 py-8 md:px-6 md:py-12">
         <div class="container mx-auto">
-          <div class="overflow-hidden rounded-2xl border border-primary-300/20">
+          <div class="overflow-hidden rounded-2xl border border-border-organic/20">
             <img
               src={entrada.data.coverImage}
               alt={entrada.data.title}
@@ -108,11 +108,11 @@ const { Content } = await render(entrada);
 
       <!-- Navigation -->
       <div
-        class="mt-16 flex items-center justify-between border-t border-primary-300/15 pt-8"
+        class="mt-16 flex items-center justify-between border-t border-border-organic/15 pt-8"
       >
         <a
           href="/sistema-juego"
-          class="inline-flex items-center gap-2 rounded-lg border border-primary-300/35 bg-primary-700/25 px-6 py-3 font-text font-semibold text-primary-100 transition-all hover:border-primary-300/60 hover:bg-primary-700/40"
+          class="inline-flex items-center gap-2 rounded-lg border border-border-organic/35 bg-bg-elevated/25 px-6 py-3 font-text font-semibold text-text-primary transition-all hover:border-border-organic/60 hover:bg-bg-elevated/40"
         >
           <svg
             class="h-5 w-5"
@@ -131,7 +131,7 @@ const { Content } = await render(entrada);
 
         <a
           href="/sistema-juego"
-          class="inline-flex items-center gap-2 rounded-lg border border-primary-300/35 bg-primary-700/25 px-6 py-3 font-text font-semibold text-primary-100 transition-all hover:border-primary-300/60 hover:bg-primary-700/40"
+          class="inline-flex items-center gap-2 rounded-lg border border-border-organic/35 bg-bg-elevated/25 px-6 py-3 font-text font-semibold text-text-primary transition-all hover:border-border-organic/60 hover:bg-bg-elevated/40"
         >
           Ver todas
           <svg
@@ -199,11 +199,11 @@ const { Content } = await render(entrada);
   }
 
   .prose code {
-    @apply rounded bg-neutral-900/50 px-2 py-1 text-sm font-mono text-primary-200;
+    @apply rounded bg-neutral-900/50 px-2 py-1 text-sm font-mono text-accent-strong;
   }
 
   .prose pre {
-    @apply overflow-x-auto rounded-lg border border-primary-300/20 bg-neutral-900/50 p-4;
+    @apply overflow-x-auto rounded-lg border border-border-organic/20 bg-neutral-900/50 p-4;
   }
 
   .prose table {
@@ -212,10 +212,10 @@ const { Content } = await render(entrada);
 
   .prose th,
   .prose td {
-    @apply border border-primary-300/20 px-4 py-3 text-left;
+    @apply border border-border-organic/20 px-4 py-3 text-left;
   }
 
   .prose th {
-    @apply bg-primary-900/20 font-semibold;
+    @apply bg-bg-base/20 font-semibold;
   }
 </style>
