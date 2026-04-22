@@ -1,5 +1,5 @@
 import { defineCollection, reference } from "astro:content";
-import { glob, file } from "astro/loaders";
+import { glob } from "astro/loaders";
 import { z } from "astro/zod";
 
 const authorsCollection = defineCollection({
@@ -24,6 +24,8 @@ const entradasCollection = defineCollection({
     description: z.string(),
     date: z.date(),
     author: reference("authors"),
+    order: z.number().int().nonnegative(),
+    coverImage: z.string().optional(),
   }),
 });
 
