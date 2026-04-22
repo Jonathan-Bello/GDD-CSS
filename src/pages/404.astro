@@ -1,0 +1,70 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="404 - Página no encontrada">
+  <main class="min-h-screen flex items-center justify-center p-4 sm:p-8 bg-gradient-to-br from-indigo-500 to-purple-700">
+    <div class="w-full max-w-2xl">
+      <div class="bg-white rounded-xl p-6 sm:p-8 md:p-12 shadow-2xl text-center">
+        <!-- Code Block -->
+        <div class="flex flex-col items-center mb-6 sm:mb-8 font-mono">
+          <span class="text-5xl sm:text-6xl md:text-7xl font-bold bg-gradient-to-r from-indigo-500 to-purple-700 bg-clip-text text-transparent mb-2">404</span>
+          <span class="text-lg sm:text-xl text-gray-500 tracking-widest">NOT FOUND</span>
+        </div>
+
+        <!-- Joke Section -->
+        <div class="mb-6 sm:mb-8">
+          <h1 class="text-2xl sm:text-3xl md:text-4xl text-gray-800 mb-4 sm:mb-6 leading-relaxed">
+            ¡Oops! Esta página se ha perdido en el código
+          </h1>
+          <div class="bg-gray-100 border-l-4 border-indigo-500 p-4 sm:p-6 rounded-lg mb-6">
+            <p class="text-base sm:text-lg text-gray-700 leading-relaxed">
+              Un string entra a un bar y le dice al bartender:<br />
+              <span class="block mt-3 font-bold text-purple-700 italic">
+                "Ponme un trago, estoy muy NULL"
+              </span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Tech Humor -->
+        <div class="bg-gray-900 text-green-400 p-4 rounded-lg mb-6 sm:mb-8 text-left font-mono text-sm break-words">
+          <p class="m-0">TypeError: Cannot read property 'page' of undefined</p>
+          <p class="mt-2 text-yellow-300">
+            La página que buscas fue un <span class="text-red-400">reference</span> nula.
+          </p>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-6 sm:mb-8 justify-center">
+          <a 
+            href="/" 
+            class="inline-block px-6 py-3 bg-gradient-to-r from-indigo-500 to-purple-700 text-white font-bold rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-1 w-full sm:w-auto"
+          >
+            ← Volver a Inicio
+          </a>
+          <a 
+            href="/GDD" 
+            class="inline-block px-6 py-3 bg-white text-indigo-500 font-bold rounded-lg border-2 border-indigo-500 transition-all duration-300 hover:bg-indigo-500 hover:text-white w-full sm:w-auto"
+          >
+            📖 Ver GDD
+          </a>
+        </div>
+
+        <!-- ASCII Art -->
+        <div class="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t-2 border-gray-200">
+          <pre class="font-mono text-sm sm:text-base text-purple-700 leading-tight mx-auto overflow-x-auto">
+  ╱|、
+ (´ | `ヽ
+ /  ⌒  ⌒ \
+| /| 404 |\ |
+| / | | \ |
+\/ | ⌒ | \/
+  \ | /
+   `ー´
+          </pre>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

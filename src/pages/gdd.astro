@@ -7,43 +7,161 @@ const generalEntries = (await getCollection("general")).sort((a, b) => {
   if (a.data.order !== b.data.order) {
     return a.data.order - b.data.order;
   }
-
   return a.data.date.getTime() - b.data.date.getTime();
 });
+
+const sistemaJuegoEntries = (await getCollection("sistema-juego")).sort(
+  (a, b) => {
+    if (a.data.order !== b.data.order) {
+      return a.data.order - b.data.order;
+    }
+    return a.data.date.getTime() - b.data.date.getTime();
+  },
+);
+
+const narrativaEntries = (await getCollection("narrativa")).sort((a, b) => {
+  if (a.data.order !== b.data.order) {
+    return a.data.order - b.data.order;
+  }
+  return a.data.date.getTime() - b.data.date.getTime();
+});
+
+const progresionEntries = (await getCollection("progresion")).sort((a, b) => {
+  if (a.data.order !== b.data.order) {
+    return a.data.order - b.data.order;
+  }
+  return a.data.date.getTime() - b.data.date.getTime();
+});
+
+const interfazEntries = (await getCollection("interfaz")).sort((a, b) => {
+  if (a.data.order !== b.data.order) {
+    return a.data.order - b.data.order;
+  }
+  return a.data.date.getTime() - b.data.date.getTime();
+});
+
+const collections = [
+  {
+    name: "general",
+    label: "General",
+    path: "/gdd/",
+    entries: generalEntries.map((entry) => ({
+      id: entry.id,
+      data: {
+        title: entry.data.title,
+        description: entry.data.description,
+        order: entry.data.order,
+      },
+    })),
+  },
+  {
+    name: "sistema-juego",
+    label: "Sistema de Juego",
+    path: "/sistema-juego/",
+    entries: sistemaJuegoEntries.map((entry) => ({
+      id: entry.id,
+      data: {
+        title: entry.data.title,
+        description: entry.data.description,
+        order: entry.data.order,
+      },
+    })),
+  },
+  {
+    name: "narrativa",
+    label: "Narrativa",
+    path: "/narrativa/",
+    entries: narrativaEntries.map((entry) => ({
+      id: entry.id,
+      data: {
+        title: entry.data.title,
+        description: entry.data.description,
+        order: entry.data.order,
+      },
+    })),
+  },
+  {
+    name: "progresion",
+    label: "Progresión",
+    path: "/progresion/",
+    entries: progresionEntries.map((entry) => ({
+      id: entry.id,
+      data: {
+        title: entry.data.title,
+        description: entry.data.description,
+        order: entry.data.order,
+      },
+    })),
+  },
+  {
+    name: "interfaz",
+    label: "Interfaz",
+    path: "/interfaz/",
+    entries: interfazEntries.map((entry) => ({
+      id: entry.id,
+      data: {
+        title: entry.data.title,
+        description: entry.data.description,
+        order: entry.data.order,
+      },
+    })),
+  },
+];
 
 const featuredEntry = generalEntries[0];
 ---
 
 <Layout title="GDD | CSS Quest AI">
-  <section class="bg-[linear-gradient(180deg,rgba(74,6,5,0.95)_0%,rgba(135,22,21,0.88)_48%,rgba(26,26,26,1)_100%)] px-4 py-10 md:px-6 md:py-14">
+  <section
+    class="bg-[linear-gradient(180deg,rgba(74,6,5,0.95)_0%,rgba(135,22,21,0.88)_48%,rgba(26,26,26,1)_100%)] px-4 py-10 md:px-6 md:py-14"
+  >
     <div class="container mx-auto space-y-8">
       <div class="max-w-4xl space-y-5">
-        <span class="inline-flex items-center rounded-full border border-primary-300/35 bg-primary-700/25 px-4 py-2 font-text text-sm font-semibold text-primary-100">
+        <span
+          class="inline-flex items-center rounded-full border border-primary-300/35 bg-primary-700/25 px-4 py-2 font-text text-sm font-semibold text-primary-100"
+        >
           Game Design Document
         </span>
         <div class="space-y-4">
-          <h1 class="font-title text-4xl font-extrabold text-neutral-50 md:text-5xl lg:text-6xl">
-            Explora la documentación del juego desde una navegación lateral.
+          <h1
+            class="font-title text-4xl font-extrabold text-neutral-50 md:text-5xl lg:text-6xl"
+          >
+            Explora la documentación completa del juego.
           </h1>
-          <p class="max-w-3xl font-text text-lg leading-8 text-neutral-100/90 md:text-xl">
-            El apartado GDD ahora muestra la colección <strong>General</strong> en un visualizador desplegable, ordenado por el nuevo campo <strong>order</strong> para que controles exactamente cómo se presentan las entradas.
+          <p
+            class="max-w-3xl font-text text-lg leading-8 text-neutral-100/90 md:text-xl"
+          >
+            Navega por todas las colecciones del GDD: General, Sistema de Juego,
+            Narrativa, Progresión e Interfaz. Cada sección contiene
+            documentación detallada ordenada por importancia.
           </p>
         </div>
       </div>
 
       <div class="grid gap-6 xl:grid-cols-[320px_minmax(0,1fr)] xl:items-start">
-        <GddSidebar entries={generalEntries} />
+        <GddSidebar collections={collections} />
 
-        <section class="overflow-hidden rounded-[2rem] border border-primary-300/20 bg-neutral-50/6 shadow-[0_28px_90px_rgba(26,26,26,0.25)] backdrop-blur">
+        <section
+          class="overflow-hidden rounded-[2rem] border border-primary-300/20 bg-neutral-50/6 shadow-[0_28px_90px_rgba(26,26,26,0.25)] backdrop-blur"
+        >
           <div class="border-b border-primary-300/15 px-6 py-6 md:px-8 md:py-7">
-            <p class="font-text text-sm font-semibold uppercase tracking-[0.24em] text-primary-300">
+            <p
+              class="font-text text-sm font-semibold uppercase tracking-[0.24em] text-primary-300"
+            >
               Inicio de la documentación
             </p>
-            <h2 class="mt-3 font-title text-3xl font-bold text-neutral-50 md:text-4xl">
+            <h2
+              class="mt-3 font-title text-3xl font-bold text-neutral-50 md:text-4xl"
+            >
               Selecciona una entrada del menú lateral para navegar por el GDD.
             </h2>
-            <p class="mt-4 max-w-3xl font-text text-base leading-8 text-neutral-200/90 md:text-lg">
-              Cada entrada se renderiza con una plantilla preparada para contenido, metadatos e imagen destacada. La colección actual es <strong>General</strong> y ya está lista para crecer con más secciones después.
+            <p
+              class="mt-4 max-w-3xl font-text text-base leading-8 text-neutral-200/90 md:text-lg"
+            >
+              Cada entrada se renderiza con una plantilla preparada para
+              contenido, metadatos e imagen destacada. La colección actual es <strong
+                >General</strong
+              > y ya está lista para crecer con más secciones después.
             </p>
           </div>
 

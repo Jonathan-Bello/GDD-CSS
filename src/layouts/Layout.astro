@@ -1,4 +1,5 @@
 ---
+import { ClientRouter } from "astro:transitions";
 import Header from "./Header.astro";
 
 import "../styles/global.css";
@@ -19,6 +20,7 @@ const { title = "CSS Quest AI" } = Astro.props;
     <link rel="icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <ClientRouter />
   </head>
   <body class="bg-neutral-950 text-neutral-50">
     <Header />
