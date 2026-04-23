@@ -6,17 +6,66 @@
   --font-title: Poppins, sans-serif;
   --font-text: Manrope, sans-serif;
 
-  --color-primary-50: #fff1f1;
-  --color-primary-100: #ffe0e0;
-  --color-primary-200: #ffc7c6;
-  --color-primary-300: #ff9f9e;
-  --color-primary-400: #ff6866;
-  --color-primary-500: #fd3836;
-  --color-primary-600: #ea1a18;
-  --color-primary-700: #be110f;
-  --color-primary-800: #a31311;
-  --color-primary-900: #871615;
-  --color-primary-950: #4a0605;
+  /* Solar Punk palette: green, orange, quartz */
+  --color-canopy-50: #ecfdf3;
+  --color-canopy-100: #d2f9e2;
+  --color-canopy-200: #a8f0c9;
+  --color-canopy-300: #76e1a9;
+  --color-canopy-400: #43cb84;
+  --color-canopy-500: #22b567;
+  --color-canopy-600: #149651;
+  --color-canopy-700: #117741;
+  --color-canopy-800: #105f36;
+  --color-canopy-900: #0f4e2f;
+  --color-canopy-950: #062b1a;
+
+  --color-solar-50: #fff7eb;
+  --color-solar-100: #ffebcd;
+  --color-solar-200: #ffd49a;
+  --color-solar-300: #ffb762;
+  --color-solar-400: #ff9b32;
+  --color-solar-500: #f07f15;
+  --color-solar-600: #d6640c;
+  --color-solar-700: #b1470c;
+  --color-solar-800: #8f3811;
+  --color-solar-900: #742f12;
+  --color-solar-950: #411506;
+
+  --color-quartz-50: #f8fbff;
+  --color-quartz-100: #f0f6ff;
+  --color-quartz-200: #dfe9f6;
+  --color-quartz-300: #c7d6e9;
+  --color-quartz-400: #9fb5cd;
+  --color-quartz-500: #7892ae;
+  --color-quartz-600: #5f7893;
+  --color-quartz-700: #4f6077;
+  --color-quartz-800: #455364;
+  --color-quartz-900: #3d4855;
+  --color-quartz-950: #262f3a;
+
+  --color-metal-50: #f4f7fa;
+  --color-metal-100: #e7ebf0;
+  --color-metal-200: #ced7e1;
+  --color-metal-300: #adbccc;
+  --color-metal-400: #8599ae;
+  --color-metal-500: #677d93;
+  --color-metal-600: #52657a;
+  --color-metal-700: #445262;
+  --color-metal-800: #3c4653;
+  --color-metal-900: #363e48;
+  --color-metal-950: #242a31;
+
+  --color-bg-base: var(--color-quartz-50);
+  --color-bg-elevated: var(--color-quartz-100);
+  --color-bg-overlay: var(--color-quartz-200);
+
+  --color-text-primary: var(--color-quartz-950);
+  --color-text-secondary: var(--color-quartz-700);
+  --color-text-inverse: var(--color-quartz-50);
+
+  --color-accent: var(--color-solar-500);
+  --color-accent-strong: var(--color-solar-400);
+  --color-border-organic: var(--color-canopy-400);
 
   --color-neutral-50: #f6f6f6;
   --color-neutral-100: #e7e7e7;
@@ -29,4 +78,40 @@
   --color-neutral-800: #454545;
   --color-neutral-900: #3d3d3d;
   --color-neutral-950: #1a1a1a;
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+    --color-bg-base: var(--color-quartz-50);
+    --color-bg-elevated: var(--color-quartz-100);
+    --color-bg-overlay: var(--color-quartz-200);
+
+    --color-text-primary: var(--color-quartz-950);
+    --color-text-secondary: var(--color-quartz-700);
+    --color-text-inverse: var(--color-quartz-50);
+
+    --color-accent: var(--color-solar-500);
+    --color-accent-strong: var(--color-solar-400);
+    --color-border-organic: var(--color-canopy-400);
+  }
+
+  .dark {
+    color-scheme: dark;
+    --color-bg-base: var(--color-quartz-950);
+    --color-bg-elevated: var(--color-quartz-900);
+    --color-bg-overlay: color-mix(in oklab, var(--color-quartz-950) 85%, black);
+
+    --color-text-primary: var(--color-quartz-50);
+    --color-text-secondary: var(--color-quartz-200);
+    --color-text-inverse: var(--color-quartz-950);
+
+    --color-accent: var(--color-solar-400);
+    --color-accent-strong: var(--color-solar-300);
+    --color-border-organic: var(--color-canopy-300);
+  }
+
+  body {
+    @apply bg-bg-base text-text-primary;
+  }
 }
