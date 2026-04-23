@@ -1,6 +1,7 @@
 ---
 import { ClientRouter } from "astro:transitions";
 import Header from "./Header.astro";
+import Footer from "./Footer.astro";
 
 import "../styles/global.css";
 
@@ -27,6 +28,7 @@ const { title = "CSS Quest AI" } = Astro.props;
     <main class="pt-16">
       <slot />
     </main>
+    <Footer />
   </body>
 </html>
 
