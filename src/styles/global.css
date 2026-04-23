@@ -3,6 +3,8 @@
 @import "tailwindcss";
 @plugin '@tailwindcss/typography';
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --font-title: Poppins, sans-serif;
   --font-text: Manrope, sans-serif;
@@ -119,8 +121,8 @@
 
 @layer components {
   .ds-panel {
-    border: 1px solid color-mix(in oklab, var(--color-border-organic) 28%, transparent);
-
+    border: 1px solid
+      color-mix(in oklab, var(--color-border-organic) 28%, transparent);
   }
 
   .ds-panel--blur {
@@ -128,21 +130,38 @@
   }
 
   .ds-panel--hero {
-    border-color: color-mix(in oklab, var(--color-border-organic) 40%, transparent);
-    background:
-      linear-gradient(
-        120deg,
-        color-mix(in oklab, var(--color-bg-elevated) 80%, transparent),
-        color-mix(in oklab, var(--color-accent) 35%, var(--color-bg-elevated) 65%),
-        color-mix(in oklab, var(--color-accent-strong) 52%, var(--color-bg-elevated) 48%)
-      );
+    border-color: color-mix(
+      in oklab,
+      var(--color-border-organic) 40%,
+      transparent
+    );
+    background: linear-gradient(
+      120deg,
+      color-mix(in oklab, var(--color-bg-elevated) 80%, transparent),
+      color-mix(
+        in oklab,
+        var(--color-accent) 35%,
+        var(--color-bg-elevated) 65%
+      ),
+      color-mix(
+        in oklab,
+        var(--color-accent-strong) 52%,
+        var(--color-bg-elevated) 48%
+      )
+    );
   }
 
   .ds-panel--organic {
     border-radius: 2rem 2.5rem 2.125rem 2.375rem;
-    border-color: color-mix(in oklab, var(--color-border-organic) 48%, transparent);
-    outline: 1px solid color-mix(in oklab, var(--color-border-organic) 20%, transparent);
+    border-color: color-mix(
+      in oklab,
+      var(--color-border-organic) 48%,
+      transparent
+    );
+    outline: 1px solid
+      color-mix(in oklab, var(--color-border-organic) 20%, transparent);
     outline-offset: -5px;
-    box-shadow: inset 0 0 0 1px color-mix(in oklab, var(--color-bg-elevated) 85%, white 15%);
+    box-shadow: inset 0 0 0 1px
+      color-mix(in oklab, var(--color-bg-elevated) 85%, white 15%);
   }
 }
