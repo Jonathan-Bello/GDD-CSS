@@ -1,21 +1,21 @@
 ---
 import { render } from "astro:content";
-import Layout from "../../layouts/Layout.astro";
-import GddSidebar from "../../components/gdd/GddSidebar.astro";
-import GddEntryView from "../../components/gdd/GddEntryView.astro";
+import Layout from "@layouts/Layout.astro";
+import GddSidebar from "@components/gdd/GddSidebar.astro";
+import GddEntryView from "@components/gdd/GddEntryView.astro";
 import {
   getGddCollectionMeta,
   getGddCollections,
   getSortedCollectionEntries,
   type GddSidebarCollection,
-} from "../../utils/gddCollections";
+} from "@utils/gddCollections";
 
-const progresionEntries = await getSortedCollectionEntries("progresion");
+const sistemaJuegoEntries = await getSortedCollectionEntries("sistema-juego");
 const allCollections = await getGddCollections();
-const collectionMeta = getGddCollectionMeta("progresion");
+const collectionMeta = getGddCollectionMeta("sistema-juego");
 
 export async function getStaticPaths() {
-  const entries = await getSortedCollectionEntries("progresion");
+  const entries = await getSortedCollectionEntries("sistema-juego");
   const collections = await getGddCollections();
 
   return entries.map((entry) => ({
@@ -28,14 +28,14 @@ export async function getStaticPaths() {
 }
 
 const { entry, collections = allCollections } = Astro.props as {
-  entry?: (typeof progresionEntries)[number];
+  entry?: (typeof sistemaJuegoEntries)[number];
   collections?: GddSidebarCollection[];
 };
 
 const currentEntry =
   entry ||
   (Astro.params.id
-    ? progresionEntries.find((item) => item.id === Astro.params.id)
+    ? sistemaJuegoEntries.find((item) => item.id === Astro.params.id)
     : null);
 
 if (!currentEntry) {

@@ -33,27 +33,27 @@ const GDD_COLLECTIONS: GddCollectionConfig[] = [
   {
     name: "general",
     label: "General",
-    path: "/gdd/",
+    path: "/gdd/general/",
   },
   {
     name: "sistema-juego",
     label: "Sistema de Juego",
-    path: "/sistema-juego/",
+    path: "/gdd/sistema-juego/",
   },
   {
     name: "narrativa",
     label: "Narrativa",
-    path: "/narrativa/",
+    path: "/gdd/narrativa/",
   },
   {
     name: "progresion",
     label: "Progresión",
-    path: "/progresion/",
+    path: "/gdd/progresion/",
   },
   {
     name: "interfaz",
     label: "Interfaz",
-    path: "/interfaz/",
+    path: "/gdd/interfaz/",
   },
 ];
 
@@ -75,7 +75,6 @@ export async function getSortedCollectionEntries<T extends GddCollectionName>(
   const entries = await getCollection(name);
   return sortEntries(entries);
 }
-
 
 export function getGddCollectionMeta(name: GddCollectionName): {
   label: string;

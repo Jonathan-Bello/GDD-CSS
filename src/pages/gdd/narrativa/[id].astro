@@ -4,16 +4,18 @@ import Layout from "@layouts/Layout.astro";
 import GddSidebar from "@components/gdd/GddSidebar.astro";
 import GddEntryView from "@components/gdd/GddEntryView.astro";
 import {
+  getGddCollectionMeta,
   getGddCollections,
   getSortedCollectionEntries,
   type GddSidebarCollection,
 } from "@utils/gddCollections";
 
-const generalEntries = await getSortedCollectionEntries("general");
+const narrativaEntries = await getSortedCollectionEntries("narrativa");
 const allCollections = await getGddCollections();
+const collectionMeta = getGddCollectionMeta("narrativa");
 
 export async function getStaticPaths() {
-  const entries = await getSortedCollectionEntries("general");
+  const entries = await getSortedCollectionEntries("narrativa");
   const collections = await getGddCollections();
 
   return entries.map((entry) => ({
@@ -26,19 +28,15 @@ export async function getStaticPaths() {
 }
 
 const { entry, collections = allCollections } = Astro.props as {
-  entry?: (typeof generalEntries)[number];
+  entry?: (typeof narrativaEntries)[number];
   collections?: GddSidebarCollection[];
 };
 
-function getCurrentEntry() {
-  if (entry) return entry;
-  if (Astro.params.id) {
-    return generalEntries.find((item) => item.id === Astro.params.id) || null;
-  }
-  return null;
-}
-
-const currentEntry = getCurrentEntry();
+const currentEntry =
+  entry ||
+  (Astro.params.id
+    ? narrativaEntries.find((item) => item.id === Astro.params.id)
+    : null);
 
 if (!currentEntry) {
   return Astro.redirect("/404");
@@ -54,7 +52,7 @@ const { Content } = await render(currentEntry);
     >
       <GddSidebar collections={collections} currentId={currentEntry.id} />
 
-      <GddEntryView entry={currentEntry}>
+      <GddEntryView entry={currentEntry} collectionLabel={collectionMeta.label}>
         <Content />
       </GddEntryView>
     </div>

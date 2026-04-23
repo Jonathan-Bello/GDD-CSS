@@ -1,19 +1,19 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import GddSidebar from "../components/gdd/GddSidebar.astro";
+import Layout from "@layouts/Layout.astro";
+import GddSidebar from "@components/gdd/GddSidebar.astro";
 import {
   getGddCollectionMeta,
   getGddCollections,
   getSortedCollectionEntries,
-} from "../utils/gddCollections";
+} from "@utils/gddCollections";
 
 const collections = await getGddCollections();
-const collectionMeta = getGddCollectionMeta("progresion");
-const progresionEntries = await getSortedCollectionEntries("progresion");
-const featuredEntry = progresionEntries[0];
+const collectionMeta = getGddCollectionMeta("sistema-juego");
+const sistemaJuegoEntries = await getSortedCollectionEntries("sistema-juego");
+const featuredEntry = sistemaJuegoEntries[0];
 ---
 
-<Layout title="Progresión | CSS Quest AI">
+<Layout title="Sistema de Juego | CSS Quest AI">
   <section class="bg-bg-base px-4 py-10 md:px-6 md:py-14">
     <div
       class="container mx-auto grid gap-6 xl:grid-cols-[320px_minmax(0,1fr)] xl:items-start"
@@ -34,13 +34,13 @@ const featuredEntry = progresionEntries[0];
           <h1
             class="mt-3 font-title text-3xl font-bold text-text-primary md:text-4xl"
           >
-            Evolución del jugador y curva de aprendizaje
+            Mecánicas principales y reglas del juego
           </h1>
           <p
             class="mt-4 max-w-3xl font-text text-base leading-8 text-text-secondary/90 md:text-lg"
           >
-            Este bloque define cómo avanza el jugador, qué recompensas obtiene y
-            cómo se estructura el ritmo de progreso dentro de CSS Quest AI.
+            Esta colección describe el funcionamiento interno de CSS Quest AI:
+            combate, economía, sistemas de progresión y lógica de interacción.
           </p>
         </div>
 
