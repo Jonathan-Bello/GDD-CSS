@@ -29,7 +29,7 @@ const { title = "CSS Quest AI" } = Astro.props;
     font-sans text-base leading-7 text-neutral-900 dark:text-neutral-100"
   >
     <Header />
-    <main class="pt-16 flex-1">
+    <main class="pt-16 min-h-dvh flex-1">
       <slot />
     </main>
     <Footer />
@@ -37,9 +37,6 @@ const { title = "CSS Quest AI" } = Astro.props;
 </html>
 
 <style>
-  html {
-    height: 100%;
-  }
 
 
 </style>
