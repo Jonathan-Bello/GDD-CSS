@@ -23,9 +23,13 @@ const { title = "CSS Quest AI" } = Astro.props;
     <title>{title}</title>
     <ClientRouter />
   </head>
-  <body class="bg-neutral-950 text-neutral-50">
+  <body
+    class="bg-neutral-50 dark:bg-neutral-950
+    flex min-h-screen flex-col
+    font-sans text-base leading-7 text-neutral-900 dark:text-neutral-100"
+  >
     <Header />
-    <main class="pt-16">
+    <main class="pt-16 flex-1">
       <slot />
     </main>
     <Footer />
@@ -33,10 +37,9 @@ const { title = "CSS Quest AI" } = Astro.props;
 </html>
 
 <style>
-  html,
-  body {
-    margin: 0;
-    width: 100%;
-    min-height: 100%;
+  html {
+    height: 100%;
   }
+
+
 </style>

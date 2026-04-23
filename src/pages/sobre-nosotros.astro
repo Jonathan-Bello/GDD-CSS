@@ -1,77 +1,174 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import imgAndroide from "../assets/imgs/androideme.png";
+import { Image } from "astro:assets";
 ---
 
 <Layout title="Sobre Nosotros | CSS Quest AI">
-  <section class="mx-auto flex w-full max-w-6xl flex-col gap-8 px-4 py-16 md:px-8">
-    <header class="ds-panel ds-panel--hero ds-panel--organic rounded-3xl p-8 md:p-10">
-      <p class="mb-3 inline-flex rounded-full border border-canopy-300/50 bg-canopy-500/15 px-4 py-1 text-xs font-semibold tracking-[0.2em] text-canopy-100 uppercase">
-        Sobre el equipo
-      </p>
-      <h1 class="font-title text-4xl font-bold tracking-tight text-neutral-50 md:text-5xl">
-        Construimos un universo Solarpunk desde la ingeniería, narrativa y colaboración.
-      </h1>
-      <p class="mt-4 max-w-4xl text-base leading-relaxed text-neutral-100 md:text-lg">
-        Somos un equipo multidisciplinario comprometido con el desarrollo de videojuegos con enfoque académico, técnico y creativo. Integramos diseño de sistemas, dirección de proyecto y narrativa para crear experiencias memorables.
-      </p>
-    </header>
-
-    <div class="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
-      <article class="ds-panel ds-panel--blur rounded-3xl p-6 md:p-8">
-        <h2 class="font-title text-2xl font-semibold text-text-primary">Jonathan Alexis Bello López</h2>
-        <p class="mt-2 text-sm font-semibold tracking-wide text-canopy-300 uppercase">
-          Director de Proyecto y Desarrollador Principal
-        </p>
-        <p class="mt-4 leading-relaxed text-text-secondary">
-          Ingeniero y maestrante en Sistemas Computacionales por el ITST (TecNM). Con una trayectoria centrada en el desarrollo de software y la integración de sistemas complejos, lidera la arquitectura técnica y el diseño de niveles del proyecto.
-        </p>
-        <p class="mt-3 leading-relaxed text-text-secondary">
-          Su enfoque combina el rigor de la computación científica con la estética minimalista del movimiento Solarpunk, encargándose de la programación en Godot Engine, la implementación de mecánicas de juego y la optimización de sistemas de animación modular.
-        </p>
-      </article>
-
-      <aside class="ds-panel ds-panel--organic rounded-3xl p-6 md:p-8">
-        <h3 class="font-title text-xl font-semibold text-text-primary">Retrato estilo videojuego</h3>
-        <p class="mt-2 text-sm leading-relaxed text-text-secondary">
-          Espacio reservado para tu imagen personal adaptada a la estética del videojuego.
-        </p>
-        <div class="mt-5 flex aspect-[4/5] items-center justify-center rounded-2xl border-2 border-dashed border-canopy-400/60 bg-canopy-950/20 p-6 text-center">
-          <span class="max-w-[14rem] text-sm font-medium tracking-wide text-canopy-200 uppercase">
-            Placeholder para imagen de Jonathan versión personaje del juego
-          </span>
-        </div>
-      </aside>
-    </div>
-
-    <article class="ds-panel ds-panel--blur rounded-3xl p-6 md:p-8">
-      <h2 class="font-title text-2xl font-semibold text-text-primary">Jhonnatan López Aguilar</h2>
-      <p class="mt-2 text-sm font-semibold tracking-wide text-solar-300 uppercase">Guionista y Narrativa</p>
-      <p class="mt-4 leading-relaxed text-text-secondary">
-        Pieza fundamental en la construcción del universo del proyecto. Jhonnatan aporta la profundidad literaria necesaria para transformar las mecánicas de juego en una experiencia narrativa cohesiva.
-      </p>
-      <p class="mt-3 leading-relaxed text-text-secondary">
-        Su labor se centra en la escritura de guion, el desarrollo de lore y la creación de diálogos, asegurando que la progresión del jugador esté intrínsecamente ligada a una historia significativa y envolvente.
-      </p>
-    </article>
-
-    <article class="ds-panel rounded-3xl p-6 md:p-8">
-      <h2 class="font-title text-2xl font-semibold text-text-primary">Colaboradores y apoyo académico</h2>
-      <p class="mt-4 leading-relaxed text-text-secondary">
-        El desarrollo de este proyecto de tesis cuenta con el respaldo técnico y metodológico del Instituto Tecnológico Superior de Teziutlán, integrando estándares de investigación de posgrado y la colaboración de profesionales en formación que asisten en la validación de sistemas y documentación técnica.
-      </p>
-    </article>
-
-    <section class="ds-panel ds-panel--hero rounded-3xl p-8 text-neutral-50">
-      <h2 class="font-title text-3xl font-semibold">Únete a nosotros</h2>
-      <p class="mt-4 max-w-4xl leading-relaxed text-neutral-100">
-        Estamos en constante búsqueda de mentes creativas y técnicas que deseen contribuir a la evolución de este ecosistema Solarpunk. Si te apasiona el desarrollo de videojuegos y la innovación tecnológica, queremos conocerte.
-      </p>
-      <a
-        class="mt-6 inline-flex w-fit items-center rounded-full bg-solar-400 px-6 py-3 text-sm font-semibold text-neutral-950 transition-colors hover:bg-solar-300"
-        href="/contacto"
+  <section class="bg-bg-base px-4 py-10 md:px-6 md:py-14">
+    <div class="container mx-auto space-y-6">
+      <section
+        class="overflow-hidden rounded-[2rem] border border-border-organic/20 bg-bg-elevated/70 shadow-[0_28px_90px_rgba(26,26,26,0.25)] backdrop-blur"
       >
-        Contactar al equipo de desarrollo
-      </a>
-    </section>
+        <div
+          class="border-b border-border-organic/15 px-6 py-6 md:px-8 md:py-7"
+        >
+          <p
+            class="font-text text-sm font-semibold uppercase tracking-[0.24em] text-accent-strong"
+          >
+            Sobre el equipo
+          </p>
+          <h1
+            class="mt-3 font-title text-3xl font-bold text-text-primary md:text-4xl"
+          >
+            Construimos un universo Solarpunk desde la ingeniería, narrativa y
+            colaboración.
+          </h1>
+          <p
+            class="mt-4 max-w-3xl font-text text-base leading-8 text-text-secondary/90 md:text-lg"
+          >
+            Somos un equipo multidisciplinario comprometido con el desarrollo de
+            videojuegos con enfoque académico, técnico y creativo. Integramos
+            diseño de sistemas, dirección de proyecto y narrativa para crear
+            experiencias memorables.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="overflow-hidden rounded-[2rem] border border-border-organic/20 bg-bg-elevated/70 shadow-[0_28px_90px_rgba(26,26,26,0.25)] backdrop-blur"
+      >
+        <div
+          class="grid gap-6 p-6 md:p-8 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] lg:p-10"
+        >
+          <div class="space-y-4">
+            <span
+              class="inline-flex rounded-full border border-border-organic/20 bg-bg-overlay/70 px-3 py-1 font-text text-xs font-semibold uppercase tracking-[0.22em] text-accent-strong"
+            >
+              Director de Proyecto
+            </span>
+            <h2 class="font-title text-3xl font-bold text-text-primary">
+              Jonathan Alexis Bello López
+            </h2>
+            <p
+              class="font-text text-sm font-semibold uppercase tracking-[0.24em] text-accent-strong"
+            >
+              Director de Proyecto y Desarrollador Principal
+            </p>
+            <p class="font-text text-base leading-8 text-text-secondary/90">
+              Ingeniero y maestrante en Sistemas Computacionales por el ITST
+              (TecNM). Con una trayectoria centrada en el desarrollo de software
+              y la integración de sistemas complejos, lidera la arquitectura
+              técnica y el diseño de niveles del proyecto.
+            </p>
+            <p class="font-text text-base leading-8 text-text-secondary/90">
+              Su enfoque combina el rigor de la computación científica con la
+              estética minimalista del movimiento Solarpunk, encargándose de la
+              programación en Godot Engine, la implementación de mecánicas de
+              juego y la optimización de sistemas de animación modular.
+            </p>
+          </div>
+
+          <div
+            class="flex items-center justify-center rounded-[1.75rem] border border-dashed border-border-organic/25 bg-bg-overlay/80 p-8 text-center"
+          >
+            <div class="space-y-3">
+              <Image
+                src={imgAndroide}
+                alt="Retrato del equipo"
+                class="mx-auto rounded-lg border border-border-organic/20"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="overflow-hidden rounded-[2rem] border border-border-organic/20 bg-bg-elevated/70 shadow-[0_28px_90px_rgba(26,26,26,0.25)] backdrop-blur"
+      >
+        <div
+          class="border-b border-border-organic/15 px-6 py-6 md:px-8 md:py-7"
+        >
+          <span
+            class="inline-flex rounded-full border border-border-organic/20 bg-bg-overlay/70 px-3 py-1 font-text text-xs font-semibold uppercase tracking-[0.22em] text-accent-strong"
+          >
+            Guionista
+          </span>
+          <h2 class="mt-3 font-title text-3xl font-bold text-text-primary">
+            Jhonnatan López Aguilar
+          </h2>
+          <p
+            class="mt-2 font-text text-sm font-semibold uppercase tracking-[0.24em] text-accent-strong"
+          >
+            Guionista y Narrativa
+          </p>
+        </div>
+        <div class="space-y-4 px-6 py-6 md:px-8 md:py-7">
+          <p class="font-text text-base leading-8 text-text-secondary/90">
+            Pieza fundamental en la construcción del universo del proyecto.
+            Jhonnatan aporta la profundidad literaria necesaria para transformar
+            las mecánicas de juego en una experiencia narrativa cohesiva.
+          </p>
+          <p class="font-text text-base leading-8 text-text-secondary/90">
+            Su labor se centra en la escritura de guion, el desarrollo de lore y
+            la creación de diálogos, asegurando que la progresión del jugador
+            esté intrínsecamente ligada a una historia significativa y
+            envolvente.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="overflow-hidden rounded-[2rem] border border-border-organic/20 bg-bg-elevated/70 shadow-[0_28px_90px_rgba(26,26,26,0.25)] backdrop-blur"
+      >
+        <div
+          class="border-b border-border-organic/15 px-6 py-6 md:px-8 md:py-7"
+        >
+          <h2 class="font-title text-3xl font-bold text-text-primary">
+            Colaboradores y apoyo académico
+          </h2>
+        </div>
+        <div class="px-6 py-6 md:px-8 md:py-7">
+          <p class="font-text text-base leading-8 text-text-secondary/90">
+            El desarrollo de este proyecto de tesis cuenta con el respaldo
+            técnico y metodológico del Instituto Tecnológico Superior de
+            Teziutlán, integrando estándares de investigación de posgrado y la
+            colaboración de profesionales en formación que asisten en la
+            validación de sistemas y documentación técnica.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="overflow-hidden rounded-[2rem] border border-border-organic/20 bg-bg-elevated/70 shadow-[0_28px_90px_rgba(26,26,26,0.25)] backdrop-blur"
+      >
+        <div class="space-y-6 px-6 py-8 md:px-8 md:py-10">
+          <div>
+            <p
+              class="font-text text-sm font-semibold uppercase tracking-[0.24em] text-accent-strong"
+            >
+              ¿Interesado?
+            </p>
+            <h2 class="mt-3 font-title text-3xl font-bold text-text-primary">
+              Únete a nosotros
+            </h2>
+            <p
+              class="mt-4 max-w-3xl font-text text-base leading-8 text-text-secondary/90"
+            >
+              Estamos en constante búsqueda de mentes creativas y técnicas que
+              deseen contribuir a la evolución de este ecosistema Solarpunk. Si
+              te apasiona el desarrollo de videojuegos y la innovación
+              tecnológica, queremos conocerte.
+            </p>
+          </div>
+          <a
+            class="inline-flex rounded-xl bg-accent px-5 py-3 font-text text-sm font-semibold text-text-primary transition hover:bg-accent-strong"
+            href="/contacto"
+          >
+            Contactar al equipo de desarrollo
+          </a>
+        </div>
+      </section>
+    </div>
   </section>
 </Layout>
