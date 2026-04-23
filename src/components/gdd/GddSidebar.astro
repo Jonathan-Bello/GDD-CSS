@@ -48,77 +48,84 @@ const totalEntries = Array.isArray(collections)
   <div class="space-y-3">
     {
       Array.isArray(collections) && collections.length > 0 ? (
-        collections.map((collection) => (
-          <details
-            class="group overflow-hidden rounded-2xl border border-border-organic/20 bg-bg-overlay/70"
-            open
-          >
-            <summary class="flex cursor-pointer list-none items-center justify-between gap-3 px-4 py-4 font-title text-lg font-semibold text-text-primary transition hover:bg-bg-overlay/70">
-              <span>{collection.label}</span>
-              <svg
-                class="size-5 text-accent-strong transition group-open:rotate-180"
-                viewBox="0 0 20 20"
-                fill="none"
-                aria-hidden="true"
-              >
-                <path
-                  d="m5 7.5 5 5 5-5"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </summary>
+        collections.map((collection) => {
+          const hasCurrentEntry =
+            typeof currentId === "string" &&
+            Array.isArray(collection?.entries) &&
+            collection.entries.some((entry) => entry.id === currentId);
 
-            {Array.isArray(collection?.entries) &&
-            collection.entries.length > 0 ? (
-              <div class="space-y-2 border-t border-border-organic/15 px-3 py-3">
-                {collection.entries.map((entry) => {
-                  const isActive = entry.id === currentId;
+          return (
+            <details
+              class="group overflow-hidden rounded-2xl border border-border-organic/20 bg-bg-overlay/70"
+              open={hasCurrentEntry}
+            >
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-3 px-4 py-4 font-title text-lg font-semibold text-text-primary transition hover:bg-bg-overlay/70">
+                <span>{collection.label}</span>
+                <svg
+                  class="size-5 text-accent-strong transition group-open:rotate-180"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="m5 7.5 5 5 5-5"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </summary>
 
-                  return (
-                    <a
-                      href={`${collection.path}${entry.id}`}
-                      class:list={[
-                        "group flex items-start gap-3 rounded-2xl border px-3 py-3 transition",
-                        isActive
-                          ? "border-border-organic/50 bg-bg-elevated/25 shadow-[0_0_0_1px_rgba(255,199,198,0.12)]"
-                          : "border-transparent bg-transparent hover:border-border-organic/20 hover:bg-bg-overlay/70",
-                      ]}
-                      aria-current={isActive ? "page" : undefined}
-                    >
-                      <span
+              {Array.isArray(collection?.entries) &&
+              collection.entries.length > 0 ? (
+                <div class="space-y-2 border-t border-border-organic/15 px-3 py-3">
+                  {collection.entries.map((entry) => {
+                    const isActive = entry.id === currentId;
+
+                    return (
+                      <a
+                        href={`${collection.path}${entry.id}`}
                         class:list={[
-                          "mt-1 inline-flex size-7 shrink-0 items-center justify-center rounded-full border font-text text-xs font-bold",
+                          "group flex items-start gap-3 rounded-2xl border px-3 py-3 transition",
                           isActive
-                            ? "border-border-organic/50 bg-accent/20 text-text-primary"
-                            : "border-border-organic/25 bg-bg-overlay/70 text-accent-strong",
+                            ? "border-border-organic/50 bg-bg-elevated/25 shadow-[0_0_0_1px_rgba(255,199,198,0.12)]"
+                            : "border-transparent bg-transparent hover:border-border-organic/20 hover:bg-bg-overlay/70",
                         ]}
+                        aria-current={isActive ? "page" : undefined}
                       >
-                        {entry.data.order}
-                      </span>
-                      <span class="space-y-1">
-                        <span class="block font-text text-sm font-semibold leading-snug text-text-primary">
-                          {entry.data.title}
+                        <span
+                          class:list={[
+                            "mt-1 inline-flex size-7 shrink-0 items-center justify-center rounded-full border font-text text-xs font-bold",
+                            isActive
+                              ? "border-border-organic/50 bg-accent/20 text-text-primary"
+                              : "border-border-organic/25 bg-bg-overlay/70 text-accent-strong",
+                          ]}
+                        >
+                          {entry.data.order}
                         </span>
-                        <span class="block font-text text-xs leading-relaxed text-text-secondary/80">
-                          {entry.data.description}
+                        <span class="space-y-1">
+                          <span class="block font-text text-sm font-semibold leading-snug text-text-primary">
+                            {entry.data.title}
+                          </span>
+                          <span class="block font-text text-xs leading-relaxed text-text-secondary/80">
+                            {entry.data.description}
+                          </span>
                         </span>
-                      </span>
-                    </a>
-                  );
-                })}
-              </div>
-            ) : (
-              <div class="border-t border-border-organic/15 px-3 py-3 text-center">
-                <p class="font-text text-xs text-text-secondary/60">
-                  Sin entradas
-                </p>
-              </div>
-            )}
-          </details>
-        ))
+                      </a>
+                    );
+                  })}
+                </div>
+              ) : (
+                <div class="border-t border-border-organic/15 px-3 py-3 text-center">
+                  <p class="font-text text-xs text-text-secondary/60">
+                    Sin entradas
+                  </p>
+                </div>
+              )}
+            </details>
+          );
+        })
       ) : (
         <p class="text-center font-text text-sm text-text-secondary/80">
           No hay colecciones disponibles
