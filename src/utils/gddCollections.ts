@@ -5,7 +5,9 @@ export type GddCollectionName =
   | "sistema-juego"
   | "narrativa"
   | "progresion"
-  | "interfaz";
+  | "interfaz"
+  | "contenido"
+  | "monetizacion";
 
 interface GddCollectionConfig {
   name: GddCollectionName;
@@ -19,6 +21,8 @@ export interface GddSidebarEntry {
     title: string;
     description: string;
     order: number;
+    isParent?: boolean;
+    parentId?: string;
   };
 }
 
@@ -55,6 +59,16 @@ const GDD_COLLECTIONS: GddCollectionConfig[] = [
     label: "Interfaz",
     path: "/interfaz/",
   },
+  {
+    name: "contenido",
+    label: "Contenido",
+    path: "/contenido/",
+  },
+  {
+    name: "monetizacion",
+    label: "Monetización",
+    path: "/monetizacion/",
+  },
 ];
 
 function sortEntries<T extends GddCollectionName>(
@@ -75,7 +89,6 @@ export async function getSortedCollectionEntries<T extends GddCollectionName>(
   const entries = await getCollection(name);
   return sortEntries(entries);
 }
-
 
 export function getGddCollectionMeta(name: GddCollectionName): {
   label: string;
@@ -106,6 +119,8 @@ export async function getGddCollections(): Promise<GddSidebarCollection[]> {
             title: entry.data.title,
             description: entry.data.description,
             order: entry.data.order,
+            isParent: entry.data.isParent,
+            parentId: entry.data.parentId,
           },
         })),
       };

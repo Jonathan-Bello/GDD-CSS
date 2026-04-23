@@ -1,5 +1,5 @@
 ---
-import type { GddSidebarCollection } from "../../utils/gddCollections";
+import type { GddSidebarCollection, GddSidebarEntry } from "../../utils/gddCollections";
 
 interface Props {
   collections?: GddSidebarCollection[];
@@ -10,6 +10,33 @@ const { collections = [], currentId } = Astro.props;
 const totalEntries = Array.isArray(collections)
   ? collections.reduce((total, col) => total + (col?.entries?.length || 0), 0)
   : 0;
+
+const getGroupedEntries = (entries: GddSidebarEntry[]) => {
+  const parentEntries = entries.filter((entry) => entry.data.isParent);
+  const parentIds = new Set(parentEntries.map((entry) => entry.id));
+
+  const childrenByParent = new Map<string, GddSidebarEntry[]>();
+  entries
+    .filter((entry) => entry.data.parentId && parentIds.has(entry.data.parentId))
+    .forEach((entry) => {
+      const parentId = entry.data.parentId as string;
+      const current = childrenByParent.get(parentId) ?? [];
+      current.push(entry);
+      childrenByParent.set(parentId, current);
+    });
+
+  const ungroupedEntries = entries.filter(
+    (entry) =>
+      !entry.data.isParent &&
+      (!entry.data.parentId || !parentIds.has(entry.data.parentId)),
+  );
+
+  return {
+    parentEntries,
+    childrenByParent,
+    ungroupedEntries,
+  };
+};
 ---
 
 <aside
@@ -40,6 +67,47 @@ const totalEntries = Array.isArray(collections)
             Array.isArray(collection?.entries) &&
             collection.entries.some((entry) => entry.id === currentId);
 
+          const { parentEntries, childrenByParent, ungroupedEntries } = getGroupedEntries(
+            collection.entries,
+          );
+
+          const renderEntry = (entry: GddSidebarEntry, isChild = false) => {
+            const isActive = entry.id === currentId;
+
+            return (
+              <a
+                href={`${collection.path}${entry.id}`}
+                class:list={[
+                  "group flex items-start gap-3 rounded-2xl border px-3 py-3 transition",
+                  isChild ? "ml-4" : "",
+                  isActive
+                    ? "border-border-organic/50 bg-bg-elevated/25 shadow-[0_0_0_1px_rgba(255,199,198,0.12)]"
+                    : "border-transparent bg-transparent hover:border-border-organic/20 hover:bg-bg-overlay/70",
+                ]}
+                aria-current={isActive ? "page" : undefined}
+              >
+                <span
+                  class:list={[
+                    "mt-1 inline-flex size-7 shrink-0 items-center justify-center rounded-full border font-text text-xs font-bold",
+                    isActive
+                      ? "border-border-organic/50 bg-accent/20 text-text-primary"
+                      : "border-border-organic/25 bg-bg-overlay/70 text-accent-strong",
+                  ]}
+                >
+                  {entry.data.order}
+                </span>
+                <span class="space-y-1">
+                  <span class="block font-text text-sm font-semibold leading-snug text-text-primary">
+                    {entry.data.title}
+                  </span>
+                  <span class="block font-text text-xs leading-relaxed text-text-secondary/80">
+                    {entry.data.description}
+                  </span>
+                </span>
+              </a>
+            );
+          };
+
           return (
             <details
               class="group overflow-hidden rounded-2xl border border-border-organic/20 bg-bg-overlay/70"
@@ -66,41 +134,20 @@ const totalEntries = Array.isArray(collections)
               {Array.isArray(collection?.entries) &&
               collection.entries.length > 0 ? (
                 <div class="space-y-2 border-t border-border-organic/15 px-3 py-3">
-                  {collection.entries.map((entry) => {
-                    const isActive = entry.id === currentId;
+                  {parentEntries.map((parent) => (
+                    <div class="space-y-2">
+                      {renderEntry(parent)}
+                      {(childrenByParent.get(parent.id) ?? []).map((child) =>
+                        renderEntry(child, true),
+                      )}
+                    </div>
+                  ))}
 
-                    return (
-                      <a
-                        href={`${collection.path}${entry.id}`}
-                        class:list={[
-                          "group flex items-start gap-3 rounded-2xl border px-3 py-3 transition",
-                          isActive
-                            ? "border-border-organic/50 bg-bg-elevated/25 shadow-[0_0_0_1px_rgba(255,199,198,0.12)]"
-                            : "border-transparent bg-transparent hover:border-border-organic/20 hover:bg-bg-overlay/70",
-                        ]}
-                        aria-current={isActive ? "page" : undefined}
-                      >
-                        <span
-                          class:list={[
-                            "mt-1 inline-flex size-7 shrink-0 items-center justify-center rounded-full border font-text text-xs font-bold",
-                            isActive
-                              ? "border-border-organic/50 bg-accent/20 text-text-primary"
-                              : "border-border-organic/25 bg-bg-overlay/70 text-accent-strong",
-                          ]}
-                        >
-                          {entry.data.order}
-                        </span>
-                        <span class="space-y-1">
-                          <span class="block font-text text-sm font-semibold leading-snug text-text-primary">
-                            {entry.data.title}
-                          </span>
-                          <span class="block font-text text-xs leading-relaxed text-text-secondary/80">
-                            {entry.data.description}
-                          </span>
-                        </span>
-                      </a>
-                    );
-                  })}
+                  {ungroupedEntries.length > 0 && (
+                    <div class="space-y-2">
+                      {ungroupedEntries.map((entry) => renderEntry(entry))}
+                    </div>
+                  )}
                 </div>
               ) : (
                 <div class="border-t border-border-organic/15 px-3 py-3 text-center">

@@ -2,6 +2,18 @@ import { defineCollection, reference } from "astro:content";
 import { glob } from "astro/loaders";
 import { z } from "astro/zod";
 
+const entrySchema = z.object({
+  id: z.string(),
+  title: z.string(),
+  description: z.string(),
+  date: z.date(),
+  author: reference("authors"),
+  order: z.number().int().nonnegative(),
+  isParent: z.boolean().optional(),
+  parentId: z.string().optional(),
+  coverImage: z.string().optional(),
+});
+
 const authorsCollection = defineCollection({
   loader: glob({
     base: "./src/content/authors",
@@ -18,15 +30,7 @@ const entradasCollection = defineCollection({
     base: "./src/content/general",
     pattern: "**/*.md",
   }),
-  schema: z.object({
-    id: z.string(),
-    title: z.string(),
-    description: z.string(),
-    date: z.date(),
-    author: reference("authors"),
-    order: z.number().int().nonnegative(),
-    coverImage: z.string().optional(),
-  }),
+  schema: entrySchema,
 });
 
 const sistemaJuegoCollection = defineCollection({
@@ -34,15 +38,7 @@ const sistemaJuegoCollection = defineCollection({
     base: "./src/content/sistema-juego",
     pattern: "**/*.md",
   }),
-  schema: z.object({
-    id: z.string(),
-    title: z.string(),
-    description: z.string(),
-    date: z.date(),
-    author: reference("authors"),
-    order: z.number().int().nonnegative(),
-    coverImage: z.string().optional(),
-  }),
+  schema: entrySchema,
 });
 
 const narrativaCollection = defineCollection({
@@ -50,15 +46,7 @@ const narrativaCollection = defineCollection({
     base: "./src/content/narrativa",
     pattern: "**/*.md",
   }),
-  schema: z.object({
-    id: z.string(),
-    title: z.string(),
-    description: z.string(),
-    date: z.date(),
-    author: reference("authors"),
-    order: z.number().int().nonnegative(),
-    coverImage: z.string().optional(),
-  }),
+  schema: entrySchema,
 });
 
 const progresionCollection = defineCollection({
@@ -66,15 +54,7 @@ const progresionCollection = defineCollection({
     base: "./src/content/progresion",
     pattern: "**/*.md",
   }),
-  schema: z.object({
-    id: z.string(),
-    title: z.string(),
-    description: z.string(),
-    date: z.date(),
-    author: reference("authors"),
-    order: z.number().int().nonnegative(),
-    coverImage: z.string().optional(),
-  }),
+  schema: entrySchema,
 });
 
 const interfazCollection = defineCollection({
@@ -82,15 +62,23 @@ const interfazCollection = defineCollection({
     base: "./src/content/interfaz",
     pattern: "**/*.md",
   }),
-  schema: z.object({
-    id: z.string(),
-    title: z.string(),
-    description: z.string(),
-    date: z.date(),
-    author: reference("authors"),
-    order: z.number().int().nonnegative(),
-    coverImage: z.string().optional(),
+  schema: entrySchema,
+});
+
+const contenidoCollection = defineCollection({
+  loader: glob({
+    base: "./src/content/contenido",
+    pattern: "**/*.md",
   }),
+  schema: entrySchema,
+});
+
+const monetizacionCollection = defineCollection({
+  loader: glob({
+    base: "./src/content/monetizacion",
+    pattern: "**/*.md",
+  }),
+  schema: entrySchema,
 });
 
 export const collections = {
@@ -100,4 +88,6 @@ export const collections = {
   narrativa: narrativaCollection,
   progresion: progresionCollection,
   interfaz: interfazCollection,
+  contenido: contenidoCollection,
+  monetizacion: monetizacionCollection,
 };
