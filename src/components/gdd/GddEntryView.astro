@@ -20,7 +20,7 @@ const { entry, collectionLabel = "General" } = Astro.props;
 ---
 
 <article
-  class="overflow-hidden rounded-[2rem] border border-border-organic/20 bg-bg-elevated/70 shadow-[0_28px_90px_rgba(26,26,26,0.25)] backdrop-blur"
+  class="overflow-hidden rounded-4xl border border-border-organic/20 bg-bg-elevated/70 shadow-[0_28px_90px_rgba(26,26,26,0.25)] backdrop-blur"
 >
   <div class="grid gap-0 xl:grid-cols-[1.25fr_0.95fr]">
     <div class="space-y-6 p-6 md:p-8 lg:p-10">
@@ -50,7 +50,9 @@ const { entry, collectionLabel = "General" } = Astro.props;
         </p>
       </div>
 
-      <div class="flex flex-wrap gap-3 font-text text-sm text-text-secondary/85">
+      <div
+        class="flex flex-wrap gap-3 font-text text-sm text-text-secondary/85"
+      >
         <span
           class="rounded-full border border-border-organic/20 bg-bg-overlay/70 px-4 py-2"
         >

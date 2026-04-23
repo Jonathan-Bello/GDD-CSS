@@ -15,32 +15,55 @@ const featuredEntry = sistemaJuegoEntries[0];
 
 <Layout title="Sistema de Juego | CSS Quest AI">
   <section class="bg-bg-base px-4 py-10 md:px-6 md:py-14">
-    <div class="container mx-auto grid gap-6 xl:grid-cols-[320px_minmax(0,1fr)] xl:items-start">
+    <div
+      class="container mx-auto grid gap-6 xl:grid-cols-[320px_minmax(0,1fr)] xl:items-start"
+    >
       <GddSidebar collections={collections} />
 
-      <section class="overflow-hidden rounded-[2rem] border border-border-organic/20 bg-bg-elevated/70 shadow-[0_28px_90px_rgba(26,26,26,0.25)] backdrop-blur">
-        <div class="border-b border-border-organic/15 px-6 py-6 md:px-8 md:py-7">
-          <p class="font-text text-sm font-semibold uppercase tracking-[0.24em] text-accent-strong">
+      <section
+        class="overflow-hidden rounded-4xl border border-border-organic/20 bg-bg-elevated/70 shadow-[0_28px_90px_rgba(26,26,26,0.25)] backdrop-blur"
+      >
+        <div
+          class="border-b border-border-organic/15 px-6 py-6 md:px-8 md:py-7"
+        >
+          <p
+            class="font-text text-sm font-semibold uppercase tracking-[0.24em] text-accent-strong"
+          >
             {collectionMeta.label}
           </p>
-          <h1 class="mt-3 font-title text-3xl font-bold text-text-primary md:text-4xl">
+          <h1
+            class="mt-3 font-title text-3xl font-bold text-text-primary md:text-4xl"
+          >
             Mecánicas principales y reglas del juego
           </h1>
-          <p class="mt-4 max-w-3xl font-text text-base leading-8 text-text-secondary/90 md:text-lg">
+          <p
+            class="mt-4 max-w-3xl font-text text-base leading-8 text-text-secondary/90 md:text-lg"
+          >
             Esta colección describe el funcionamiento interno de CSS Quest AI:
             combate, economía, sistemas de progresión y lógica de interacción.
           </p>
         </div>
 
-        {featuredEntry && (
-          <div class="p-6 md:p-8 lg:p-10">
-            <a href={`${collectionMeta.path}${featuredEntry.id}`} class="block rounded-2xl border border-border-organic/20 bg-bg-overlay/70 p-6 transition hover:border-border-organic/40 hover:bg-bg-overlay/80">
-              <p class="font-text text-xs font-semibold uppercase tracking-[0.22em] text-accent-strong">Entrada sugerida</p>
-              <h2 class="mt-3 font-title text-2xl font-bold text-text-primary">{featuredEntry.data.title}</h2>
-              <p class="mt-3 font-text text-base leading-7 text-text-secondary/90">{featuredEntry.data.description}</p>
-            </a>
-          </div>
-        )}
+        {
+          featuredEntry && (
+            <div class="p-6 md:p-8 lg:p-10">
+              <a
+                href={`${collectionMeta.path}${featuredEntry.id}`}
+                class="block rounded-2xl border border-border-organic/20 bg-bg-overlay/70 p-6 transition hover:border-border-organic/40 hover:bg-bg-overlay/80"
+              >
+                <p class="font-text text-xs font-semibold uppercase tracking-[0.22em] text-accent-strong">
+                  Entrada sugerida
+                </p>
+                <h2 class="mt-3 font-title text-2xl font-bold text-text-primary">
+                  {featuredEntry.data.title}
+                </h2>
+                <p class="mt-3 font-text text-base leading-7 text-text-secondary/90">
+                  {featuredEntry.data.description}
+                </p>
+              </a>
+            </div>
+          )
+        }
       </section>
     </div>
   </section>
