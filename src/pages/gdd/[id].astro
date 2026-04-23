@@ -1,45 +1,39 @@
 ---
-import { getCollection, render } from "astro:content";
+import { render } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import GddSidebar from "../../components/gdd/GddSidebar.astro";
 import GddEntryView from "../../components/gdd/GddEntryView.astro";
+import {
+  getGddCollections,
+  getSortedCollectionEntries,
+  type GddSidebarCollection,
+} from "../../utils/gddCollections";
 
-const generalEntries = (await getCollection("general")).sort((a, b) => {
-  if (a.data.order !== b.data.order) {
-    return a.data.order - b.data.order;
-  }
-
-  return a.data.date.getTime() - b.data.date.getTime();
-});
+const generalEntries = await getSortedCollectionEntries("general");
+const allCollections = await getGddCollections();
 
 export async function getStaticPaths() {
-  const entries = (await getCollection("general")).sort((a, b) => {
-    if (a.data.order !== b.data.order) {
-      return a.data.order - b.data.order;
-    }
-
-    return a.data.date.getTime() - b.data.date.getTime();
-  });
+  const entries = await getSortedCollectionEntries("general");
+  const collections = await getGddCollections();
 
   return entries.map((entry) => ({
     params: { id: entry.id },
     props: {
       entry,
-      entries: entries.map((item) => ({
-        id: item.id,
-        data: item.data,
-      })),
+      collections,
     },
   }));
 }
 
-const { entry, entries = generalEntries } = Astro.props;
+const { entry, collections = allCollections } = Astro.props as {
+  entry?: (typeof generalEntries)[number];
+  collections?: GddSidebarCollection[];
+};
 
-// Obtener la entrada: primero del props, luego búsquedla en la colección
 function getCurrentEntry() {
   if (entry) return entry;
   if (Astro.params.id) {
-    return generalEntries.find((e) => e.id === Astro.params.id) || null;
+    return generalEntries.find((item) => item.id === Astro.params.id) || null;
   }
   return null;
 }
@@ -60,17 +54,7 @@ const { Content } = await render(currentEntry);
     <div
       class="container mx-auto grid gap-6 xl:grid-cols-[320px_minmax(0,1fr)] xl:items-start"
     >
-      <GddSidebar
-        entries={entries.map((item) => ({
-          id: item.id,
-          data: {
-            title: item.data.title,
-            description: item.data.description,
-            order: item.data.order,
-          },
-        }))}
-        currentId={currentEntry.id}
-      />
+      <GddSidebar collections={collections} currentId={currentEntry.id} />
 
       <GddEntryView entry={currentEntry}>
         <Content />

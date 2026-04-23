@@ -1,22 +1,8 @@
 ---
-interface EntryItem {
-  id: string;
-  data: {
-    title: string;
-    description: string;
-    order: number;
-  };
-}
-
-interface Collection {
-  name: string;
-  label: string;
-  path: string;
-  entries: EntryItem[];
-}
+import type { GddSidebarCollection } from "../../utils/gddCollections";
 
 interface Props {
-  collections?: Collection[];
+  collections?: GddSidebarCollection[];
   currentId?: string;
 }
 
