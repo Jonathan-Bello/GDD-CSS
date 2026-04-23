@@ -120,7 +120,7 @@
 @layer components {
   .ds-panel {
     border: 1px solid color-mix(in oklab, var(--color-border-organic) 28%, transparent);
-    background: color-mix(in oklab, var(--color-bg-elevated) 72%, black 28%);
+
   }
 
   .ds-panel--blur {
