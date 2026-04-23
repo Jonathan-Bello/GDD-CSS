@@ -1,45 +1,70 @@
 ---
-id: "mecanicas-basicas"
-title: "Mecánicas Básicas"
-description: "Descripción de las mecánicas fundamentales del sistema de juego de CSS Quest AI."
-date: 2026-03-20
+id: "2"
+title: "Mecánicas"
+description: "Descripción de las mecánicas principales del juego, incluyendo movimiento, combate, creación de munición, progresión de propiedades y sistemas de apoyo."
+date: 2026-04-23
 author: "jonathan-bello"
-order: 1
-coverImage: "/game-mechanics.jpg"
+order: 2
+coverImage: ""
 ---
+## Movimiento
 
-# Mecánicas Básicas del Juego
+El movimiento del jugador es una de las bases más importantes de la experiencia. El personaje puede desplazarse de izquierda a derecha con una respuesta inmediata, sin retrasos ni animaciones de giro que entorpezcan el control. La intención es que moverse se sienta natural, preciso y fluido, de forma que el jugador nunca luche contra el personaje, sino que sienta que este responde de manera directa a cada comando.
 
-## Introducción
+Desde el inicio, el personaje puede caminar y saltar. Conforme avanza la progresión, desbloquea nuevas habilidades de movilidad como el **doble salto** y el **dash**. El doble salto amplía las posibilidades de exploración y evasión, mientras que el dash está pensado principalmente como una herramienta de esquiva. El dash puede ejecutarse tanto en el suelo como en el aire, y su uso debe integrarse de forma orgánica con el salto y el doble salto. Esto permite secuencias como saltar, dashar en el aire y luego realizar un segundo salto, reforzando una jugabilidad móvil, ágil y con margen para la destreza del jugador.
 
-Las mecánicas básicas definen cómo interactúa el jugador con el mundo del juego y cómo progresa a través de los desafíos.
+La movilidad no solo cumple una función de desplazamiento, sino que constituye el centro de la supervivencia en combate. El jugador debe ser capaz de esquivar con soltura, reposicionarse con rapidez y reaccionar de forma inmediata a los peligros del entorno. Por ello, toda la lógica del movimiento debe diseñarse bajo el criterio de suavidad, precisión y accesibilidad.
 
-## Sistema de Movimiento
+## Disparo y combate base
 
-El jugador puede desplazarse por el mapa utilizando las teclas de dirección o WASD. El movimiento es fluido y se adapta a los obstáculos del mapa.
+El combate se apoya en un sistema de disparo frontal como acción ofensiva principal. El personaje puede atacar hacia adelante y también modificar la dirección del disparo para apuntar hacia arriba o hacia abajo. Para disparos diagonales, el jugador deberá combinar la dirección con una entrada adicional específica. La intención es conservar un sistema comprensible y directo, evitando una complejidad excesiva en el apuntado manual.
 
-- Velocidad de movimiento estándar: 5 unidades por segundo
-- Sprint disponible con tecla Shift: 1.5x velocidad
-- Saltos pueden ser necesarios en ciertas plataformas
+Debido a que el juego pone gran parte de su exigencia en la evasión, el combate no busca castigar al jugador con una puntería innecesariamente difícil. Por ello, se contempla un sistema de **auto target** como opción de accesibilidad. Este sistema permitirá fijar o priorizar al enemigo más cercano, facilitando que el personaje oriente sus disparos de manera automática, especialmente durante combates contra jefes o situaciones de mayor presión. Esta ayuda debe poder activarse o desactivarse, ya que no forma parte de la dificultad base, sino de las opciones para ampliar la accesibilidad del juego.
 
-## Sistema de Interacción
+El daño, comportamiento y utilidad de cada disparo dependerán de la configuración de la munición creada por el jugador mediante el sistema de CSS. De esta manera, el combate no se basa únicamente en reflejos, sino también en la comprensión de las propiedades y en la preparación previa de la munición adecuada para cada situación.
 
-Presionar E cerca de objetos interactuables activa eventos especiales:
+## Creación de munición mediante CSS
 
-- Abrir puertas y cofres
-- Hablar con NPCs
-- Recoger items
-- Activar mecanismos
+La mecánica central y más distintiva del juego es la posibilidad de crear munición personalizada utilizando propiedades de CSS. Esta acción no se realiza directamente en medio del combate, sino dentro de **zonas de control** que funcionan como puntos seguros o de preparación, equivalentes conceptualmente a una hoguera o punto de descanso. Al interactuar con una de estas zonas, el jugador abre una interfaz especial donde puede diseñar la bala que utilizará después en el mapa.
 
-## Sistema de Inventario
+La interfaz de creación de munición se divide en tres áreas principales. El espacio más grande, que ocupa aproximadamente dos tercios de la pantalla, corresponde al **lienzo**, donde el jugador visualiza en tiempo real la munición que está construyendo. En el tercio restante de la pantalla se ubican dos paneles: en la parte superior, un **editor de código** donde el jugador escribe las propiedades CSS que desea aplicar; en la parte inferior, un **chat con Emis**, la inteligencia artificial acompañante.
 
-El inventario tiene capacidad limitada de 20 espacios. Los jugadores pueden:
+El editor de código permite escribir y modificar propiedades desbloqueadas dentro del juego. Si el jugador conoce una propiedad por experiencia externa pero todavía no la ha obtenido durante la partida, no podrá usarla, aunque la escriba correctamente. En esos casos, la interfaz debe marcar dicha propiedad como inválida, por ejemplo subrayándola o resaltándola en color rojo. Esto convierte la progresión del conocimiento en una parte del sistema jugable y no solo en una barrera artificial.
 
-- Recoger items del mundo
-- Usar items durante el juego
-- Dropear items para hacer espacio
-- Organizar items en categorías
+Una vez que el jugador termina de configurar la munición, puede guardarla y equiparla para regresar al mapa y comenzar a utilizarla. La transición entre la fase de preparación y la fase de acción debe ser rápida y clara, de manera que el sistema se perciba como una extensión natural del flujo de juego.
 
-## Progresión Básica
+## Propiedades de CSS como habilidades desbloqueables
 
-El jugador avanza completando misiones y resolviendo puzzles de CSS. Cada logro desbloquea nuevas áreas y habilidades.
+Las propiedades de CSS funcionan como habilidades o recursos que el jugador obtiene a lo largo de la aventura. No todas están disponibles desde el inicio, sino que se desbloquean progresivamente conforme el jugador avanza y supera desafíos específicos. Esto permite estructurar la curva de aprendizaje y controlar cómo se introducen nuevas posibilidades de combate, exploración y resolución de puzzles.
+
+Una de las formas principales de desbloqueo son los **desafíos especializados**, concebidos como espacios cerrados o cápsulas similares a pequeños templos. Dentro de estos lugares, el jugador se enfrenta a una situación diseñada para enseñar y poner a prueba una propiedad concreta. Por ejemplo, un desafío centrado en `z-index` podría presentar enemigos o elementos ubicados en distintos planos visuales, obligando al jugador a comprender que esa propiedad puede alterar la profundidad de la munición y permitir que esta interactúe con objetivos fuera del plano habitual.
+
+Al completar el desafío, el jugador obtiene oficialmente esa propiedad, que desde entonces puede utilizar en el sistema de creación de munición. Cada nueva propiedad amplía las posibilidades del jugador y abre nuevas soluciones tanto en combate como en el diseño de acertijos y rutas del entorno.
+
+## Diálogo con entidades
+
+El juego incluye un sistema de diálogo para interactuar con ciertas entidades del mundo, principalmente robots y personajes relevantes. No se espera una gran cantidad de NPCs, por lo que cada interacción debe tener peso contextual, narrativo o funcional. El protagonista actúa como un avatar silencioso, por lo que no contará con líneas de diálogo propias visibles; en cambio, la comunicación se apoya en las respuestas y exposición de los personajes con los que interactúa.
+
+Este sistema sirve para proporcionar contexto, reforzar el lore, orientar al jugador y dar vida a la ciudad a través de los pocos seres con los que todavía es posible establecer contacto.
+
+## Inventario
+
+El jugador dispone de un inventario en forma de mochila donde se almacenan objetos importantes obtenidos durante la aventura. Estos objetos pueden representar llaves de progreso, piezas de equipamiento, restos tecnológicos o elementos vinculados al desbloqueo de habilidades. Por ejemplo, al obtener el doble salto, este puede asociarse a un objeto concreto como unas **botas cohete rotas**, acompañado de su respectiva descripción.
+
+El inventario no está pensado como un menú de gestión compleja ni como un espacio para consumir objetos manualmente en mitad de la partida. Su función principal es registrar hallazgos, conservar elementos importantes y reforzar la construcción del mundo. Cada objeto debe contar con una pequeña descripción, no solo para explicar su función, sino también para aportar detalles de lore y enriquecer la narrativa ambiental.
+
+## Curación y recurso de recuperación
+
+La recuperación de vida se realiza mediante un recurso limitado llamado **Luz Solar**, presentado como una cápsula de energía utilizable por el jugador. Su lógica se inspira en sistemas como el estus de _Dark Souls_: el jugador cuenta con una cantidad determinada de cargas antes de llegar al siguiente punto de control, y estas se recargan completamente al descansar o interactuar con una zona segura.
+
+El uso de la curación no depende del inventario ni del consumo manual de objetos desde menús, sino de un botón específico asignado a esta acción. Esto permite mantener el ritmo del combate y evita interrumpir innecesariamente la partida con navegación de interfaces. La gestión de la Luz Solar introduce una capa de administración del riesgo y refuerza la importancia de los puntos de control en la estructura del juego.
+
+## Registro de propiedades desbloqueadas
+
+Además del sistema de creación de munición, el jugador contará con un menú o registro donde podrá consultar todas las propiedades de CSS que ha desbloqueado a lo largo del juego. Este espacio funciona como una especie de almanaque o compendio de habilidades, permitiendo revisar qué hace cada propiedad y en qué tipo de situaciones puede resultar útil.
+
+Este registro cumple una función pedagógica y práctica. Por un lado, ayuda al jugador a recordar conceptos y mantenerlos organizados; por otro, sirve como apoyo estratégico al momento de decidir qué tipo de munición construir para afrontar un reto concreto. Debe presentarse de manera clara, accesible y coherente con la interfaz general del juego.
+
+## Relación con mecánicas de enemigos
+
+Los enemigos contarán con sus propias conductas, patrones y particularidades de combate, pero esas mecánicas se desarrollarán en detalle dentro de la sección correspondiente a enemigos. En este documento se establece únicamente que el sistema general del jugador debe dialogar con ellos desde tres frentes: la movilidad para esquivar, el disparo como herramienta ofensiva y el uso de propiedades de CSS como capa táctica y de progresión.

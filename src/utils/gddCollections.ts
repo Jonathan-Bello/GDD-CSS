@@ -41,11 +41,6 @@ const GDD_COLLECTIONS: GddCollectionConfig[] = [
     path: "/gdd/sistema-juego/",
   },
   {
-    name: "narrativa",
-    label: "Narrativa",
-    path: "/gdd/narrativa/",
-  },
-  {
     name: "progresion",
     label: "Progresión",
     path: "/gdd/progresion/",
@@ -54,6 +49,11 @@ const GDD_COLLECTIONS: GddCollectionConfig[] = [
     name: "interfaz",
     label: "Interfaz",
     path: "/gdd/interfaz/",
+  },
+  {
+    name: "narrativa",
+    label: "Narrativa",
+    path: "/gdd/narrativa/",
   },
 ];
 

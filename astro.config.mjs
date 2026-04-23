@@ -3,19 +3,27 @@ import { defineConfig } from "astro/config";
 
 import react from "@astrojs/react";
 
-import vue from "@astrojs/vue";
-
 import tailwindcss from "@tailwindcss/vite";
 
 import netlify from "@astrojs/netlify";
 
+import rehypeMermaid from "rehype-mermaid";
+
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react(), vue()],
-  output: "server",
+  integrations: [react()],
+  output: "static",
   vite: {
     plugins: [tailwindcss()],
   },
 
   adapter: netlify(),
+
+  markdown: {
+    syntaxHighlight: {
+      type: "shiki",
+      excludeLangs: ["mermaid"],
+    },
+    rehypePlugins: [rehypeMermaid],
+  },
 });
