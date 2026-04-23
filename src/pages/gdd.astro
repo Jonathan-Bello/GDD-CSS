@@ -12,107 +12,82 @@ const featuredEntry = generalEntries[0];
 ---
 
 <Layout title="GDD | CSS Quest AI">
-  <section
-    class="bg-bg-base px-4 py-10 md:px-6 md:py-14"
-  >
-    <div class="container mx-auto space-y-8">
-      <div class="max-w-4xl space-y-5">
-        <span
-          class="inline-flex items-center rounded-full border border-border-organic/35 bg-bg-elevated/25 px-4 py-2 font-text text-sm font-semibold text-text-primary"
-        >
-          Game Design Document
-        </span>
-        <div class="space-y-4">
-          <h1
-            class="font-title text-4xl font-extrabold text-text-primary md:text-5xl lg:text-6xl"
+  <section class="bg-bg-base px-4 py-10 md:px-6 md:py-14">
+    <div
+      class="container mx-auto grid gap-6 xl:grid-cols-[320px_minmax(0,1fr)] xl:items-start"
+    >
+      <GddSidebar collections={collections} />
+
+      <section
+        class="overflow-hidden rounded-[2rem] border border-border-organic/20 bg-bg-elevated/70 shadow-[0_28px_90px_rgba(26,26,26,0.25)] backdrop-blur"
+      >
+        <div class="border-b border-border-organic/15 px-6 py-6 md:px-8 md:py-7">
+          <p
+            class="font-text text-sm font-semibold uppercase tracking-[0.24em] text-accent-strong"
           >
-            Explora la documentación completa del juego.
+            Bienvenido a CSS Quest AI
+          </p>
+          <h1 class="mt-3 font-title text-3xl font-bold text-text-primary md:text-4xl">
+            Resumen general del juego y su documentación
           </h1>
           <p
-            class="max-w-3xl font-text text-lg leading-8 text-text-secondary/90 md:text-xl"
+            class="mt-4 max-w-3xl font-text text-base leading-8 text-text-secondary/90 md:text-lg"
           >
-            Navega por todas las colecciones del GDD: General, Sistema de Juego,
-            Narrativa, Progresión e Interfaz. Cada sección contiene
-            documentación detallada ordenada por importancia.
+            Este GDD reúne toda la visión de CSS Quest AI: un juego donde el
+            aprendizaje de CSS se transforma en exploración, decisiones y
+            progresión. En el panel lateral encontrarás cada colección del
+            proyecto para navegar entre sistemas, narrativa, interfaz y evolución
+            del jugador, manteniendo siempre la navegación en la misma posición.
           </p>
         </div>
-      </div>
 
-      <div class="grid gap-6 xl:grid-cols-[320px_minmax(0,1fr)] xl:items-start">
-        <GddSidebar collections={collections} />
-
-        <section
-          class="overflow-hidden rounded-[2rem] border border-border-organic/20 bg-bg-elevated/70 shadow-[0_28px_90px_rgba(26,26,26,0.25)] backdrop-blur"
-        >
-          <div class="border-b border-border-organic/15 px-6 py-6 md:px-8 md:py-7">
-            <p
-              class="font-text text-sm font-semibold uppercase tracking-[0.24em] text-accent-strong"
-            >
-              Inicio de la documentación
-            </p>
-            <h2
-              class="mt-3 font-title text-3xl font-bold text-text-primary md:text-4xl"
-            >
-              Selecciona una entrada del menú lateral para navegar por el GDD.
-            </h2>
-            <p
-              class="mt-4 max-w-3xl font-text text-base leading-8 text-text-secondary/90 md:text-lg"
-            >
-              Cada entrada se renderiza con una plantilla preparada para
-              contenido, metadatos e imagen destacada. La colección actual es <strong
-                >General</strong
-              > y ya está lista para crecer con más secciones después.
-            </p>
-          </div>
-
-          {
-            featuredEntry && (
-              <div class="grid gap-6 p-6 md:p-8 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] lg:p-10">
-                <div class="space-y-4">
-                  <span class="inline-flex rounded-full border border-border-organic/20 bg-bg-overlay/70 px-3 py-1 font-text text-xs font-semibold uppercase tracking-[0.22em] text-accent-strong">
-                    Primera entrada sugerida
+        {
+          featuredEntry && (
+            <div class="grid gap-6 p-6 md:p-8 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] lg:p-10">
+              <div class="space-y-4">
+                <span class="inline-flex rounded-full border border-border-organic/20 bg-bg-overlay/70 px-3 py-1 font-text text-xs font-semibold uppercase tracking-[0.22em] text-accent-strong">
+                  Entrada sugerida para comenzar
+                </span>
+                <h2 class="font-title text-3xl font-bold text-text-primary">
+                  {featuredEntry.data.title}
+                </h2>
+                <p class="font-text text-base leading-8 text-text-secondary/90">
+                  {featuredEntry.data.description}
+                </p>
+                <div class="flex flex-wrap gap-3 pt-2 font-text text-sm text-text-secondary/85">
+                  <span class="rounded-full border border-border-organic/20 bg-bg-overlay/70 px-4 py-2">
+                    Orden {featuredEntry.data.order}
                   </span>
-                  <h3 class="font-title text-3xl font-bold text-text-primary">
-                    {featuredEntry.data.title}
-                  </h3>
-                  <p class="font-text text-base leading-8 text-text-secondary/90">
-                    {featuredEntry.data.description}
-                  </p>
-                  <div class="flex flex-wrap gap-3 pt-2 font-text text-sm text-text-secondary/85">
-                    <span class="rounded-full border border-border-organic/20 bg-bg-overlay/70 px-4 py-2">
-                      Orden {featuredEntry.data.order}
-                    </span>
-                    <span class="rounded-full border border-border-organic/20 bg-bg-overlay/70 px-4 py-2">
-                      {featuredEntry.data.date.toLocaleDateString("es-MX", {
-                        day: "2-digit",
-                        month: "long",
-                        year: "numeric",
-                      })}
-                    </span>
-                  </div>
-                </div>
-
-                <div class="flex items-center justify-center rounded-[1.75rem] border border-dashed border-border-organic/25 bg-bg-overlay/80 p-8 text-center">
-                  <div class="space-y-3">
-                    <p class="font-text text-xs font-semibold uppercase tracking-[0.22em] text-accent-strong">
-                      Plantilla de entrada
-                    </p>
-                    <p class="font-title text-2xl font-bold text-text-primary">
-                      Lista para portada y contenido enriquecido
-                    </p>
-                    <a
-                      href={`/gdd/${featuredEntry.id}`}
-                      class="inline-flex rounded-xl bg-accent px-5 py-3 font-text text-sm font-semibold text-text-primary transition hover:bg-accent-strong"
-                    >
-                      Abrir entrada
-                    </a>
-                  </div>
+                  <span class="rounded-full border border-border-organic/20 bg-bg-overlay/70 px-4 py-2">
+                    {featuredEntry.data.date.toLocaleDateString("es-MX", {
+                      day: "2-digit",
+                      month: "long",
+                      year: "numeric",
+                    })}
+                  </span>
                 </div>
               </div>
-            )
-          }
-        </section>
-      </div>
+
+              <div class="flex items-center justify-center rounded-[1.75rem] border border-dashed border-border-organic/25 bg-bg-overlay/80 p-8 text-center">
+                <div class="space-y-3">
+                  <p class="font-text text-xs font-semibold uppercase tracking-[0.22em] text-accent-strong">
+                    Comienza aquí
+                  </p>
+                  <p class="font-title text-2xl font-bold text-text-primary">
+                    Revisa la primera entrada de la colección General
+                  </p>
+                  <a
+                    href={`/gdd/${featuredEntry.id}`}
+                    class="inline-flex rounded-xl bg-accent px-5 py-3 font-text text-sm font-semibold text-text-primary transition hover:bg-accent-strong"
+                  >
+                    Abrir entrada
+                  </a>
+                </div>
+              </div>
+            </div>
+          )
+        }
+      </section>
     </div>
   </section>
 </Layout>

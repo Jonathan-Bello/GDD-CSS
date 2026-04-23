@@ -12,10 +12,11 @@ interface Props {
     id: string;
     data: EntryData;
   };
+  collectionLabel?: string;
   children?: unknown;
 }
 
-const { entry } = Astro.props;
+const { entry, collectionLabel = "General" } = Astro.props;
 ---
 
 <article
@@ -27,7 +28,7 @@ const { entry } = Astro.props;
         <span
           class="rounded-full border border-border-organic/35 bg-bg-elevated/25 px-3 py-1 font-text text-xs font-semibold uppercase tracking-[0.22em] text-text-primary"
         >
-          General
+          {collectionLabel}
         </span>
         <span
           class="rounded-full border border-border-organic/20 bg-bg-overlay/70 px-3 py-1 font-text text-xs font-medium text-text-secondary"

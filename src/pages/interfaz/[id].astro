@@ -1,154 +1,60 @@
 ---
-export const prerender = false;
+import { render } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
+import GddSidebar from "../../components/gdd/GddSidebar.astro";
+import GddEntryView from "../../components/gdd/GddEntryView.astro";
+import {
+  getGddCollectionMeta,
+  getGddCollections,
+  getSortedCollectionEntries,
+  type GddSidebarCollection,
+} from "../../utils/gddCollections";
 
-import { getEntry, render } from "astro:content";
-const { id } = Astro.params;
-if (!id) {
+const interfazEntries = await getSortedCollectionEntries("interfaz");
+const allCollections = await getGddCollections();
+const collectionMeta = getGddCollectionMeta("interfaz");
+
+export async function getStaticPaths() {
+  const entries = await getSortedCollectionEntries("interfaz");
+  const collections = await getGddCollections();
+
+  return entries.map((entry) => ({
+    params: { id: entry.id },
+    props: {
+      entry,
+      collections,
+    },
+  }));
+}
+
+const { entry, collections = allCollections } = Astro.props as {
+  entry?: (typeof interfazEntries)[number];
+  collections?: GddSidebarCollection[];
+};
+
+const currentEntry =
+  entry ||
+  (Astro.params.id
+    ? interfazEntries.find((item) => item.id === Astro.params.id)
+    : null);
+
+if (!currentEntry) {
   return Astro.redirect("/404");
 }
 
-const entrada = await getEntry("interfaz", id);
-
-if (!entrada) {
-  return Astro.redirect("/404");
-}
-
-const { Content } = await render(entrada);
+const { Content } = await render(currentEntry);
 ---
 
-<Layout title={`${entrada.data.title} | CSS Quest AI`}>
-  <section
-    class="bg-bg-base px-4 py-10 md:px-6 md:py-14"
-  >
-    <div class="container mx-auto">
-      <a
-        href="/interfaz"
-        class="inline-flex items-center gap-2 rounded-full border border-border-organic/35 bg-bg-elevated/25 px-4 py-2 font-text text-sm font-semibold text-text-primary transition-all hover:border-border-organic/60 hover:bg-bg-elevated/40"
-      >
-        <svg
-          class="h-4 w-4"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M15 19l-7-7 7-7"></path>
-        </svg>
-        Volver a Interfaz
-      </a>
+<Layout title={`GDD | ${currentEntry.data.title}`}>
+  <section class="bg-bg-base px-4 py-10 md:px-6 md:py-14">
+    <div
+      class="container mx-auto grid gap-6 xl:grid-cols-[320px_minmax(0,1fr)] xl:items-start"
+    >
+      <GddSidebar collections={collections} currentId={currentEntry.id} />
 
-      <div class="mt-8 max-w-4xl space-y-5">
-        <div class="space-y-4">
-          <h1
-            class="font-title text-4xl font-extrabold text-text-primary md:text-5xl lg:text-6xl"
-          >
-            {entrada.data.title}
-          </h1>
-          <p
-            class="max-w-3xl font-text text-lg leading-8 text-text-secondary/90 md:text-xl"
-          >
-            {entrada.data.description}
-          </p>
-        </div>
-
-        <div
-          class="flex flex-wrap gap-4 pt-2 font-text text-sm text-text-secondary/85"
-        >
-          <span
-            class="rounded-full border border-border-organic/20 bg-bg-overlay/70 px-4 py-2"
-          >
-            Orden {entrada.data.order}
-          </span>
-          <span
-            class="rounded-full border border-border-organic/20 bg-bg-overlay/70 px-4 py-2"
-          >
-            {
-              entrada.data.date.toLocaleDateString("es-MX", {
-                day: "2-digit",
-                month: "long",
-                year: "numeric",
-              })
-            }
-          </span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Cover Image con ViewTransition -->
-  {
-    entrada.data.coverImage && (
-      <section class="px-4 py-8 md:px-6 md:py-12">
-        <div class="container mx-auto">
-          <div class="overflow-hidden rounded-2xl border border-border-organic/20">
-            <img
-              src={entrada.data.coverImage}
-              alt={entrada.data.title}
-              transition:name={`card-image-${entrada.id}`}
-              class="h-auto w-full object-cover"
-            />
-          </div>
-        </div>
-      </section>
-    )
-  }
-
-  <!-- Content -->
-  <section class="px-4 py-12 md:px-6 md:py-16">
-    <div class="container mx-auto max-w-4xl">
-      <div
-        class="prose prose-invert max-w-none space-y-8 font-text text-text-secondary/90"
-      >
+      <GddEntryView entry={currentEntry} collectionLabel={collectionMeta.label}>
         <Content />
-      </div>
-
-      <!-- Navigation -->
-      <div
-        class="mt-16 flex items-center justify-between border-t border-border-organic/15 pt-8"
-      >
-        <a
-          href="/interfaz"
-          class="inline-flex items-center gap-2 rounded-lg border border-border-organic/35 bg-bg-elevated/25 px-6 py-3 font-text font-semibold text-text-primary transition-all hover:border-border-organic/60 hover:bg-bg-elevated/40"
-        >
-          <svg
-            class="h-5 w-5"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M15 19l-7-7 7-7"></path>
-          </svg>
-          Volver al índice
-        </a>
-
-        <a
-          href="/interfaz"
-          class="inline-flex items-center gap-2 rounded-lg border border-border-organic/35 bg-bg-elevated/25 px-6 py-3 font-text font-semibold text-text-primary transition-all hover:border-border-organic/60 hover:bg-bg-elevated/40"
-        >
-          Ver todas
-          <svg
-            class="h-5 w-5"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 5l7 7-7 7"></path>
-          </svg>
-        </a>
-      </div>
+      </GddEntryView>
     </div>
   </section>
 </Layout>
-

@@ -1,87 +1,47 @@
 ---
-import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
-import EntryCard from "../components/EntryCard.astro";
+import GddSidebar from "../components/gdd/GddSidebar.astro";
+import {
+  getGddCollectionMeta,
+  getGddCollections,
+  getSortedCollectionEntries,
+} from "../utils/gddCollections";
 
-const narrativaEntries = (await getCollection("narrativa")).sort((a, b) => {
-  if (a.data.order !== b.data.order) {
-    return a.data.order - b.data.order;
-  }
-  return a.data.date.getTime() - b.data.date.getTime();
-});
+const collections = await getGddCollections();
+const collectionMeta = getGddCollectionMeta("narrativa");
+const narrativaEntries = await getSortedCollectionEntries("narrativa");
+const featuredEntry = narrativaEntries[0];
 ---
 
 <Layout title="Narrativa | CSS Quest AI">
-  <section
-    class="bg-bg-base px-4 py-10 md:px-6 md:py-14"
-  >
-    <div class="container mx-auto space-y-8">
-      <div class="max-w-4xl space-y-5">
-        <span
-          class="inline-flex items-center rounded-full border border-border-organic/35 bg-bg-elevated/25 px-4 py-2 font-text text-sm font-semibold text-text-primary"
-        >
-          Story & Lore
-        </span>
-        <div class="space-y-4">
-          <h1
-            class="font-title text-4xl font-extrabold text-text-primary md:text-5xl lg:text-6xl"
-          >
-            Sumergete en la historia de CSS Quest AI.
-          </h1>
-          <p
-            class="max-w-3xl font-text text-lg leading-8 text-text-secondary/90 md:text-xl"
-          >
-            Descubre los personajes, el mundo, y la narrativa que dan vida a
-            este universo de CSS y diseño web.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <section class="bg-bg-base px-4 py-10 md:px-6 md:py-14">
+    <div class="container mx-auto grid gap-6 xl:grid-cols-[320px_minmax(0,1fr)] xl:items-start">
+      <GddSidebar collections={collections} />
 
-  <!-- Main Content -->
-  <section class="px-4 py-12 md:px-6 md:py-16">
-    <div class="container mx-auto">
-      <!-- Header -->
-      <div
-        class="mb-12 overflow-hidden rounded-[2rem] border border-border-organic/20 bg-bg-elevated/70 shadow-[0_28px_90px_rgba(26,26,26,0.25)] backdrop-blur"
-      >
+      <section class="overflow-hidden rounded-[2rem] border border-border-organic/20 bg-bg-elevated/70 shadow-[0_28px_90px_rgba(26,26,26,0.25)] backdrop-blur">
         <div class="border-b border-border-organic/15 px-6 py-6 md:px-8 md:py-7">
-          <p
-            class="font-text text-sm font-semibold uppercase tracking-[0.24em] text-accent-strong"
-          >
-            Inicio de documentación
+          <p class="font-text text-sm font-semibold uppercase tracking-[0.24em] text-accent-strong">
+            {collectionMeta.label}
           </p>
-          <h2
-            class="mt-3 font-title text-3xl font-bold text-text-primary md:text-4xl"
-          >
-            Entradas Disponibles
-          </h2>
-          <p
-            class="mt-4 max-w-3xl font-text text-base leading-8 text-text-secondary/90 md:text-lg"
-          >
-            Explora los diferentes aspectos de la narrativa del juego, desde los
-            personajes hasta el mundo en el que habitan.
+          <h1 class="mt-3 font-title text-3xl font-bold text-text-primary md:text-4xl">
+            Mundo, tono narrativo y personajes
+          </h1>
+          <p class="mt-4 max-w-3xl font-text text-base leading-8 text-text-secondary/90 md:text-lg">
+            Aquí se documentan la historia, el contexto y los personajes que
+            guían la experiencia de aprendizaje dentro del juego.
           </p>
         </div>
 
-        <!-- Grid de Cards -->
-        <div class="p-6 md:p-8 lg:p-10">
-          <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {
-              narrativaEntries.map((entry) => (
-                <EntryCard
-                  id={entry.id}
-                  title={entry.data.title}
-                  description={entry.data.description}
-                  coverImage={entry.data.coverImage}
-                  order={entry.data.order}
-                />
-              ))
-            }
+        {featuredEntry && (
+          <div class="p-6 md:p-8 lg:p-10">
+            <a href={`${collectionMeta.path}${featuredEntry.id}`} class="block rounded-2xl border border-border-organic/20 bg-bg-overlay/70 p-6 transition hover:border-border-organic/40 hover:bg-bg-overlay/80">
+              <p class="font-text text-xs font-semibold uppercase tracking-[0.22em] text-accent-strong">Entrada sugerida</p>
+              <h2 class="mt-3 font-title text-2xl font-bold text-text-primary">{featuredEntry.data.title}</h2>
+              <p class="mt-3 font-text text-base leading-7 text-text-secondary/90">{featuredEntry.data.description}</p>
+            </a>
           </div>
-        </div>
-      </div>
+        )}
+      </section>
     </div>
   </section>
 </Layout>
