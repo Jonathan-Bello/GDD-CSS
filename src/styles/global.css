@@ -115,3 +115,35 @@
     @apply bg-bg-base text-text-primary;
   }
 }
+
+@layer components {
+  .ds-panel {
+    border: 1px solid color-mix(in oklab, var(--color-border-organic) 28%, transparent);
+    background: color-mix(in oklab, var(--color-bg-elevated) 72%, black 28%);
+    box-shadow: 0 18px 48px color-mix(in oklab, black 45%, transparent);
+  }
+
+  .ds-panel--blur {
+    backdrop-filter: blur(12px);
+  }
+
+  .ds-panel--hero {
+    border-color: color-mix(in oklab, var(--color-border-organic) 40%, transparent);
+    background:
+      linear-gradient(
+        120deg,
+        color-mix(in oklab, var(--color-bg-elevated) 80%, transparent),
+        color-mix(in oklab, var(--color-accent) 35%, var(--color-bg-elevated) 65%),
+        color-mix(in oklab, var(--color-accent-strong) 52%, var(--color-bg-elevated) 48%)
+      );
+    box-shadow: 0 24px 80px color-mix(in oklab, #4a0605 35%, transparent);
+  }
+
+  .ds-panel--organic {
+    border-radius: 2rem 2.5rem 2.125rem 2.375rem;
+    border-color: color-mix(in oklab, var(--color-border-organic) 48%, transparent);
+    box-shadow:
+      0 14px 38px color-mix(in oklab, black 30%, transparent),
+      inset 0 0 0 1px color-mix(in oklab, var(--color-bg-elevated) 85%, white 15%);
+  }
+}
