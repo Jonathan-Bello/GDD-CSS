@@ -19,7 +19,7 @@ const { Content } = await render(entrada);
 
 <Layout title={`${entrada.data.title} | CSS Quest AI`}>
   <section
-    class="bg-[linear-gradient(180deg,rgba(74,6,5,0.95)_0%,rgba(135,22,21,0.88)_48%,rgba(26,26,26,1)_100%)] px-4 py-10 md:px-6 md:py-14"
+    class="bg-bg-base px-4 py-10 md:px-6 md:py-14"
   >
     <div class="container mx-auto">
       <a
@@ -44,27 +44,27 @@ const { Content } = await render(entrada);
       <div class="mt-8 max-w-4xl space-y-5">
         <div class="space-y-4">
           <h1
-            class="font-title text-4xl font-extrabold text-neutral-50 md:text-5xl lg:text-6xl"
+            class="font-title text-4xl font-extrabold text-text-primary md:text-5xl lg:text-6xl"
           >
             {entrada.data.title}
           </h1>
           <p
-            class="max-w-3xl font-text text-lg leading-8 text-neutral-100/90 md:text-xl"
+            class="max-w-3xl font-text text-lg leading-8 text-text-secondary/90 md:text-xl"
           >
             {entrada.data.description}
           </p>
         </div>
 
         <div
-          class="flex flex-wrap gap-4 pt-2 font-text text-sm text-neutral-200/85"
+          class="flex flex-wrap gap-4 pt-2 font-text text-sm text-text-secondary/85"
         >
           <span
-            class="rounded-full border border-neutral-50/10 bg-neutral-50/5 px-4 py-2"
+            class="rounded-full border border-border-organic/20 bg-bg-overlay/70 px-4 py-2"
           >
             Orden {entrada.data.order}
           </span>
           <span
-            class="rounded-full border border-neutral-50/10 bg-neutral-50/5 px-4 py-2"
+            class="rounded-full border border-border-organic/20 bg-bg-overlay/70 px-4 py-2"
           >
             {
               entrada.data.date.toLocaleDateString("es-MX", {
@@ -101,7 +101,7 @@ const { Content } = await render(entrada);
   <section class="px-4 py-12 md:px-6 md:py-16">
     <div class="container mx-auto max-w-4xl">
       <div
-        class="prose prose-invert max-w-none space-y-8 font-text text-neutral-200/90"
+        class="prose prose-invert max-w-none space-y-8 font-text text-text-secondary/90"
       >
         <Content />
       </div>

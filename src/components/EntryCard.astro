@@ -14,19 +14,19 @@ const { id, title, description, coverImage, order } = Astro.props;
 
 <a
   href={`/sistema-juego/${id}`}
-  class="group relative overflow-hidden rounded-xl border border-border-organic/20 bg-neutral-50/6 shadow-[0_28px_90px_rgba(26,26,26,0.25)] backdrop-blur transition-all duration-300 hover:border-border-organic/40 hover:shadow-[0_28px_90px_rgba(74,6,5,0.35)]"
+  class="group relative overflow-hidden rounded-xl border border-border-organic/20 bg-bg-elevated/70 shadow-[0_28px_90px_rgba(26,26,26,0.25)] backdrop-blur transition-all duration-300 hover:border-border-organic/40 hover:shadow-[0_28px_90px_rgba(74,6,5,0.35)]"
 >
   <!-- Cover Image with ViewTransition -->
   {
     coverImage && (
-      <div class="relative h-48 w-full overflow-hidden bg-gradient-to-br from-bg-elevated/20 to-neutral-900/40">
+      <div class="relative h-48 w-full overflow-hidden bg-gradient-to-br from-bg-elevated/20 to-bg-overlay/80">
         <img
           src={coverImage}
           alt={title}
           transition:name={`card-image-${id}`}
           class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
         />
-        <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 to-transparent opacity-60" />
+        <div class="absolute inset-0 bg-gradient-to-t from-bg-overlay to-transparent opacity-60" />
       </div>
     )
   }
@@ -35,7 +35,7 @@ const { id, title, description, coverImage, order } = Astro.props;
   <div class="space-y-4 p-6">
     {
       order !== undefined && (
-        <span class="inline-flex rounded-full border border-neutral-50/10 bg-neutral-50/5 px-3 py-1 font-text text-xs font-semibold uppercase tracking-[0.22em] text-accent-strong">
+        <span class="inline-flex rounded-full border border-border-organic/20 bg-bg-overlay/70 px-3 py-1 font-text text-xs font-semibold uppercase tracking-[0.22em] text-accent-strong">
           Entrada {order}
         </span>
       )
@@ -43,11 +43,11 @@ const { id, title, description, coverImage, order } = Astro.props;
 
     <div class="space-y-2">
       <h3
-        class="font-title text-xl font-bold text-neutral-50 transition-colors duration-300 group-hover:text-accent-strong"
+        class="font-title text-xl font-bold text-text-primary transition-colors duration-300 group-hover:text-accent-strong"
       >
         {title}
       </h3>
-      <p class="line-clamp-3 font-text text-sm leading-6 text-neutral-200/80">
+      <p class="line-clamp-3 font-text text-sm leading-6 text-text-secondary/80">
         {description}
       </p>
     </div>
