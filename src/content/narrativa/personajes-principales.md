@@ -1,7 +1,7 @@
 ---
 id: "personajes-principales"
 title: "Personajes Principales"
-description: "Descripción de los personajes clave en la narrativa de CSS Quest AI."
+description: "Descripción de los personajes clave en la narrativa de Citadel of Solar Souls."
 date: 2026-03-20
 author: "jonathan-bello"
 order: 1

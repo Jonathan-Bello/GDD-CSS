@@ -1,18 +1,18 @@
 ---
 id: "mundo-y-escenarios"
 title: "Mundo y Escenarios"
-description: "Descripción del mundo de CSS Quest AI y sus diferentes regiones."
+description: "Descripción del mundo de Citadel of Solar Souls y sus diferentes regiones."
 date: 2026-03-20
 author: "jonathan-bello"
 order: 2
 coverImage: "/world.jpg"
 ---
 
-# El Mundo de CSS Quest AI
+# El Mundo de Citadel of Solar Souls
 
 ## Estructura General
 
-El mundo de CSS Quest AI está dividido en varias regiones temáticas, cada una representando diferentes aspectos del CSS y el diseño web.
+El mundo de Citadel of Solar Souls está dividido en varias regiones temáticas, cada una representando diferentes aspectos del CSS y el diseño web.
 
 ## Castillo de los Estilos
 
