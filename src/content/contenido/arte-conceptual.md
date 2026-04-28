@@ -40,6 +40,7 @@ Su objetivo es servir como base para storyboard, exploración de mood, pruebas d
 
 ## Referencia de androide Emis
 
-![Referencia de androide Emis](@assets/imgs/arte-conceptual/androideme.png)
+![Logo SVG de referencia para Emis](@assets/svgs/arte-conceptual/Hemis.svg)
+![Logo SVG de referencia para Emis](@assets/svgs/arte-conceptual/usoHemis.svg)
 
 **Uso:** base para iterar la presencia visual asociada a Emis y su coherencia con la interfaz tecnológica del universo.

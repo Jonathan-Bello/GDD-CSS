@@ -7,6 +7,7 @@ author: "jonathan-bello"
 order: 1
 coverImage: ""
 ---
+
 El HUD de _Citadel of Solar Souls (CSS)_ reúne los elementos de interfaz que acompañan directamente la experiencia de juego. Su diseño debe priorizar la claridad, la lectura inmediata del estado del jugador y el acceso rápido a las funciones más importantes, sin saturar la pantalla ni romper la inmersión. La intención es que el jugador siempre tenga a la vista la información esencial para sobrevivir, desplazarse, combatir y consultar ayuda, mientras que las interfaces más complejas se despliegan solo cuando son necesarias.
 
 ## Principios del HUD
@@ -51,7 +52,7 @@ La representación puede resolverse mediante íconos repetidos, cargas segmentad
 
 En la **parte inferior derecha** de la pantalla debe existir siempre un botón con forma de **hexágono dorado**, que representa el acceso directo a **Emis**. Este botón funciona como uno de los elementos más importantes del HUD, ya que garantiza que el jugador pueda pedir ayuda en cualquier momento de la partida.
 
-![Logo SVG de referencia para Emis](@assets/svgs/Emis.svg)
+![Logo SVG de referencia para Emis](@assets/svgs/arte-conceptual/Hemis.svg)
 
 La identidad visual del acceso a Emis debe apoyarse en un **logo en formato SVG** para conservar nitidez, escalabilidad y consistencia en distintas resoluciones de pantalla.
 
