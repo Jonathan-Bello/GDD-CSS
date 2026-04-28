@@ -10,7 +10,7 @@ coverImage: ""
 
 # Arte conceptual
 
-Esta sección reúne referencias internas de arte conceptual para alinear el tono visual de _Citadel of Solar Souls (IA)_ durante la etapa de prototipo.
+Esta sección reúne referencias internas de arte conceptual para alinear el tono visual de _Citadel of Solar Souls (CSS)_ durante la etapa de prototipo.
 
 Su objetivo es servir como base para storyboard, exploración de mood, pruebas de color y definición de composición antes de pasar a producción final.
 

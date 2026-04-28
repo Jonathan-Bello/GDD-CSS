@@ -7,7 +7,7 @@ author: "jonathan-bello"
 order: 4
 coverImage: ""
 ---
-La cámara de _Citadel of Solar Souls (IA)_ es una cámara lateral fija con seguimiento continuo al jugador, pensada para acompañar la exploración, el combate y el plataformeo sin introducir complejidad innecesaria. Su comportamiento general toma como referencia la claridad y estabilidad de cámara presente en juegos como _Hollow Knight_, donde el encuadre se mantiene centrado en la acción y permite al jugador leer con facilidad el espacio que lo rodea.
+La cámara de _Citadel of Solar Souls (CSS)_ es una cámara lateral fija con seguimiento continuo al jugador, pensada para acompañar la exploración, el combate y el plataformeo sin introducir complejidad innecesaria. Su comportamiento general toma como referencia la claridad y estabilidad de cámara presente en juegos como _Hollow Knight_, donde el encuadre se mantiene centrado en la acción y permite al jugador leer con facilidad el espacio que lo rodea.
 
 Durante la mayor parte de la partida, la cámara sigue al personaje de forma constante y suave, manteniéndolo como punto principal de referencia dentro del escenario. El objetivo de este seguimiento es que el jugador siempre tenga una lectura clara de su posición y del entorno inmediato, sin movimientos bruscos ni reencuadres innecesarios que puedan afectar la precisión del control o la percepción del peligro. La cámara no debe sentirse invasiva ni excesivamente reactiva, sino estable, limpia y confiable.
 

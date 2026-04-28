@@ -7,7 +7,7 @@ author: "jonathan-bello"
 order: 5
 coverImage: ""
 ---
-El esquema de control de _Citadel of Solar Souls (IA)_ está diseñado principalmente para **teclado y ratón**, ya que una de las mecánicas centrales del juego consiste en escribir y editar código CSS dentro de una interfaz integrada. Aunque a futuro podría contemplarse compatibilidad parcial con mando para el desplazamiento y el combate, la experiencia base y recomendada del juego está pensada para jugarse con teclado y ratón.
+El esquema de control de _Citadel of Solar Souls (CSS)_ está diseñado principalmente para **teclado y ratón**, ya que una de las mecánicas centrales del juego consiste en escribir y editar código CSS dentro de una interfaz integrada. Aunque a futuro podría contemplarse compatibilidad parcial con mando para el desplazamiento y el combate, la experiencia base y recomendada del juego está pensada para jugarse con teclado y ratón.
 
 El objetivo general del control es que el jugador sienta una respuesta inmediata, clara e intuitiva en todo momento. La movilidad debe ser fluida, el combate debe ejecutarse sin fricción y la transición entre exploración, disparo, edición de munición y consulta de menús debe sentirse natural dentro del ritmo general del juego.
 

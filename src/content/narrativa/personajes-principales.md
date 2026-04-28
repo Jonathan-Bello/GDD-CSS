@@ -1,7 +1,7 @@
 ---
 id: "3"
 title: "Personajes principales"
-description: "Definición inicial de los personajes principales y arquetipos narrativos clave de Citadel of Solar Souls (IA)."
+description: "Definición inicial de los personajes principales y arquetipos narrativos clave de Citadel of Solar Souls (CSS)."
 date: 2026-04-23
 author: "jonathan-bello"
 order: 3
@@ -10,7 +10,7 @@ coverImage: ""
 
 # Personajes principales
 
-Este documento reúne una definición inicial de los personajes principales y de algunos arquetipos narrativos que pueden sostener la experiencia de _Citadel of Solar Souls (IA)_. Su función es establecer una base clara para dirección, narrativa, diseño de diálogo, arte conceptual y construcción de contenido, dejando abierto el espacio para futuras iteraciones conforme se refine la escritura final del juego.
+Este documento reúne una definición inicial de los personajes principales y de algunos arquetipos narrativos que pueden sostener la experiencia de _Citadel of Solar Souls (CSS)_. Su función es establecer una base clara para dirección, narrativa, diseño de diálogo, arte conceptual y construcción de contenido, dejando abierto el espacio para futuras iteraciones conforme se refine la escritura final del juego.
 
 ## Principios generales de los personajes
 
@@ -32,7 +32,7 @@ Androide de origen desconocido para sí mismo al inicio de la historia
 
 ### Función narrativa
 
-Xanat es el punto de entrada del jugador al mundo de _Citadel of Solar Souls (IA)_. Despierta en una mansión doscientos años después de la desaparición de la humanidad, sin comprender quién es, por qué está ahí ni qué ocurrió con el planeta. Para los robots que aún permanecen activos, Xanat es percibido como el regreso imposible de un ser humano. Esa percepción define gran parte de la tensión narrativa inicial del juego.
+Xanat es el punto de entrada del jugador al mundo de _Citadel of Solar Souls (CSS)_. Despierta en una mansión doscientos años después de la desaparición de la humanidad, sin comprender quién es, por qué está ahí ni qué ocurrió con el planeta. Para los robots que aún permanecen activos, Xanat es percibido como el regreso imposible de un ser humano. Esa percepción define gran parte de la tensión narrativa inicial del juego.
 
 ### Función jugable
 
@@ -230,7 +230,7 @@ Son fundamentales para la atmósfera del juego porque permiten que el abandono d
 
 ## Relación entre personajes y tono del juego
 
-Los personajes de _Citadel of Solar Souls (IA)_ deben transmitir la idea de un mundo que no está muerto, sino suspendido. Todo sigue existiendo con una lógica propia, aunque ya no queden humanos para darle sentido pleno. Por eso los personajes no deben construirse como figuras excesivamente teatrales o caricaturescas, sino como extensiones vivas, rotas o persistentes de una civilización desaparecida.
+Los personajes de _Citadel of Solar Souls (CSS)_ deben transmitir la idea de un mundo que no está muerto, sino suspendido. Todo sigue existiendo con una lógica propia, aunque ya no queden humanos para darle sentido pleno. Por eso los personajes no deben construirse como figuras excesivamente teatrales o caricaturescas, sino como extensiones vivas, rotas o persistentes de una civilización desaparecida.
 
 ## Dirección general para futuras iteraciones
 

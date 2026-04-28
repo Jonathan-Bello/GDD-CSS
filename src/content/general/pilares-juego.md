@@ -9,7 +9,7 @@ coverImage: ""
 ---
 ## Primero es juego, después aprendizaje
 
-La prioridad de *Citadel of Solar Souls (IA)* es ser un juego divertido antes que una herramienta educativa. El aprendizaje debe surgir como consecuencia natural de jugar, explorar, combatir y resolver problemas dentro del mundo. La base del proyecto no es la gamificación superficial ni la incorporación de recompensas externas para disfrazar contenido didáctico, sino la construcción de una experiencia lúdica real, donde aprender forma parte del acto de jugar. Si una decisión hace al juego menos disfrutable aunque sea más explicativa, entonces no está alineada con este pilar.
+La prioridad de *Citadel of Solar Souls (CSS)* es ser un juego divertido antes que una herramienta educativa. El aprendizaje debe surgir como consecuencia natural de jugar, explorar, combatir y resolver problemas dentro del mundo. La base del proyecto no es la gamificación superficial ni la incorporación de recompensas externas para disfrazar contenido didáctico, sino la construcción de una experiencia lúdica real, donde aprender forma parte del acto de jugar. Si una decisión hace al juego menos disfrutable aunque sea más explicativa, entonces no está alineada con este pilar.
 
 ## Aprender haciendo dentro del mundo
 
@@ -17,7 +17,7 @@ El aprendizaje debe surgir de la acción del jugador y no de una explicación ex
 
 ## El conocimiento es una herramienta de supervivencia
 
-En *Citadel of Solar Souls (IA)* aprender no es un añadido opcional, sino una parte central de la progresión. Comprender el sistema de CSS debe traducirse en ventajas reales dentro del juego, como mejorar la munición, activar mecanismos, resolver acertijos del entorno o enfrentar enemigos más complejos. El jugador debe sentir que saber más le permite jugar mejor y avanzar con mayor dominio del mundo. El uso de propiedades no debe sentirse como una tarea escolar, sino como parte del lenguaje práctico del combate y la exploración.
+En *Citadel of Solar Souls (CSS)* aprender no es un añadido opcional, sino una parte central de la progresión. Comprender el sistema de CSS debe traducirse en ventajas reales dentro del juego, como mejorar la munición, activar mecanismos, resolver acertijos del entorno o enfrentar enemigos más complejos. El jugador debe sentir que saber más le permite jugar mejor y avanzar con mayor dominio del mundo. El uso de propiedades no debe sentirse como una tarea escolar, sino como parte del lenguaje práctico del combate y la exploración.
 
 ## Coherencia total del mundo y sus elementos
 

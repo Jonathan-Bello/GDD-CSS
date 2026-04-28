@@ -7,7 +7,7 @@ author: "jonathan-bello"
 order: 3
 coverImage: ""
 ---
-El flujo principal de _Citadel of Solar Souls (IA)_ se basa en una progresión por zonas. El jugador explora una parte del mapa, descubre rutas, enemigos y puntos de interés, encuentra cápsulas de desafío donde desbloquea nuevas propiedades de CSS y utiliza esas nuevas herramientas para superar tanto los obstáculos de la zona como a sus enemigos. Al final de cada área se enfrenta a un jefe, diseñado como una prueba integradora de las mecánicas y propiedades aprendidas durante ese tramo. Una vez derrotado, se desbloquea el acceso a una nueva parte del mapa y el ciclo se repite con nuevos retos, enemigos y conceptos.
+El flujo principal de _Citadel of Solar Souls (CSS)_ se basa en una progresión por zonas. El jugador explora una parte del mapa, descubre rutas, enemigos y puntos de interés, encuentra cápsulas de desafío donde desbloquea nuevas propiedades de CSS y utiliza esas nuevas herramientas para superar tanto los obstáculos de la zona como a sus enemigos. Al final de cada área se enfrenta a un jefe, diseñado como una prueba integradora de las mecánicas y propiedades aprendidas durante ese tramo. Una vez derrotado, se desbloquea el acceso a una nueva parte del mapa y el ciclo se repite con nuevos retos, enemigos y conceptos.
 
 Este flujo busca que cada zona funcione como un bloque de aprendizaje y dominio. El jugador primero descubre, luego comprende, después practica y finalmente demuestra lo aprendido en un enfrentamiento mayor. De esta manera, la progresión del juego mantiene coherencia entre exploración, combate, puzzles y aprendizaje de CSS.
 
@@ -86,4 +86,4 @@ La estructura de explorar, desbloquear, aplicar y superar permite que cada nuevo
 
 ## Principio general del flujo
 
-El flujo de Citadel of Solar Souls (IA) debe transmitir una sensación constante de avance. El jugador explora, descubre, aprende, aplica y vence. No se busca una experiencia fragmentada en pantallas aisladas, sino una progresión orgánica donde las transiciones entre menús, mapa, desafíos, combate y jefes mantengan coherencia tanto narrativa como jugable. Cada nueva zona debe sentirse como una extensión natural del viaje, y cada cierre de área como una confirmación de que el jugador ha dominado un nuevo bloque de conocimiento y acción.
+El flujo de Citadel of Solar Souls (CSS) debe transmitir una sensación constante de avance. El jugador explora, descubre, aprende, aplica y vence. No se busca una experiencia fragmentada en pantallas aisladas, sino una progresión orgánica donde las transiciones entre menús, mapa, desafíos, combate y jefes mantengan coherencia tanto narrativa como jugable. Cada nueva zona debe sentirse como una extensión natural del viaje, y cada cierre de área como una confirmación de que el jugador ha dominado un nuevo bloque de conocimiento y acción.

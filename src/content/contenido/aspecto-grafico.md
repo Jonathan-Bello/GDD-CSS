@@ -8,7 +8,7 @@ order: 1
 coverImage: ""
 ---
 
-_Citadel of Solar Souls (IA)_ utiliza una dirección de arte basada en un estilo de **dibujo vectorial minimalista**, construido con **líneas puramente rectas**, **formas geométricas claras** y **colores sólidos**. La intención visual del proyecto es transmitir un mundo futurista, limpio, tecnológico y melancólico, donde la naturaleza ha invadido una civilización avanzada sin destruir por completo su belleza ni su sentido de armonía.
+_Citadel of Solar Souls (CSS)_ utiliza una dirección de arte basada en un estilo de **dibujo vectorial minimalista**, construido con **líneas puramente rectas**, **formas geométricas claras** y **colores sólidos**. La intención visual del proyecto es transmitir un mundo futurista, limpio, tecnológico y melancólico, donde la naturaleza ha invadido una civilización avanzada sin destruir por completo su belleza ni su sentido de armonía.
 
 El estilo debe sentirse simple de leer, fuerte en identidad y viable para producción. No se busca un acabado hiperrealista, texturizado o recargado, sino una imagen clara, elegante y reconocible, capaz de sostener tanto la exploración como el combate y la narrativa ambiental.
 

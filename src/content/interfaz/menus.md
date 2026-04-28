@@ -10,7 +10,7 @@ coverImage: ""
 
 # Menús
 
-La estructura de menús de _Citadel of Solar Souls (IA)_ debe ser clara, rápida y fácil de navegar. Su función no es solo dar acceso a opciones del sistema, sino también organizar la información del jugador, permitir la consulta de recursos importantes y acompañar el ritmo general de la experiencia sin romper la inmersión más de lo necesario. Cada menú debe tener un propósito concreto, una cantidad limitada de opciones y una navegación consistente con el resto del juego.
+La estructura de menús de _Citadel of Solar Souls (CSS)_ debe ser clara, rápida y fácil de navegar. Su función no es solo dar acceso a opciones del sistema, sino también organizar la información del jugador, permitir la consulta de recursos importantes y acompañar el ritmo general de la experiencia sin romper la inmersión más de lo necesario. Cada menú debe tener un propósito concreto, una cantidad limitada de opciones y una navegación consistente con el resto del juego.
 
 El sistema de menús se divide en dos grandes grupos: los menús de acceso general, como el menú principal, opciones o pausa, y los menús de consulta del jugador, como inventario y compendio de propiedades CSS. Todos deben compartir una lógica de uso coherente, con controles simples y transiciones comprensibles.
 
@@ -426,4 +426,4 @@ El sistema de menús debe apoyar tres necesidades principales del jugador:
 
 ## Principio general del sistema de menús
 
-Los menús de _Citadel of Solar Souls (IA)_ deben ser funcionales, limpios y coherentes con el resto del diseño del juego. No deben sentirse como un sistema ajeno, sino como una extensión ordenada de la experiencia. Su estructura debe ayudar al jugador a orientarse, consultar, ajustar y volver al juego rápidamente, reforzando en todo momento la claridad, la accesibilidad y la sensación de control.
+Los menús de _Citadel of Solar Souls (CSS)_ deben ser funcionales, limpios y coherentes con el resto del diseño del juego. No deben sentirse como un sistema ajeno, sino como una extensión ordenada de la experiencia. Su estructura debe ayudar al jugador a orientarse, consultar, ajustar y volver al juego rápidamente, reforzando en todo momento la claridad, la accesibilidad y la sensación de control.
