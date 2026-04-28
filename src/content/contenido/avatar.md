@@ -1,7 +1,7 @@
 ---
 id: "2"
 title: "Personaje principal"
-description: "Definición visual y conceptual de Xanat, protagonista y avatar del jugador en Citadel of Solar Souls (IA)."
+description: "Definición visual y conceptual de Xanat, protagonista y avatar del jugador en Citadel of Solar Souls (CSS)."
 date: 2026-04-23
 author: "jonathan-bello"
 order: 2
@@ -22,7 +22,7 @@ Protagonista del juego y avatar del jugador.
 
 ## Función general
 
-Xanat es el personaje a través del cual el jugador vive toda la experiencia de _Citadel of Solar Souls (IA)_. Su diseño debe permitir que el jugador proyecte sobre él su propia experiencia, por lo que su presencia debe ser clara y distintiva, pero sin convertirlo en un personaje excesivamente expresivo o demasiado narrativamente invasivo.
+Xanat es el personaje a través del cual el jugador vive toda la experiencia de _Citadel of Solar Souls (CSS)_. Su diseño debe permitir que el jugador proyecte sobre él su propia experiencia, por lo que su presencia debe ser clara y distintiva, pero sin convertirlo en un personaje excesivamente expresivo o demasiado narrativamente invasivo.
 
 El jugador debe sentir que **encarna** a Xanat, no solo que lo observa.
 

@@ -12,7 +12,7 @@ coverImage: ""
 
 ## Descripción general de la historia
 
-_Citadel of Solar Souls (IA)_ narra el despertar de una figura que aparenta ser humana dentro de un mundo donde la humanidad ha desaparecido desde hace doscientos años. Rodeado de robots que aún ejecutan antiguas rutinas, ciudades cubiertas por vegetación y sistemas que continúan activos sin propósito claro, el protagonista inicia un viaje de exploración, combate y descubrimiento para entender qué ocurrió con la civilización y por qué él sigue existiendo.
+_Citadel of Solar Souls (CSS)_ narra el despertar de una figura que aparenta ser humana dentro de un mundo donde la humanidad ha desaparecido desde hace doscientos años. Rodeado de robots que aún ejecutan antiguas rutinas, ciudades cubiertas por vegetación y sistemas que continúan activos sin propósito claro, el protagonista inicia un viaje de exploración, combate y descubrimiento para entender qué ocurrió con la civilización y por qué él sigue existiendo.
 
 A lo largo de la aventura, el jugador avanza por distintos escenarios que funcionan tanto como espacios jugables como capas narrativas del mundo. En cada uno de ellos se reconstruyen fragmentos del pasado, se conocen vestigios de la antigua sociedad y se profundiza en la naturaleza del protagonista. La narrativa está pensada como una historia de misterio y revelación progresiva, donde el entorno, los personajes robóticos, los objetos y las descripciones cumplen un papel fundamental en la reconstrucción del sentido del mundo.
 
