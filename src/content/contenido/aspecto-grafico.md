@@ -110,30 +110,30 @@ Las siguientes referencias fueron cuidadosamente seleccionadas para establecer y
 
 ## Figuras geométricas simples
 
-![Referencia de figuras geométricas simples](/src/assets/imgs/referencias/figuras.png)
+![Referencia de figuras geométricas simples](@assets/imgs/referencias/figuras.png)
 
 **¿Por qué?** Esta referencia establece el lenguaje fundamental de formas geométricas rectas y simples que debe permear todo el proyecto. Demuestra cómo construcciones visuales complejas pueden lograrse mediante la combinación de bloques rectangulares, líneas y formas básicas, manteniendo la claridad visual y la lectura rápida. Es esencial para mantener la coherencia en el diseño de personajes, escenarios e interfaz.
 
 ## Arte vectorial minimalista
 
-![Referencia de arte vectorial minimalista](/src/assets/imgs/referencias/svg.png)
+![Referencia de arte vectorial minimalista](@assets/imgs/referencias/svg.png)
 
 **¿Por qué?** Esta referencia muestra la aplicación práctica del minimalismo geométrico en un contexto visual completo. Demuestra cómo líneas rectas, colores planos y composición limpia pueden transmitir narrativa visual sin necesidad de detalles hiperrealistas. Es fundamental para establecer el estándar de producción viable y la identidad técnica del juego.
 
 ## Composición en tonos neutros
 
-![Referencia de paleta neutral en blanco y gris](/src/assets/imgs/referencias/gris.png)
+![Referencia de paleta neutral en blanco y gris](@assets/imgs/referencias/gris.png)
 
 **¿Por qué?** Esta referencia establece la importancia del contraste y la composición en ausencia de color saturado. Demuestra que la fuerza visual puede construirse mediante tonos neutros (blanco, gris, negro), lo que refuerza nuestra decisión de usar una paleta limitada (blanco, verde, naranja). Muestra cómo la proporción, el espaciado y la jerarquía visual pueden compensar la ausencia de una paleta cromática compleja.
 
 ## Estética de juego indie: Siluetas fuertes
 
-![Referencia de diseño de personajes y escenarios](/src/assets/imgs/referencias/hollow.png)
+![Referencia de diseño de personajes y escenarios](@assets/imgs/referencias/hollow.png)
 
 **¿Por qué?** Hollow Knight es una referencia clave para entender cómo una paleta limitada (blanco, negro, tonos de gris) combinada con siluetas fuertes puede crear personajes y entornos inmediatamente reconocibles y emocionalmente resonantes. Demuestra la viabilidad artística del minimalismo geométrico en un juego 2D y la importancia de la claridad visual en el gameplay.
 
 ## Dirección de arte melancólica: Blasphemous
 
-![Referencia de atmósfera visual y detalle minimalista](/src/assets/imgs/referencias/blasfemous.png)
+![Referencia de atmósfera visual y detalle minimalista](@assets/imgs/referencias/blasfemous.png)
 
 **¿Por qué?** Blasphemous muestra cómo un mundo decadente y visualmente deteriorado puede mantener belleza y elegancia mediante el uso mesurado de formas geométricas y líneas rectas. Refuerza la idea central del proyecto: transmitir un futuro hermoso que se quedó sin humanidad, donde la ruina es controlada y estética, no caótica ni destructiva.
