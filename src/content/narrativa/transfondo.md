@@ -1,7 +1,7 @@
 ---
 id: "1"
 title: "Trasfondo"
-description: "Contexto histórico y conceptual del mundo de Citadel of Solar Souls (IA), desde la era dorada de la humanidad hasta el estado actual del planeta."
+description: "Contexto histórico y conceptual del mundo de Citadel of Solar Souls (CSS), desde la era dorada de la humanidad hasta el estado actual del planeta."
 date: 2026-04-23
 author: "jonathan-bello"
 order: 1
@@ -10,7 +10,7 @@ coverImage: ""
 
 # Trasfondo
 
-La historia de _Citadel of Solar Souls (IA)_ se sitúa en un futuro muy lejano en el que la humanidad alcanzó uno de sus momentos de mayor esplendor. Lejos de los escenarios distópicos tradicionales, este mundo logró resolver gran parte de los conflictos entre progreso, sostenibilidad y calidad de vida. La tecnología y la naturaleza dejaron de estar enfrentadas y pasaron a coexistir en equilibrio dentro de una civilización de estética y filosofía solarpunk: ciudades verdes, energía sustentable, automatización avanzada, robótica integrada a la vida cotidiana y una inteligencia artificial plenamente incorporada al desarrollo humano.
+La historia de _Citadel of Solar Souls (CSS)_ se sitúa en un futuro muy lejano en el que la humanidad alcanzó uno de sus momentos de mayor esplendor. Lejos de los escenarios distópicos tradicionales, este mundo logró resolver gran parte de los conflictos entre progreso, sostenibilidad y calidad de vida. La tecnología y la naturaleza dejaron de estar enfrentadas y pasaron a coexistir en equilibrio dentro de una civilización de estética y filosofía solarpunk: ciudades verdes, energía sustentable, automatización avanzada, robótica integrada a la vida cotidiana y una inteligencia artificial plenamente incorporada al desarrollo humano.
 
 Dentro de esta sociedad, cada ser humano recibía desde su nacimiento un chip llamado **Emis**. Este sistema funcionaba como un asistente personal de por vida, orientado al acompañamiento, el aprendizaje y la gestión del conocimiento. Emis no era visto como una herramienta excepcional, sino como una extensión natural de la experiencia humana dentro de una civilización altamente tecnificada. La humanidad vivía, en apariencia, una etapa de armonía total entre inteligencia, infraestructura, automatización y entorno natural.
 

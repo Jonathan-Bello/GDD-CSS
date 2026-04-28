@@ -8,7 +8,7 @@ order: 3
 coverImage: ""
 ---
 
-La progresión del jugador en _Citadel of Solar Souls (IA)_ no se mide únicamente en términos de avance por el mapa, sino en la expansión gradual de su dominio sobre el juego. A lo largo de la partida, el jugador se vuelve más competente en cuatro dimensiones principales: movimiento, combate, comprensión del sistema CSS y lectura del mundo. Esta progresión debe sentirse natural y acumulativa, de forma que cada nueva etapa del juego aproveche lo aprendido en las anteriores.
+La progresión del jugador en _Citadel of Solar Souls (CSS)_ no se mide únicamente en términos de avance por el mapa, sino en la expansión gradual de su dominio sobre el juego. A lo largo de la partida, el jugador se vuelve más competente en cuatro dimensiones principales: movimiento, combate, comprensión del sistema CSS y lectura del mundo. Esta progresión debe sentirse natural y acumulativa, de forma que cada nueva etapa del juego aproveche lo aprendido en las anteriores.
 
 A diferencia de juegos que basan toda su progresión en estadísticas o niveles numéricos, aquí el crecimiento del jugador se apoya principalmente en el dominio práctico. El jugador mejora porque comprende mejor las reglas, se mueve con mayor soltura, toma decisiones más acertadas y utiliza con más inteligencia las herramientas que ha desbloqueado.
 
@@ -42,7 +42,7 @@ El jugador empieza con un repertorio pequeño de propiedades y una comprensión 
 
 ## Grupos de propiedades por fases de zona
 
-La progresión de propiedades en _Citadel of Solar Souls (IA)_ debe respetar una curva de aprendizaje clara. Las primeras propiedades tienen que producir resultados visuales inmediatos y fáciles de comprender, mientras que las más avanzadas deben exigir mayor abstracción, mejor lectura del entorno y una combinación más estratégica durante combate, exploración y resolución de puzzles.
+La progresión de propiedades en _Citadel of Solar Souls (CSS)_ debe respetar una curva de aprendizaje clara. Las primeras propiedades tienen que producir resultados visuales inmediatos y fáciles de comprender, mientras que las más avanzadas deben exigir mayor abstracción, mejor lectura del entorno y una combinación más estratégica durante combate, exploración y resolución de puzzles.
 
 La idea no es desbloquear propiedades aisladas sin relación entre sí, sino agruparlas por familias de dificultad y función jugable. Cada fase de zona debe introducir un conjunto pequeño de propiedades, permitir que el jugador las practique y finalmente evaluarlas mediante enemigos, obstáculos y un jefe que exija su uso.
 

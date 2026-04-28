@@ -8,7 +8,7 @@ order: 1
 coverImage: ""
 ---
 
-El game loop principal de _Citadel of Solar Souls (IA)_ se basa en una estructura de progreso por zonas donde el jugador explora, aprende, aplica y supera una prueba final. Cada área del juego introduce nuevos enemigos, nuevos obstáculos y nuevos conceptos de CSS que deben ser descubiertos y dominados para poder avanzar. El objetivo de este loop es que la progresión del jugador no dependa únicamente de su habilidad motriz, sino también de su comprensión del sistema central del juego.
+El game loop principal de _Citadel of Solar Souls (CSS)_ se basa en una estructura de progreso por zonas donde el jugador explora, aprende, aplica y supera una prueba final. Cada área del juego introduce nuevos enemigos, nuevos obstáculos y nuevos conceptos de CSS que deben ser descubiertos y dominados para poder avanzar. El objetivo de este loop es que la progresión del jugador no dependa únicamente de su habilidad motriz, sino también de su comprensión del sistema central del juego.
 
 La secuencia base consiste en entrar a una zona, explorarla, encontrar desafíos asociados a propiedades de CSS, desbloquear esas propiedades y utilizarlas en situaciones reales dentro del mapa. Estas situaciones pueden tomar la forma de combate, puzzles, rutas bloqueadas o mecanismos del entorno. A medida que el jugador domina las herramientas de esa región, se aproxima al jefe final del área, el cual funciona como una prueba integradora de lo aprendido. Al derrotarlo, se abre una nueva parte del mapa y el ciclo vuelve a comenzar con nuevos elementos.
 

@@ -8,7 +8,7 @@ order: 2
 coverImage: ""
 ---
 
-Además del loop principal de progresión por zonas, _Citadel of Solar Souls (IA)_ se sostiene sobre varios ciclos secundarios que operan de forma constante durante la partida. Estos loops son más cortos, más específicos y están ligados a aspectos concretos de la experiencia, como el combate, el aprendizaje, la edición de munición o la exploración metroidvania.
+Además del loop principal de progresión por zonas, _Citadel of Solar Souls (CSS)_ se sostiene sobre varios ciclos secundarios que operan de forma constante durante la partida. Estos loops son más cortos, más específicos y están ligados a aspectos concretos de la experiencia, como el combate, el aprendizaje, la edición de munición o la exploración metroidvania.
 
 Cada uno de estos loops refuerza una dimensión distinta del juego, pero todos deben mantenerse conectados con la lógica central del proyecto: aprender jugando y jugar aprendiendo.
 

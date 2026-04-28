@@ -23,9 +23,45 @@ Debido a que el juego pone gran parte de su exigencia en la evasión, el combate
 
 El daño, comportamiento y utilidad de cada disparo dependerán de la configuración de la munición creada por el jugador mediante el sistema de CSS. De esta manera, el combate no se basa únicamente en reflejos, sino también en la comprensión de las propiedades y en la preparación previa de la munición adecuada para cada situación.
 
+### Sistema de daño por sinergia CSS (munición vs enemigo)
+
+Cada tipo de munición define un **daño base**. Ese daño se modifica en función de la sinergia entre los atributos CSS de la bala y los metadatos del enemigo impactado.
+
+Cada enemigo almacena en su metadata un conjunto de atributos CSS que lo describen (por ejemplo, `background`, `color`, `border`, etc.) y, cuando aplique, también el valor específico de esos atributos (por ejemplo, `background: red`). El sistema de daño se resuelve en tres niveles:
+
+1. **Sin coincidencia**: se aplica únicamente el daño base de la bala.
+2. **Coincidencia de propiedad**: si la bala comparte al menos una propiedad CSS con el enemigo (por ejemplo, la bala usa `background` y el enemigo también tiene la propiedad `background` en su metadata), se aplica un bono de daño.
+3. **Coincidencia de propiedad + valor**: si además coincide el valor exacto (por ejemplo, `background: red` en la bala y `background: red` en el enemigo), se aplica un bono mayor.
+
+Este enfoque convierte el combate en un sistema de lectura y respuesta: no basta con disparar, también importa construir una munición que “hable el mismo lenguaje” CSS que el enemigo.
+
+### Relación con progresión del jugador
+
+Cada nueva propiedad CSS desbloqueada amplía el potencial ofensivo del jugador de forma directa. En términos de diseño, desbloquear propiedades no solo habilita nuevas apariencias de bala, también incrementa la capacidad de generar sinergias y, por tanto, de escalar el daño efectivo en combate.
+
+Si el jugador intenta usar una propiedad CSS que **todavía no ha desbloqueado**, el sistema debe tratarla como no válida para cálculo de bonificaciones:
+
+- la propiedad puede mostrarse como error en el visor/editor de munición;
+- no aporta ningún bono por sinergia;
+- y además aplica una **penalización de daño** al disparo (bonus negativo sobre el daño base).
+
+Con esto se evita que el jugador se beneficie de conocimiento externo al progreso de la partida y se refuerza el loop de aprendizaje-desbloqueo-mejora dentro del propio juego.
+
+### Slots de munición y gestión en tiempo real
+
+El jugador no puede reescribir ni modificar su munición en cualquier lugar del mapa: la edición de balas está restringida exclusivamente a los **puntos de control** (zonas de control). Fuera de esos puntos, la configuración de cada bala queda bloqueada hasta volver a una zona segura.
+
+Durante la progresión, el jugador desbloquea espacios adicionales de equipamiento de munición hasta un máximo de **3 slots**:
+
+1. **Inicio del juego:** 1 slot disponible.
+2. **Progresión media:** desbloqueo del slot 2.
+3. **Progresión avanzada:** desbloqueo del slot 3 (límite máximo).
+
+Cada slot puede almacenar una bala distinta (con propiedades CSS diferentes). En combate y exploración, el jugador sí puede alternar entre los slots desbloqueados para adaptarse al tipo de enemigo o situación, pero sin editar su contenido en ese momento.
+
 ## Creación de munición mediante CSS
 
-La mecánica central y más distintiva del juego es la posibilidad de crear munición personalizada utilizando propiedades de CSS. Esta acción no se realiza directamente en medio del combate, sino dentro de **zonas de control** que funcionan como puntos seguros o de preparación, equivalentes conceptualmente a una hoguera o punto de descanso. Al interactuar con una de estas zonas, el jugador abre una interfaz especial donde puede diseñar la bala que utilizará después en el mapa.
+La mecánica central y más distintiva del juego es la posibilidad de crear munición personalizada utilizando propiedades de CSS. Esta acción no se realiza directamente en medio del combate, sino únicamente en **zonas de control / puntos de control** que funcionan como espacios seguros de preparación, equivalentes conceptualmente a una hoguera o punto de descanso. Al interactuar con una de estas zonas, el jugador abre una interfaz especial donde puede diseñar la bala que utilizará después en el mapa.
 
 La interfaz de creación de munición se divide en tres áreas principales. El espacio más grande, que ocupa aproximadamente dos tercios de la pantalla, corresponde al **lienzo**, donde el jugador visualiza en tiempo real la munición que está construyendo. En el tercio restante de la pantalla se ubican dos paneles: en la parte superior, un **editor de código** donde el jugador escribe las propiedades CSS que desea aplicar; en la parte inferior, un **chat con Emis**, la inteligencia artificial acompañante.
 
