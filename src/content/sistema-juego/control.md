@@ -47,6 +47,14 @@ El dash puede ejecutarse tanto en tierra como en el aire. Su uso es central para
 
 El disparo base siempre se proyecta al frente. Las variantes direccionales permiten ampliar la cobertura ofensiva sin convertir el apuntado en una carga excesiva. El sistema de auto target, cuando esté activado, funcionará como apoyo de accesibilidad, pero no modifica la asignación de botones.
 
+### Cambio de slot de munición
+
+- **1:** equipar slot de munición 1 (si está desbloqueado)
+- **2:** equipar slot de munición 2 (si está desbloqueado)
+- **3:** equipar slot de munición 3 (si está desbloqueado)
+
+El jugador inicia la partida con un único slot de munición y puede desbloquear hasta un máximo de tres durante la progresión. El cambio entre slots está permitido en tiempo real durante exploración y combate, pero su contenido solo puede editarse al interactuar con un punto de control.
+
 ### Fijado de enemigo
 
 - **R:** fijar o liberar enemigo objetivo
@@ -84,7 +92,7 @@ El inventario permite consultar objetos importantes y sus descripciones. El regi
 
 ## Controles dentro de la zona de control
 
-Cuando el jugador interactúa con una zona de control, entra en la interfaz de creación de munición. En esta pantalla el control deja de centrarse en movimiento y combate, y pasa a enfocarse en escritura, edición y consulta.
+Cuando el jugador interactúa con una zona de control (punto de control), entra en la interfaz de creación de munición. Esta es la única instancia donde puede modificar el contenido de sus balas/slots. En esta pantalla el control deja de centrarse en movimiento y combate, y pasa a enfocarse en escritura, edición y consulta.
 
 ### Navegación general en la interfaz
 
