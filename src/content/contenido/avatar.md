@@ -88,6 +88,8 @@ Como Xanat funciona como avatar, sus expresiones deben ser moderadas. No necesit
 
 Si se opta por un rostro muy simplificado, eso puede reforzar tanto el estilo minimalista como su función de avatar.
 
+![Xanat](@assets/svgs/arte-conceptual/xanat.svg)
+
 ## Movimiento
 
 El diseño del personaje debe facilitar animaciones que transmitan:
