@@ -51,6 +51,10 @@ La representación puede resolverse mediante íconos repetidos, cargas segmentad
 
 En la **parte inferior derecha** de la pantalla debe existir siempre un botón con forma de **hexágono dorado**, que representa el acceso directo a **Emis**. Este botón funciona como uno de los elementos más importantes del HUD, ya que garantiza que el jugador pueda pedir ayuda en cualquier momento de la partida.
 
+![Logo SVG de referencia para Emis](@assets/svgs/Emis.svg)
+
+La identidad visual del acceso a Emis debe apoyarse en un **logo en formato SVG** para conservar nitidez, escalabilidad y consistencia en distintas resoluciones de pantalla.
+
 Su función principal es desplegar la interfaz de conversación con Emis al hacer clic sobre él. Esta aparición debe sentirse similar a la intervención de un acompañante dentro del juego, como una presencia constante que asiste al jugador sin romper la lógica del mundo. La referencia conceptual es una ayuda persistente tipo acompañante, pero reforzada por el uso de un modelo de lenguaje natural.
 
 El botón de Emis debe cumplir las siguientes condiciones:
