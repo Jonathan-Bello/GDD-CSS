@@ -5,7 +5,8 @@ export type GddCollectionName =
   | "sistema-juego"
   | "narrativa"
   | "progresion"
-  | "interfaz";
+  | "interfaz"
+  | "contenido";
 
 interface GddCollectionConfig {
   name: GddCollectionName;
@@ -54,6 +55,11 @@ const GDD_COLLECTIONS: GddCollectionConfig[] = [
     name: "narrativa",
     label: "Narrativa",
     path: "/gdd/narrativa/",
+  },
+  {
+    name: "contenido",
+    label: "Contenido",
+    path: "/gdd/contenido/",
   },
 ];
 

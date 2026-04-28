@@ -93,6 +93,22 @@ const interfazCollection = defineCollection({
   }),
 });
 
+const contenidoCollection = defineCollection({
+  loader: glob({
+    base: "./src/content/contenido",
+    pattern: "**/*.md",
+  }),
+  schema: z.object({
+    id: z.string(),
+    title: z.string(),
+    description: z.string(),
+    date: z.date(),
+    author: reference("authors"),
+    order: z.number().int().nonnegative(),
+    coverImage: z.string().optional(),
+  }),
+});
+
 export const collections = {
   authors: authorsCollection,
   general: entradasCollection,
@@ -100,4 +116,5 @@ export const collections = {
   narrativa: narrativaCollection,
   progresion: progresionCollection,
   interfaz: interfazCollection,
+  contenido: contenidoCollection,
 };
