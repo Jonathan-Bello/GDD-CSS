@@ -44,3 +44,21 @@ Su objetivo es servir como base para storyboard, exploración de mood, pruebas d
 ![Logo SVG de referencia para Emis](@assets/svgs/arte-conceptual/usoHemis.svg)
 
 **Uso:** base para iterar la presencia visual asociada a Emis y su coherencia con la interfaz tecnológica del universo.
+
+## Hub central
+
+![Hub conceptual](@assets/imgs/arte-conceptual/hub.png)
+
+**Uso:** referencia para la zona central de convergencia, punto de encuentro clave y distribución espacial de sistemas de navegación principales.
+
+## Comerciante
+
+![Comerciante conceptual](@assets/imgs/arte-conceptual/comerciante.png)
+
+**Uso:** guía de diseño de personaje secundario, lenguaje visual de comercio y elementos de interacción económica en el mundo.
+
+## Zona de tienda
+
+![Zona de tienda conceptual](@assets/imgs/arte-conceptual/zona-tienda.png)
+
+**Uso:** referencia para la arquitectura comercial, disposición de espacios de venta y atmósfera de intercambio dentro del mundo del juego.
