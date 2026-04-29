@@ -23,27 +23,47 @@ El estilo debe sentirse simple de leer, fuerte en identidad y viable para produc
 - Estética tecnológica integrada con vegetación y ruina
 - Minimalismo visual con énfasis en composición y contraste
 
-## Paleta principal
+## Paleta de colores
 
-La identidad cromática del juego debe construirse alrededor de tres tonos principales:
+La identidad visual del juego se construye a partir de tres colores principales con significado narrativo y funcional.
 
-- **Blanco**
-- **Verde**
-- **Naranja**
+### Blanco — Tecnología
 
-Estos colores funcionan como base para toda la propuesta visual.
+Representa tecnología avanzada, pura y funcional.
 
-### Blanco
+- Usado en estructuras futuristas, interfaces y elementos activos.
+- Transmite limpieza, orden y evolución.
 
-Representa tecnología, pureza estructural, superficies limpias y vestigios del viejo mundo idealizado.
+### Verde — Naturaleza
 
-### Verde
+Representa vida, crecimiento y recuperación del entorno.
 
-Representa naturaleza, invasión vegetal, vida persistente, recuperación orgánica y el corazón solarpunk del entorno.
+- Usado en vegetación, escenarios y elementos orgánicos.
+- Color dominante del entorno visual.
 
-### Naranja
+### Naranja — Energía, óxido y protagonista
 
-Representa energía, señalización, actividad tecnológica, advertencia, calor y puntos de atención visual.
+Representa energía, peligro y desgaste tecnológico asociado al óxido.
+
+- Color principal del protagonista.
+- Usado en enemigos, puntos de interés y elementos interactivos.
+- Funciona como color de acento para guiar al jugador.
+
+### Reglas de uso del color
+
+- El verde domina el entorno para reforzar la idea de un mundo vivo.
+- El blanco define la tecnología funcional y las estructuras clave.
+- El naranja indica interacción, peligro o relevancia.
+- Se mantiene un uso limitado de colores por escena para conservar claridad visual.
+- Las sombras se construyen con variaciones cromáticas, evitando negros puros.
+
+### Intención visual del color
+
+El uso del color busca transmitir un mundo donde:
+
+- La naturaleza ha reclamado la civilización.
+- La tecnología aún persiste de forma limpia y silenciosa.
+- El jugador, representado por el naranja, destaca como elemento activo dentro de un entorno pasivo.
 
 ## Sensación general del mundo
 
