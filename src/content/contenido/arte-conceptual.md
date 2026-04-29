@@ -62,3 +62,9 @@ Su objetivo es servir como base para storyboard, exploración de mood, pruebas d
 ![Zona de tienda conceptual](@assets/imgs/arte-conceptual/zona-tienda.png)
 
 **Uso:** referencia para la arquitectura comercial, disposición de espacios de venta y atmósfera de intercambio dentro del mundo del juego.
+
+## Guardianes de la ciudadela
+
+![Guardianes conceptual](@assets/imgs/arte-conceptual/guardianes-ciudadela.png)
+
+**Uso:** referencia para el diseño de enemigos fuertes, guardianes defensores de zonas clave, proporción, silueta característica y armadura tecnológica avanzada.
