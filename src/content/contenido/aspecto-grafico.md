@@ -132,10 +132,9 @@ Las siguientes referencias fueron cuidadosamente seleccionadas para establecer y
 
 **¿Por qué?** _Hollow Knight_ se incorpora principalmente como referencia de mecánicas narrativas y del uso de cámara dentro de un entorno 2D. Nos interesa cómo articula exploración, ritmo y lectura espacial sin romper la inmersión. Esta referencia guía la forma en que conectaremos atmósfera, narrativa ambiental y desplazamiento visual del jugador en pantalla.
 
-
 ## Referencia de tono postapocalíptico esperanzador: Kipo (DreamWorks)
 
-![Referencia de Kipo and the Age of Wonderbeasts](https://upload.wikimedia.org/wikipedia/en/8/86/Kipo_and_the_Age_of_Wonderbeasts.jpg)
+![Referencia de Kipo and the Age of Wonderbeasts](https://i.redd.it/kipo-and-the-age-of-wonderbeasts-2020-v0-seqag1a2g0061.png?width=1920&format=png&auto=webp&s=d8d853d07ad22077df47c301f370aa56ab590c75)
 
 **¿Por qué?** _Kipo and the Age of Wonderbeasts_ se suma como referencia directa porque propone un mundo postapocalíptico donde la naturaleza domina el paisaje, pero sin caer en la estética típica de destrucción total, gris o desesperanzada. Esta mirada conecta con el objetivo visual de _CSS_: presentar un entorno verde, vivo y bonito, en el que conviven ruina tecnológica, color y sensación de aventura. La referencia nos ayuda a justificar un tono más luminoso y orgánico dentro del género postapocalíptico.
 
