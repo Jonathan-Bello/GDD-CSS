@@ -37,7 +37,7 @@ La representación visual puede resolverse mediante una barra segmentada, contin
 
 El jugador debe contar con un indicador visible de cuántas **cargas de curación** o **recargas solares** tiene disponibles en ese momento. Este elemento puede colocarse **junto a la barra de vida** o bien en la **esquina inferior derecha**, dependiendo de la composición final del HUD y de cuál de las dos opciones ofrezca mejor lectura en pantalla.
 
-Su función es informar de forma inmediata cuántas veces puede curarse el jugador antes de llegar al siguiente punto de control. Como este recurso opera bajo una lógica limitada y se recarga en zonas seguras, su visibilidad es importante para la toma de decisiones durante la exploración y especialmente durante el combate.
+Su función es informar de forma inmediata cuántas veces puede curarse el jugador antes de llegar al siguiente punto de control. Como este recurso opera bajo una lógica limitada y se recarga en Puntos de control, su visibilidad es importante para la toma de decisiones durante la exploración y especialmente durante el combate.
 
 Este indicador debe cumplir las siguientes condiciones:
 
@@ -81,7 +81,7 @@ El panel no debe bloquear innecesariamente la lectura del escenario, y su apertu
 
 ## Interfaz de creación de munición
 
-La interfaz de creación de munición es una de las piezas centrales del HUD expandido del juego. Esta aparece al interactuar con una **zona de control** y permite al jugador diseñar la bala que utilizará después en combate y en la resolución de situaciones del entorno. A diferencia del HUD permanente de exploración, esta interfaz ocupa una parte importante de la pantalla y concentra varias funciones en simultáneo.
+La interfaz de creación de munición es una de las piezas centrales del HUD expandido del juego. Esta aparece al interactuar con un **Punto de control** y permite al jugador diseñar la bala que utilizará después en combate y en la resolución de situaciones del entorno. A diferencia del HUD permanente de exploración, esta interfaz ocupa una parte importante de la pantalla y concentra varias funciones en simultáneo.
 
 Su estructura general debe dividirse en áreas muy claras y diferenciadas.
 

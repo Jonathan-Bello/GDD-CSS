@@ -59,13 +59,13 @@ flowchart TD
 
 ## Transiciones principales durante la partida
 
-Durante la partida, el jugador alterna entre diferentes estados de interacción que forman el ritmo general del juego. La mayor parte del tiempo se encontrará explorando y combatiendo, pero también podrá acceder a zonas de control para editar su munición, entrar en cápsulas de desafío para desbloquear propiedades, interactuar con entidades mediante diálogos y enfrentarse a jefes al final de cada zona. Estas transiciones deben sentirse naturales y rápidas, evitando romper el ritmo de exploración y aprendizaje.
+Durante la partida, el jugador alterna entre diferentes estados de interacción que forman el ritmo general del juego. La mayor parte del tiempo se encontrará explorando y combatiendo, pero también podrá acceder a Puntos de control para editar su munición, entrar en cápsulas de desafío para desbloquear propiedades, interactuar con entidades mediante diálogos y enfrentarse a jefes al final de cada zona. Estas transiciones deben sentirse naturales y rápidas, evitando romper el ritmo de exploración y aprendizaje.
 
 ```mermaid
 flowchart LR
     A[Exploración] --> B[Combate]
     B --> A
-    A --> C[Zona de control]
+    A --> C[Punto de control]
     C --> D[Editor de munición CSS]
     D --> A
     A --> E[Diálogo con entidad]
