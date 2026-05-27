@@ -7,9 +7,10 @@ author: "jonathan-bello"
 order: 1
 coverImage: "/figma.jpg"
 ---
-- **Nombre:** Citadel of Solar Souls (CSS)
+- **Nombre:** Citadel of Solar Souls (IA)
 - **Plataforma:** PC y navegador web
-- **Fecha de lanzamiento:** Prototipo en desarrollo, con entrega de demo prevista para el viernes 24 de abril de 2026
+- **Estado del proyecto:** Demo vertical slice en desarrollo
 - **Idiomas:** Español
 - **Modos de juego:** Un jugador
-- **Género:** Videojuego educativo, serious game, aventura interactiva con retos de CSS, Metroidvania, Souls
+- **Género principal:** Metroidvania de acción y exploración en 2D
+- **Etiquetas secundarias:** souls-like ligero, videojuego educativo, aventura de ciencia ficción solarpunk

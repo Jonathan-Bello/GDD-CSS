@@ -44,11 +44,11 @@ Este loop convierte cada nuevo concepto de CSS en una herramienta viva y no en i
 
 ## Loop de edición de munición
 
-La creación de balas personalizadas es uno de los núcleos del juego. Este loop ocurre cuando el jugador llega a una zona de control y decide preparar o ajustar su munición antes de volver al mapa.
+La creación de balas personalizadas es uno de los núcleos del juego. Este loop ocurre cuando el jugador llega a una Punto de control y decide preparar o ajustar su munición antes de volver al mapa.
 
 ```mermaid
 flowchart LR
-    A[Llegar a zona de control] --> B[Abrir editor]
+    A[Llegar a Punto de control] --> B[Abrir editor]
     B --> C[Escribir propiedades CSS]
     C --> D[Visualizar resultado]
     D --> E[Consultar a Emis si es necesario]

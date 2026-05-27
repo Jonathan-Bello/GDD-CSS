@@ -19,7 +19,7 @@ La movilidad no solo cumple una función de desplazamiento, sino que constituye 
 
 El combate se apoya en un sistema de disparo frontal como acción ofensiva principal. El personaje puede atacar hacia adelante y también modificar la dirección del disparo para apuntar hacia arriba o hacia abajo. Para disparos diagonales, el jugador deberá combinar la dirección con una entrada adicional específica. La intención es conservar un sistema comprensible y directo, evitando una complejidad excesiva en el apuntado manual.
 
-Debido a que el juego pone gran parte de su exigencia en la evasión, el combate no busca castigar al jugador con una puntería innecesariamente difícil. Por ello, se contempla un sistema de **auto target** como opción de accesibilidad. Este sistema permitirá fijar o priorizar al enemigo más cercano, facilitando que el personaje oriente sus disparos de manera automática, especialmente durante combates contra jefes o situaciones de mayor presión. Esta ayuda debe poder activarse o desactivarse, ya que no forma parte de la dificultad base, sino de las opciones para ampliar la accesibilidad del juego.
+Debido a que el juego pone gran parte de su exigencia en la evasión, el combate no busca castigar al jugador con una puntería innecesariamente difícil. Por ello, se contempla un sistema de **auto-target** como opción de accesibilidad. Este sistema permitirá fijar o priorizar al enemigo más cercano, facilitando que el personaje oriente sus disparos de manera automática, especialmente durante combates contra jefes o situaciones de mayor presión. Esta ayuda debe poder activarse o desactivarse, ya que no forma parte de la dificultad base, sino de las opciones para ampliar la accesibilidad del juego.
 
 El daño, comportamiento y utilidad de cada disparo dependerán de la configuración de la munición creada por el jugador mediante el sistema de CSS. De esta manera, el combate no se basa únicamente en reflejos, sino también en la comprensión de las propiedades y en la preparación previa de la munición adecuada para cada situación.
 
@@ -49,7 +49,7 @@ Con esto se evita que el jugador se beneficie de conocimiento externo al progres
 
 ### Slots de munición y gestión en tiempo real
 
-El jugador no puede reescribir ni modificar su munición en cualquier lugar del mapa: la edición de balas está restringida exclusivamente a los **puntos de control** (zonas de control). Fuera de esos puntos, la configuración de cada bala queda bloqueada hasta volver a una zona segura.
+El jugador no puede reescribir ni modificar su munición en cualquier lugar del mapa: la edición de balas está restringida exclusivamente a los **Puntos de control**. Fuera de esos puntos, la configuración de cada bala queda bloqueada hasta volver a un Punto de control.
 
 Durante la progresión, el jugador desbloquea espacios adicionales de equipamiento de munición hasta un máximo de **3 slots**:
 
@@ -61,7 +61,7 @@ Cada slot puede almacenar una bala distinta (con propiedades CSS diferentes). En
 
 ## Creación de munición mediante CSS
 
-La mecánica central y más distintiva del juego es la posibilidad de crear munición personalizada utilizando propiedades de CSS. Esta acción no se realiza directamente en medio del combate, sino únicamente en **zonas de control / puntos de control** que funcionan como espacios seguros de preparación, equivalentes conceptualmente a una hoguera o punto de descanso. Al interactuar con una de estas zonas, el jugador abre una interfaz especial donde puede diseñar la bala que utilizará después en el mapa.
+La mecánica central y más distintiva del juego es la posibilidad de crear munición personalizada utilizando propiedades de CSS. Esta acción no se realiza directamente en medio del combate, sino únicamente en **Puntos de control** que funcionan como espacios seguros de preparación (similares a una hoguera o punto de descanso). Al interactuar con una de estas zonas, el jugador abre una interfaz especial donde puede diseñar la bala que utilizará después en el mapa.
 
 La interfaz de creación de munición se divide en tres áreas principales. El espacio más grande, que ocupa aproximadamente dos tercios de la pantalla, corresponde al **lienzo**, donde el jugador visualiza en tiempo real la munición que está construyendo. En el tercio restante de la pantalla se ubican dos paneles: en la parte superior, un **editor de código** donde el jugador escribe las propiedades CSS que desea aplicar; en la parte inferior, un **chat con Emis**, la inteligencia artificial acompañante.
 
@@ -91,7 +91,7 @@ El inventario no está pensado como un menú de gestión compleja ni como un esp
 
 ## Curación y recurso de recuperación
 
-La recuperación de vida se realiza mediante un recurso limitado llamado **Luz Solar**, presentado como una cápsula de energía utilizable por el jugador. Su lógica se inspira en sistemas como el estus de _Dark Souls_: el jugador cuenta con una cantidad determinada de cargas antes de llegar al siguiente punto de control, y estas se recargan completamente al descansar o interactuar con una zona segura.
+La recuperación de vida se realiza mediante un recurso limitado llamado **Luz Solar**, presentado como una cápsula de energía utilizable por el jugador. Su lógica se inspira en sistemas como el estus de _Dark Souls_: el jugador cuenta con una cantidad determinada de cargas antes de llegar al siguiente punto de control, y estas se recargan completamente al descansar o interactuar con un Punto de control.
 
 El uso de la curación no depende del inventario ni del consumo manual de objetos desde menús, sino de un botón específico asignado a esta acción. Esto permite mantener el ritmo del combate y evita interrumpir innecesariamente la partida con navegación de interfaces. La gestión de la Luz Solar introduce una capa de administración del riesgo y refuerza la importancia de los puntos de control en la estructura del juego.
 

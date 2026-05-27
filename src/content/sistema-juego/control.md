@@ -45,7 +45,7 @@ El dash puede ejecutarse tanto en tierra como en el aire. Su uso es central para
 - **S / Flecha abajo + clic izquierdo:** disparar hacia abajo
 - **Alt izquierdo + dirección + clic izquierdo:** disparo diagonal
 
-El disparo base siempre se proyecta al frente. Las variantes direccionales permiten ampliar la cobertura ofensiva sin convertir el apuntado en una carga excesiva. El sistema de auto target, cuando esté activado, funcionará como apoyo de accesibilidad, pero no modifica la asignación de botones.
+El disparo base siempre se proyecta al frente. Las variantes direccionales permiten ampliar la cobertura ofensiva sin convertir el apuntado en una carga excesiva. El sistema de auto-target, cuando esté activado, funcionará como apoyo de accesibilidad, pero no modifica la asignación de botones.
 
 ### Cambio de slot de munición
 
@@ -90,9 +90,9 @@ Desde este menú el jugador puede reanudar la partida, consultar opciones, revis
 
 El inventario permite consultar objetos importantes y sus descripciones. El registro de propiedades funciona como un compendio de habilidades y conceptos desbloqueados durante la aventura.
 
-## Controles dentro de la zona de control
+## Controles dentro del Punto de control
 
-Cuando el jugador interactúa con una zona de control (punto de control), entra en la interfaz de creación de munición. Esta es la única instancia donde puede modificar el contenido de sus balas/slots. En esta pantalla el control deja de centrarse en movimiento y combate, y pasa a enfocarse en escritura, edición y consulta.
+Cuando el jugador interactúa con un **Punto de control**, entra en la interfaz de creación de munición. Esta es la única instancia donde puede modificar el contenido de sus balas/slots. En esta pantalla el control deja de centrarse en movimiento y combate, y pasa a enfocarse en escritura, edición y consulta.
 
 ### Navegación general en la interfaz
 
