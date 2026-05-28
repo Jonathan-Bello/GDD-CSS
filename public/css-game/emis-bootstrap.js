@@ -21,6 +21,39 @@
     return nextInit;
   }
 
+  function normalizeBackendBody(body) {
+    if (!body || typeof body !== "object") return body;
+    var reply = typeof body.reply === "string" ? body.reply.trim() : "";
+    if (!reply || reply.charAt(0) !== "{") return body;
+
+    try {
+      var parsed = JSON.parse(reply);
+      var nestedReply = parsed && (
+        parsed.reply ||
+        parsed.message ||
+        parsed.Rippledai ||
+        parsed.rippledai
+      );
+      if (typeof nestedReply === "string" && nestedReply.trim()) {
+        body.reply = nestedReply.trim();
+      }
+    } catch (_error) {}
+
+    return body;
+  }
+
+  function enrichRequestBody(init) {
+    if (!init || typeof init.body !== "string") return init;
+    try {
+      var parsed = JSON.parse(init.body);
+      if (!parsed.chat_surface) {
+        parsed.chat_surface = "general_chat";
+      }
+      init.body = JSON.stringify(parsed);
+    } catch (_error) {}
+    return init;
+  }
+
   function installFetchPatch() {
     if (!window.fetch || window.__emisFetchPatchInstalled) return;
     window.__emisFetchPatchInstalled = true;
@@ -28,7 +61,7 @@
 
     window.fetch = function emisFetch(input, init) {
       var nextInput = input;
-      var nextInit = withApiKeyHeaders(init);
+      var nextInit = enrichRequestBody(withApiKeyHeaders(init));
       var nextUrl = rewriteUrl(input);
 
       if (typeof input === "string" || input instanceof URL) {
@@ -37,7 +70,22 @@
         nextInput = new Request(nextUrl, input);
       }
 
-      return nativeFetch(nextInput, nextInit);
+      return nativeFetch(nextInput, nextInit).then(function (response) {
+        if (!String(response.headers.get("content-type") || "").includes("application/json")) {
+          return response;
+        }
+
+        return response.clone().json().then(function (body) {
+          var normalized = normalizeBackendBody(body);
+          return new Response(JSON.stringify(normalized), {
+            status: response.status,
+            statusText: response.statusText,
+            headers: response.headers,
+          });
+        }).catch(function () {
+          return response;
+        });
+      });
     };
   }
 
