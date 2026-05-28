@@ -47,11 +47,22 @@
     try {
       var parsed = JSON.parse(init.body);
       if (!parsed.chat_surface) {
-        parsed.chat_surface = "general_chat";
+        parsed.chat_surface = resolveChatSurfaceFromOverlay();
       }
       init.body = JSON.stringify(parsed);
     } catch (_error) {}
     return init;
+  }
+
+  function resolveChatSurfaceFromOverlay() {
+    try {
+      var frame = document.getElementById("css-game-html-overlay-frame");
+      var doc = frame && frame.contentDocument;
+      if (doc && (doc.getElementById("emisPanel") || doc.getElementById("codeInput") || doc.querySelector(".editor-shell"))) {
+        return "bullet_creator";
+      }
+    } catch (_error) {}
+    return "general_chat";
   }
 
   function installFetchPatch() {
