@@ -43,4 +43,17 @@ All commands are run from the root of the project, from a terminal:
 
 ## 👀 Want to learn more?
 
+## Godot + Emis backend
+
+The playable demo lives in `public/css-game`. Configure the external Emis
+Express backend in `public/css-game/emis-config.js`:
+
+```js
+window.EMIS_BACKEND_URL = "https://css-game-emis.onrender.com";
+```
+
+After exporting Godot, copy the web build into `public/css-game` and keep
+`emis-config.js` next to `index.html`. The game asks the player for a Gemini API
+key in the Emis chat overlay and keeps it only in memory for the current tab.
+
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
