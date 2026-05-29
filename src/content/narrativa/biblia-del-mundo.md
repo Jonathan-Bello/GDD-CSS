@@ -10,6 +10,8 @@ coverImage: "../../assets/imgs/arte-conceptual/mundo.png"
 
 Jhonnatan López Aguilar es el autor del lore base que da origen al trasfondo amplio de _Citadel of Solar Souls_. Esta entrada conserva el espíritu principal de ese documento para usarlo como referencia narrativa dentro del GDD, sin reemplazar las versiones operativas orientadas a gameplay.
 
+<a href="/lore.pdf" target="_blank" rel="noopener noreferrer">Abrir documento completo de lore en PDF</a>
+
 ## Apertura del mundo
 
 El relato sitúa al universo en el año **5182**, en un momento donde la tecnología, la robótica y la infraestructura científica han alcanzado un nivel de sofisticación extraordinario. El planeta ya no se encuentra en equilibrio natural: la radiación solar aumentó, la capa de ozono requirió sistemas de protección y múltiples catástrofes transformaron la geografía de la Tierra.
