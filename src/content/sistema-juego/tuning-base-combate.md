@@ -5,7 +5,7 @@ description: "Parámetros iniciales provisionales para combate, curación, movil
 date: 2026-04-23
 author: "jonathan-bello"
 order: 8
-coverImage: "/gdd-covers/sistema-juego.png"
+coverImage: "../../assets/imgs/arte-conceptual/guardianes-ciudadela.png"
 ---
 
 ## Tabla base (**provisional**)
@@ -29,3 +29,4 @@ Estos valores deben tratarse como baseline para playtests internos. Ajustar por 
 - uso de curación por zona,
 - tasa de muertes por jefe,
 - frecuencia de uso del dash.
+

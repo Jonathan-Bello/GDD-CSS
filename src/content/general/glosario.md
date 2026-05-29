@@ -5,7 +5,7 @@ description: "Definiciones operativas de términos clave del GDD para mantener c
 date: 2026-04-23
 author: "jonathan-bello"
 order: 5
-coverImage: "/gdd-covers/general.png"
+coverImage: "../../assets/imgs/arte-conceptual/portada.png"
 ---
 
 ## Objetivo
@@ -28,3 +28,4 @@ Este glosario define términos oficiales de _Citadel of Solar Souls (IA)_ para e
 ## Nota de uso editorial
 
 Cuando exista terminología histórica en documentos antiguos (por ejemplo, “zona segura” o “zona de control”), debe traducirse al término oficial: **Pilar solar**.
+

@@ -5,7 +5,7 @@ description: "Vista rápida de las características generales del videojuego y s
 date: 2026-04-23
 author: "jonathan-bello"
 order: 1
-coverImage: "/gdd-covers/general.png"
+coverImage: "../../assets/imgs/arte-conceptual/portada.png"
 ---
 - **Nombre:** Citadel of Solar Souls (IA)
 - **Plataforma:** PC y navegador web
@@ -17,3 +17,4 @@ coverImage: "/gdd-covers/general.png"
 - **Etiquetas secundarias:** souls-like ligero, videojuego educativo, aventura de ciencia ficción solarpunk
 - **Propiedades CSS evaluadas en el prototipo:** `fill`, `stroke`, `opacity`, `width`, `height`
 - **URLs oficiales:** sitio `https://css.jonathanbello.com/`, GDD `https://css.jonathanbello.com/gdd/`, demo `https://css.jonathanbello.com/demo/`
+

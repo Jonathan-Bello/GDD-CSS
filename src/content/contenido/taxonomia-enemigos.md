@@ -5,7 +5,7 @@ description: "Clasificación funcional de enemigos para diseño de combate, prog
 date: 2026-04-23
 author: "jonathan-bello"
 order: 4
-coverImage: "/gdd-covers/contenido.png"
+coverImage: "../../assets/imgs/arte-conceptual/concepto.png"
 ---
 
 ## Clases principales
@@ -33,3 +33,4 @@ coverImage: "/gdd-covers/contenido.png"
 1. Todo enemigo debe justificar su función histórica en la ciudad.
 2. Toda debilidad CSS debe estar alineada con propiedades disponibles en su tramo de progresión.
 3. Todo élite o jefe debe comunicar telegráficamente sus ventanas de castigo.
+

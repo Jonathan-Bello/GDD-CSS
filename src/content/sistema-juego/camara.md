@@ -5,7 +5,7 @@ description: "Descripción del comportamiento de la cámara durante la partida, 
 date: 2026-04-23
 author: "jonathan-bello"
 order: 4
-coverImage: "/gdd-covers/sistema-juego.png"
+coverImage: "../../assets/imgs/arte-conceptual/guardianes-ciudadela.png"
 ---
 La cámara de _Citadel of Solar Souls (CSS)_ es una cámara lateral fija con seguimiento continuo al jugador, pensada para acompañar la exploración, el combate y el plataformeo sin introducir complejidad innecesaria. Su comportamiento general toma como referencia la claridad y estabilidad de cámara presente en juegos como _Hollow Knight_, donde el encuadre se mantiene centrado en la acción y permite al jugador leer con facilidad el espacio que lo rodea.
 
@@ -16,3 +16,4 @@ Uno de los criterios más importantes de esta cámara es la visibilidad vertical
 Sin embargo, este desplazamiento vertical debe entenderse como una ayuda complementaria y no como una solución principal de diseño. El juego no debe depender de que el jugador revise constantemente lo que hay debajo para evitar errores injustos. Si una sección exige demasiado este comportamiento, entonces probablemente existe un problema de composición del escenario o de visibilidad general. En consecuencia, las áreas donde sea necesario mirar hacia abajo deben ser mínimas y cuidadosamente justificadas.
 
 En términos generales, la cámara debe cumplir tres objetivos: seguir al jugador con estabilidad, mostrar el entorno con claridad suficiente para el combate y el plataformeo, y permitir un pequeño ajuste manual hacia abajo cuando la situación lo amerite. Su diseño busca reforzar una experiencia fluida, legible y justa, evitando que la dificultad del juego provenga de una mala lectura visual del espacio.
+

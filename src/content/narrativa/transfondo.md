@@ -5,7 +5,7 @@ description: "Contexto histórico y conceptual del mundo de Citadel of Solar Sou
 date: 2026-04-23
 author: "jonathan-bello"
 order: 1
-coverImage: "/gdd-covers/narrativa.png"
+coverImage: "../../assets/imgs/arte-conceptual/mundo.png"
 ---
 
 # Trasfondo
@@ -23,3 +23,4 @@ Doscientos años después de ese acontecimiento, el mundo continúa funcionando 
 En este contexto, el jugador despierta en una mansión sin comprender quién es ni por qué está ahí. Para los robots que aún conservan funciones sociales o cognitivas, su aparición representa un milagro: creen estar frente al primer humano que han visto en dos siglos. El hecho de que el protagonista posea un **Hemis** refuerza esta idea y lo convierte en una figura central dentro de un mundo que todavía reconoce la autoridad, el valor o la presencia de lo humano.
 
 El conflicto de fondo del juego nace de esta contradicción: el protagonista es tratado como el último humano en una civilización vacía de humanidad, pero la verdad final revelará que él también es una creación artificial. El mundo, por tanto, no es solo el escenario de una aventura, sino una interrogante abierta sobre identidad, memoria, herencia tecnológica y el sentido de una civilización que siguió funcionando incluso después de perder a sus creadores.
+

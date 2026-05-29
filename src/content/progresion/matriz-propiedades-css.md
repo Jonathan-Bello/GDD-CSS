@@ -5,7 +5,7 @@ description: "Mapa de aplicación de propiedades CSS por combate, exploración, 
 date: 2026-04-23
 author: "jonathan-bello"
 order: 4
-coverImage: "/gdd-covers/progresion.png"
+coverImage: "../../assets/imgs/arte-conceptual/hub.png"
 ---
 
 > La evaluación del prototipo se concentra en `fill`, `stroke`, `opacity`, `width` y `height`. Las demás propiedades se mantienen como expansión futura.
@@ -18,3 +18,4 @@ coverImage: "/gdd-covers/progresion.png"
 | Contorno y presencia | `stroke` | Reforzar lectura de impacto y afinidad | Diferenciar estados de objetos | Interacciones por borde/contorno | Media | Avance parcial |
 | Transparencia | `opacity` | Lectura de enemigos o estados semitransparentes | Ver pasajes o capas ocultas | Secuencias de visibilidad | Media | Avance parcial |
 | Futuro | `z-index`, `position`, `transform`, `scale`, `transition-duration` | Sinergias avanzadas | Gating espacial y temporal | Puzzles de mayor complejidad | Alta | Iteraciones posteriores |
+

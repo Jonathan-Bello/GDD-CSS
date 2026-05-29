@@ -5,7 +5,7 @@ description: "Plantilla estándar de diseño para cápsulas que enseñan y valid
 date: 2026-04-23
 author: "jonathan-bello"
 order: 5
-coverImage: "/gdd-covers/contenido.png"
+coverImage: "../../assets/imgs/arte-conceptual/concepto.png"
 ---
 
 ## Plantilla estándar
@@ -59,3 +59,4 @@ coverImage: "/gdd-covers/contenido.png"
 - **Tiempo objetivo (provisional):** 8-12 min.
 - **Recompensa:** Desbloqueo oficial de `transform`.
 - **Aplicación inmediata:** Combate de élite en la misma zona.
+

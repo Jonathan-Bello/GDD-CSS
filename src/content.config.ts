@@ -18,14 +18,14 @@ const entradasCollection = defineCollection({
     base: "./src/content/general",
     pattern: "**/*.md",
   }),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     id: z.string(),
     title: z.string(),
     description: z.string(),
     date: z.date(),
     author: reference("authors"),
     order: z.number().int().nonnegative(),
-    coverImage: z.string().optional(),
+    coverImage: image().optional(),
   }),
 });
 
@@ -34,14 +34,14 @@ const sistemaJuegoCollection = defineCollection({
     base: "./src/content/sistema-juego",
     pattern: "**/*.md",
   }),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     id: z.string(),
     title: z.string(),
     description: z.string(),
     date: z.date(),
     author: reference("authors"),
     order: z.number().int().nonnegative(),
-    coverImage: z.string().optional(),
+    coverImage: image().optional(),
   }),
 });
 
@@ -50,14 +50,14 @@ const narrativaCollection = defineCollection({
     base: "./src/content/narrativa",
     pattern: "**/*.md",
   }),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     id: z.string(),
     title: z.string(),
     description: z.string(),
     date: z.date(),
     author: reference("authors"),
     order: z.number().int().nonnegative(),
-    coverImage: z.string().optional(),
+    coverImage: image().optional(),
   }),
 });
 
@@ -66,14 +66,14 @@ const progresionCollection = defineCollection({
     base: "./src/content/progresion",
     pattern: "**/*.md",
   }),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     id: z.string(),
     title: z.string(),
     description: z.string(),
     date: z.date(),
     author: reference("authors"),
     order: z.number().int().nonnegative(),
-    coverImage: z.string().optional(),
+    coverImage: image().optional(),
   }),
 });
 
@@ -82,14 +82,14 @@ const interfazCollection = defineCollection({
     base: "./src/content/interfaz",
     pattern: "**/*.md",
   }),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     id: z.string(),
     title: z.string(),
     description: z.string(),
     date: z.date(),
     author: reference("authors"),
     order: z.number().int().nonnegative(),
-    coverImage: z.string().optional(),
+    coverImage: image().optional(),
   }),
 });
 
@@ -98,14 +98,14 @@ const contenidoCollection = defineCollection({
     base: "./src/content/contenido",
     pattern: "**/*.md",
   }),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     id: z.string(),
     title: z.string(),
     description: z.string(),
     date: z.date(),
     author: reference("authors"),
     order: z.number().int().nonnegative(),
-    coverImage: z.string().optional(),
+    coverImage: image().optional(),
   }),
 });
 

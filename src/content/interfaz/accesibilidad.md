@@ -5,7 +5,7 @@ description: "Checklist operativo de accesibilidad para combate, lectura de UI y
 date: 2026-04-23
 author: "jonathan-bello"
 order: 4
-coverImage: "/gdd-covers/interfaz.png"
+coverImage: "../../assets/imgs/arte-conceptual/jefe-final.png"
 ---
 
 ## Checklist base (**provisional**)
@@ -26,3 +26,4 @@ coverImage: "/gdd-covers/interfaz.png"
 - Toda opción de accesibilidad debe ser explicada en lenguaje claro.
 - Cambios de accesibilidad no deben requerir reiniciar partida.
 - El impacto de cada opción debe ser visible inmediatamente en UI.
+

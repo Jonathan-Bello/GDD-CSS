@@ -5,7 +5,7 @@ description: "Descripción del esquema de control del juego, las acciones princi
 date: 2026-04-23
 author: "jonathan-bello"
 order: 5
-coverImage: "/gdd-covers/sistema-juego.png"
+coverImage: "../../assets/imgs/arte-conceptual/guardianes-ciudadela.png"
 ---
 El esquema de control de _Citadel of Solar Souls (CSS)_ está diseñado principalmente para **teclado y ratón**, ya que una de las mecánicas centrales del juego consiste en escribir y editar código CSS dentro de una interfaz integrada. Aunque a futuro podría contemplarse compatibilidad parcial con mando para el desplazamiento y el combate, la experiencia base y recomendada del juego está pensada para jugarse con teclado y ratón.
 
@@ -153,3 +153,4 @@ Predominan ratón, teclas de navegación y confirmación mediante clic o teclado
 El control debe estar pensado para no generar fricción entre la parte de acción y la parte de edición. El jugador debe poder pasar de explorar y combatir a escribir código y volver al mapa sin sentir que está entrando en dos juegos distintos. La prioridad es que el esquema sea coherente, cómodo y funcional para una experiencia donde jugar y programar forman parte de una misma lógica de interacción.
 
 A futuro, cualquier adaptación a mando deberá considerar que la escritura de código seguiría requiriendo teclado, por lo que el esquema principal del proyecto continuará siendo teclado y ratón.
+

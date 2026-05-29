@@ -5,7 +5,7 @@ description: "Principios de diseño que definen la identidad del juego y sirven 
 date: 2026-04-23
 author: "jonathan-bello"
 order: 4
-coverImage: "/gdd-covers/general.png"
+coverImage: "../../assets/imgs/arte-conceptual/portada.png"
 ---
 ## Primero es juego, después aprendizaje
 
@@ -50,3 +50,4 @@ El estilo gráfico del juego debe mantenerse dentro de una línea visual sencill
 ## Coherencia entre combate, narrativa, estética y aprendizaje
 
 Las distintas capas del juego deben sentirse parte de una misma experiencia. El combate, la exploración, la ambientación, la progresión, el diseño visual y el uso de CSS no pueden operar como sistemas aislados. Cada nueva mecánica, enemigo, escenario, interfaz o idea de contenido debe evaluarse en función de si fortalece esa unión entre juego y aprendizaje, o si rompe la identidad del proyecto al introducir elementos que no dialogan con su lógica central. Todo debe sentirse como parte de una misma ciudad, de una misma filosofía de diseño y de una misma experiencia jugable.
+

@@ -5,7 +5,7 @@ description: "Descripción de los menús principales y secundarios del juego, su
 date: 2026-04-23
 author: "jonathan-bello"
 order: 2
-coverImage: "/gdd-covers/interfaz.png"
+coverImage: "../../assets/imgs/arte-conceptual/jefe-final.png"
 ---
 
 # Menús
@@ -427,3 +427,4 @@ El sistema de menús debe apoyar tres necesidades principales del jugador:
 ## Principio general del sistema de menús
 
 Los menús de _Citadel of Solar Souls (CSS)_ deben ser funcionales, limpios y coherentes con el resto del diseño del juego. No deben sentirse como un sistema ajeno, sino como una extensión ordenada de la experiencia. Su estructura debe ayudar al jugador a orientarse, consultar, ajustar y volver al juego rápidamente, reforzando en todo momento la claridad, la accesibilidad y la sensación de control.
+

@@ -5,7 +5,7 @@ description: "Ciclo principal de progresión del juego, desde la exploración de
 date: 2026-04-23
 author: "jonathan-bello"
 order: 1
-coverImage: "/gdd-covers/progresion.png"
+coverImage: "../../assets/imgs/arte-conceptual/hub.png"
 ---
 
 El game loop principal de _Citadel of Solar Souls (CSS)_ se basa en una estructura de progreso por zonas donde el jugador explora, aprende, aplica y supera una prueba final. Cada área del juego introduce nuevos enemigos, nuevos obstáculos y nuevos conceptos de CSS que deben ser descubiertos y dominados para poder avanzar. El objetivo de este loop es que la progresión del jugador no dependa únicamente de su habilidad motriz, sino también de su comprensión del sistema central del juego.
@@ -58,3 +58,4 @@ El jefe de la zona actúa como una prueba final. Su diseño debe exigir que el j
 ### Expansión
 
 Al completar la zona, el jugador accede a una nueva área del mapa, lo que reinicia el loop en un nivel de complejidad superior o con nuevas variaciones.
+

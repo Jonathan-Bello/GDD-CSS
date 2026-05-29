@@ -5,7 +5,7 @@ description: "Ciclos secundarios de progresión que sostienen la experiencia de 
 date: 2026-04-23
 author: "jonathan-bello"
 order: 2
-coverImage: "/gdd-covers/progresion.png"
+coverImage: "../../assets/imgs/arte-conceptual/hub.png"
 ---
 
 Además del loop principal de progresión por zonas, _Citadel of Solar Souls (CSS)_ se sostiene sobre varios ciclos secundarios que operan de forma constante durante la partida. Estos loops son más cortos, más específicos y están ligados a aspectos concretos de la experiencia, como el combate, el aprendizaje, la edición de munición o la exploración metroidvania.
@@ -86,3 +86,4 @@ flowchart LR
     C --> D[Editar munición si es necesario]
     D --> E[Retomar exploración]
 ```
+

@@ -5,7 +5,7 @@ description: "Modelo provisional de cálculo de daño para munición CSS contra 
 date: 2026-04-23
 author: "jonathan-bello"
 order: 7
-coverImage: "/gdd-covers/sistema-juego.png"
+coverImage: "../../assets/imgs/arte-conceptual/guardianes-ciudadela.png"
 ---
 
 ## Parámetros base (**provisionales**)
@@ -71,3 +71,4 @@ Restricciones:
 - Propiedad bloqueada: subrayado rojo + tooltip “propiedad no desbloqueada”.
 - Propiedad válida sin match: estado neutral.
 - Preview de daño debe mostrar rango esperado y causa de bonificaciones.
+

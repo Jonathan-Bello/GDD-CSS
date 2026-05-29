@@ -5,7 +5,7 @@ description: "Definición inicial de los personajes principales y arquetipos nar
 date: 2026-04-23
 author: "jonathan-bello"
 order: 3
-coverImage: "/gdd-covers/narrativa.png"
+coverImage: "../../assets/imgs/arte-conceptual/mundo.png"
 ---
 
 # Personajes principales
@@ -245,3 +245,4 @@ Este documento establece una primera base para la construcción del reparto prin
 - subarcos narrativos específicos
 
 La prioridad en esta etapa es fijar la función de cada personaje dentro del mundo y asegurar que todos respondan a la misma lógica de coherencia, misterio y persistencia tecnológica que define la identidad del proyecto.
+

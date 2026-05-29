@@ -5,7 +5,7 @@ description: "Muestra de assets vectoriales finales creados para el juego y util
 date: 2026-05-29
 author: "jonathan-bello"
 order: 6
-coverImage: "/gdd-covers/contenido.png"
+coverImage: "../../assets/imgs/arte-conceptual/concepto.png"
 ---
 
 # Arte SVG del juego
@@ -73,3 +73,4 @@ Su objetivo dentro del GDD es documentar el lenguaje visual ya consolidado, most
 El uso de estos assets confirma una decision tecnica relevante del prototipo: construir una parte sustancial del apartado grafico mediante SVG nativo. Esto permite mantener nitidez, escalabilidad y coherencia con el enfoque geometrico del proyecto, al mismo tiempo que facilita la integracion entre UI, personajes, fondos y elementos interactivos.
 
 Ademas de su funcion estetica, esta coleccion demuestra que el pipeline de produccion visual del proyecto ya supera la etapa de idea conceptual y cuenta con recursos propios listos para documentacion, iteracion e integracion jugable.
+

@@ -5,7 +5,7 @@ description: "Definición visual y conceptual de Xanat, protagonista y avatar de
 date: 2026-04-23
 author: "jonathan-bello"
 order: 2
-coverImage: "/gdd-covers/contenido.png"
+coverImage: "../../assets/imgs/arte-conceptual/concepto.png"
 ---
 
 # Personaje principal
@@ -164,3 +164,4 @@ Al momento de producir storyboard o arte conceptual de Xanat, deben cuidarse est
 ## Síntesis del personaje
 
 Xanat es una figura humanoide estilizada, limpia y ágil, diseñada bajo una lógica geométrica y minimalista. Su diseño debe permitir identificación inmediata, facilitar la lectura jugable y sostener el misterio central de la historia: ser percibido como humano en un mundo sin humanidad, aun cuando en realidad también forma parte del mismo legado artificial que habita ese mundo.
+

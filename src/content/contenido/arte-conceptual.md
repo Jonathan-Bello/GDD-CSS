@@ -5,7 +5,7 @@ description: "Guía visual inicial de mood, atmósfera y composición para itera
 date: 2026-04-28
 author: "jonathan-bello"
 order: 3
-coverImage: "/gdd-covers/contenido.png"
+coverImage: "../../assets/imgs/arte-conceptual/concepto.png"
 ---
 
 # Arte conceptual
@@ -68,3 +68,4 @@ Su objetivo es servir como base para storyboard, exploración de mood, pruebas d
 ![Guardianes conceptual](@assets/imgs/arte-conceptual/guardianes-ciudadela.png)
 
 **Uso:** referencia para el diseño de enemigos fuertes, guardianes defensores de zonas clave, proporción, silueta característica y armadura tecnológica avanzada.
+

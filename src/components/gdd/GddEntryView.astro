@@ -1,10 +1,12 @@
 ---
+import type { ImageMetadata } from "astro";
+
 interface EntryData {
   title: string;
   description: string;
   date: Date;
   order: number;
-  coverImage?: string;
+  coverImage?: ImageMetadata;
 }
 
 interface Props {
@@ -78,12 +80,12 @@ const { entry, collectionLabel = "General" } = Astro.props;
           <div class="relative h-full min-h-[280px] xl:min-h-full">
             <img
               transition:name="img1"
-              src={entry.data.coverImage}
+              src={entry.data.coverImage.src}
               alt={`Imagen principal de ${entry.data.title}`}
               class="absolute inset-0 h-full w-full object-cover"
             />
-            <div class="absolute inset-0 bg-bg-overlay/60" />
-            <div class="absolute bottom-0 left-0 right-0 p-6">
+            {/* <div class="absolute inset-0 bg-bg-overlay/60" /> */}
+            {/* <div class="absolute bottom-0 left-0 right-0 p-6">
               <div class="rounded-2xl border border-border-organic/20 bg-bg-overlay/80 p-4 backdrop-blur-sm">
                 <p class="font-text text-xs font-semibold uppercase tracking-[0.22em] text-accent-strong">
                   Imagen destacada
@@ -93,7 +95,7 @@ const { entry, collectionLabel = "General" } = Astro.props;
                   GDD.
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         ) : (
           <div class="flex h-full min-h-[280px] items-center justify-center bg-bg-overlay/70 p-6">

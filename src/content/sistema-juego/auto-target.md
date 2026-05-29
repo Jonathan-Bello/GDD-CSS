@@ -5,7 +5,7 @@ description: "Especificación operativa del sistema opcional de fijado y prioriz
 date: 2026-04-23
 author: "jonathan-bello"
 order: 6
-coverImage: "/gdd-covers/sistema-juego.png"
+coverImage: "../../assets/imgs/arte-conceptual/guardianes-ciudadela.png"
 ---
 
 ## Alcance
@@ -47,3 +47,4 @@ flowchart TD
 - Cambio de objetivo en menos de **150 ms** tras muerte del objetivo fijado.
 - Cancelación de fijado inmediata al salir de cono o distancia.
 - Sin cambios de objetivo “erráticos” cuando hay un solo candidato válido.
+

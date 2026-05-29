@@ -5,7 +5,7 @@ description: "Estructura narrativa para producción integrada al gameplay, sin d
 date: 2026-04-23
 author: "jonathan-bello"
 order: 4
-coverImage: "/gdd-covers/narrativa.png"
+coverImage: "../../assets/imgs/arte-conceptual/mundo.png"
 ---
 
 ## Macroetapas (actos)
@@ -45,3 +45,4 @@ coverImage: "/gdd-covers/narrativa.png"
 | Ciudadela/Citadel | Cómo operaba la Ciudadela y por qué persiste sin humanos. |
 | Cloacas / zonas bajas | Coste sistémico y deterioro del soporte energético. |
 | Torre | Verdad operativa del sistema y papel real de Xanat. |
+

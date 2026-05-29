@@ -5,7 +5,7 @@ description: "Resumen narrativo del juego, sus ejes temáticos, tono general y d
 date: 2026-04-23
 author: "jonathan-bello"
 order: 2
-coverImage: "/gdd-covers/narrativa.png"
+coverImage: "../../assets/imgs/arte-conceptual/mundo.png"
 ---
 
 # Descripciones
@@ -83,3 +83,4 @@ El primer jefe ejemplifica esta idea de forma clara: un enorme robot guardián q
 ## Función de Hemis en la narrativa
 
 Hemis es a la vez acompañante, interfaz de conocimiento y personaje diegético. Su existencia ayuda a unir la narrativa del mundo con la dimensión pedagógica del juego. No aparece como un tutorial abstracto ni como una voz externa, sino como una parte legítima del universo. Su rol es acompañar, responder, interpretar y apoyar al protagonista mientras ambos atraviesan un mundo que ninguno termina de comprender del todo.
+

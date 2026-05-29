@@ -5,7 +5,7 @@ description: "Definición del estilo visual general del juego, sus principios fo
 date: 2026-04-23
 author: "jonathan-bello"
 order: 1
-coverImage: "/gdd-covers/contenido.png"
+coverImage: "../../assets/imgs/arte-conceptual/concepto.png"
 ---
 
 _Citadel of Solar Souls (CSS)_ utiliza una dirección de arte basada en un estilo de **dibujo vectorial minimalista**, construido con **líneas puramente rectas**, **formas geométricas claras** y **colores sólidos**. La intención visual del proyecto es transmitir un mundo futurista, limpio, tecnológico y melancólico, donde la naturaleza ha invadido una civilización avanzada sin destruir por completo su belleza ni su sentido de armonía.
@@ -176,3 +176,4 @@ Las siguientes referencias fueron cuidadosamente seleccionadas para establecer y
 ![Referencia de atmósfera visual y detalle minimalista](@assets/imgs/referencias/blasfemous.png)
 
 **¿Por qué?** _Blasphemous_ funciona como referencia para la progresión del mapa, el aumento de dificultad y la construcción de entornos visualmente hostiles. Nos interesa en particular cómo escenarios que deberían percibirse bellos —como espacios de arquitectura religiosa— pueden comunicar tensión, peligro y decadencia al mismo tiempo. Esta dualidad entre belleza formal y agresividad del mundo es clave para el tono del proyecto.
+

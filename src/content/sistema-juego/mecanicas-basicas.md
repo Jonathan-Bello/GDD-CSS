@@ -5,7 +5,7 @@ description: "Descripción de las mecánicas principales del juego, incluyendo m
 date: 2026-04-23
 author: "jonathan-bello"
 order: 2
-coverImage: "/gdd-covers/sistema-juego.png"
+coverImage: "../../assets/imgs/arte-conceptual/guardianes-ciudadela.png"
 ---
 ## Movimiento
 
@@ -104,3 +104,4 @@ Este registro cumple una función pedagógica y práctica. Por un lado, ayuda al
 ## Relación con mecánicas de enemigos
 
 Los enemigos contarán con sus propias conductas, patrones y particularidades de combate, pero esas mecánicas se desarrollarán en detalle dentro de la sección correspondiente a enemigos. En este documento se establece únicamente que el sistema general del jugador debe dialogar con ellos desde tres frentes: la movilidad para esquivar, el disparo como herramienta ofensiva y el uso de propiedades de CSS como capa táctica y de progresión.
+

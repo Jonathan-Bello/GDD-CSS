@@ -5,7 +5,7 @@ description: "Estructura macro de progresión por zonas con objetivos narrativos
 date: 2026-04-23
 author: "jonathan-bello"
 order: 5
-coverImage: "/gdd-covers/progresion.png"
+coverImage: "../../assets/imgs/arte-conceptual/hub.png"
 ---
 
 ## Estado implementado del demo vertical slice
@@ -30,3 +30,4 @@ coverImage: "/gdd-covers/progresion.png"
 - Cada zona debe introducir máximo 1-2 propiedades nuevas para controlar carga cognitiva.
 - Cada propiedad nueva debe tener aplicación inmediata en combate y entorno.
 - El jefe/prueba mayor debe evaluar el bloque de aprendizaje de su zona.
+

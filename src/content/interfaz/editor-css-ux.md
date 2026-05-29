@@ -5,7 +5,7 @@ description: "Especificación de experiencia de usuario para el editor de munici
 date: 2026-04-23
 author: "jonathan-bello"
 order: 3
-coverImage: "/gdd-covers/interfaz.png"
+coverImage: "../../assets/imgs/arte-conceptual/jefe-final.png"
 ---
 
 ## Estructura general
@@ -47,3 +47,4 @@ Interfaz activa al entrar a un **Pilar solar**:
 - El editor es la fuente de verdad.
 - El lienzo traduce el resultado en feedback visual inmediato.
 - Hemis ofrece sugerencias cuando hay errores repetidos o configuración subóptima.
+

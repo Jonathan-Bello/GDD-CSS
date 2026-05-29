@@ -5,7 +5,7 @@ description: "Puntos clave que distinguen al juego y resumen sus principales ele
 date: 2026-04-23
 author: "jonathan-bello"
 order: 3
-coverImage: "/gdd-covers/general.png"
+coverImage: "../../assets/imgs/arte-conceptual/portada.png"
 ---
 ## Aprendizaje integrado directamente en la acción del juego
 
@@ -30,3 +30,4 @@ El juego propone una combinación poco común entre exploración, combate, ambie
 ## Una identidad visual y temática poco convencional
 
 La ambientación en una ciudad postapocalíptica de estilo solarpunk le da al proyecto una personalidad distintiva. La convivencia entre naturaleza, tecnología abandonada, robots aún funcionales y estructuras automatizadas crea un escenario atractivo que refuerza la experiencia de exploración y diferencia al juego de propuestas educativas más tradicionales.
+

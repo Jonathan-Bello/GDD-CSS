@@ -5,7 +5,7 @@ description: "Descripción de los elementos de interfaz visibles durante la part
 date: 2026-04-23
 author: "jonathan-bello"
 order: 1
-coverImage: "/gdd-covers/interfaz.png"
+coverImage: "../../assets/imgs/arte-conceptual/jefe-final.png"
 ---
 
 El HUD de _Citadel of Solar Souls (CSS)_ reúne los elementos de interfaz que acompañan directamente la experiencia de juego. Su diseño debe priorizar la claridad, la lectura inmediata del estado del jugador y el acceso rápido a las funciones más importantes, sin saturar la pantalla ni romper la inmersión. La intención es que el jugador siempre tenga a la vista la información esencial para sobrevivir, desplazarse, combatir y consultar ayuda, mientras que las interfaces más complejas se despliegan solo cuando son necesarias.
@@ -175,3 +175,4 @@ El HUD expandido incluye:
 Toda la interfaz debe mantener coherencia con la identidad visual del proyecto: formas geométricas, lectura clara, composición ordenada y sensación tecnológica integrada al mundo solarpunk. Ningún elemento debe existir solo por decoración; cada pieza del HUD tiene que responder a una función concreta y fácilmente entendible para el jugador.
 
 La prioridad del HUD en _Citadel of Solar Souls (CSS)_ es acompañar la jugabilidad sin obstaculizarla, haciendo visible lo necesario y dejando que la acción, la exploración y el aprendizaje sigan siendo el centro de la experiencia.
+
