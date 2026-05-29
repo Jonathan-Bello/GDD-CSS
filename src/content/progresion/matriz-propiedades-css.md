@@ -5,22 +5,16 @@ description: "Mapa de aplicación de propiedades CSS por combate, exploración, 
 date: 2026-04-23
 author: "jonathan-bello"
 order: 4
-coverImage: ""
+coverImage: "/gdd-covers/progresion.png"
 ---
 
-> Todos los datos son **provisionales** y deben calibrarse con playtests.
+> La evaluación del prototipo se concentra en `fill`, `stroke`, `opacity`, `width` y `height`. Las demás propiedades se mantienen como expansión futura.
 
-| Grupo | Propiedad CSS | Uso en combate | Uso en exploración | Uso en puzzle | Dificultad | Zona sugerida de desbloqueo |
+| Grupo | Propiedad CSS | Uso en combate | Uso en exploración | Uso en puzzle | Dificultad | Estado |
 |---|---|---|---|---|---|---|
-| Fundamentos visuales | `color` | Match básico de sinergia | Lectura de pistas cromáticas | Activación por color | Baja | Mansión |
-| Fundamentos visuales | `background-color` | Daño elemental simple | Identificación de superficies | Compuertas por color | Baja | Mansión |
-| Presencia y forma | `opacity` | Revelar enemigos semitransparentes | Ver pasajes ocultos | Secuencias de visibilidad | Media | Ciudad en ruinas |
-| Presencia y forma | `border` | Romper armaduras ligeras | Abrir barreras frágiles | Encaje de patrones | Media | Ciudad en ruinas |
-| Posicionamiento y profundidad | `z-index` | Golpe a objetivos en otro plano | Cambio de capa de ruta | Puzzles por planos | Media-alta | Cloacas / zonas bajas |
-| Posicionamiento y profundidad | `position` | Ajuste de trayectoria táctica | Activar nodos remotos | Orden espacial correcto | Alta | Cloacas / zonas bajas |
-| Transformación | `transform` | Variar patrón de impacto | Alcanzar ángulos complejos | Reorientación de mecanismos | Alta | Torre |
-| Transformación | `scale` | Cambiar área de impacto | Alcance de interruptores grandes | Proporción de piezas | Alta | Torre |
-| Tiempo y ejecución | `transition-duration` | Ventanas temporales de daño | Cruce de plataformas temporizadas | Sincronización de eventos | Alta | Torre |
-| Tiempo y ejecución | `animation-delay` | Castigo en timing concreto | Rutas cíclicas | Secuencias encadenadas | Alta | Torre |
-| Dominio y combinación | Combinación `z-index + opacity` | Sinergia avanzada anti élites | Atajos de alto riesgo | Puzzles mixtos | Muy alta | Torre (post-jefe) |
-| Dominio y combinación | Combinación `transform + color` | Burst condicional | Acceso opcional secreto | Prueba maestra | Muy alta | Torre (final) |
+| Fundamentos visuales | `fill` | Afinidad cromática de bala contra enemigos | Lectura de color en objetos interactivos | Bloques y plataformas por color | Baja | Implementada en tutorial |
+| Forma de munición | `width` | Modificar tamaño horizontal del proyectil | Alcance visual de interruptores | Ajuste de paso por espacios | Baja | Evaluación de prototipo |
+| Forma de munición | `height` | Modificar tamaño vertical del proyectil | Lectura de volumen de bala | Ajuste de altura para objetivos | Baja | Evaluación de prototipo |
+| Contorno y presencia | `stroke` | Reforzar lectura de impacto y afinidad | Diferenciar estados de objetos | Interacciones por borde/contorno | Media | Avance parcial |
+| Transparencia | `opacity` | Lectura de enemigos o estados semitransparentes | Ver pasajes o capas ocultas | Secuencias de visibilidad | Media | Avance parcial |
+| Futuro | `z-index`, `position`, `transform`, `scale`, `transition-duration` | Sinergias avanzadas | Gating espacial y temporal | Puzzles de mayor complejidad | Alta | Iteraciones posteriores |

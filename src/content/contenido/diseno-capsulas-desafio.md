@@ -5,7 +5,7 @@ description: "Plantilla estándar de diseño para cápsulas que enseñan y valid
 date: 2026-04-23
 author: "jonathan-bello"
 order: 5
-coverImage: ""
+coverImage: "/gdd-covers/contenido.png"
 ---
 
 ## Plantilla estándar
@@ -29,7 +29,7 @@ coverImage: ""
 - **Regla:** Solo la bala con color coincidente activa cada nodo.
 - **Éxito:** Activar los tres nodos en menos de 90 s.
 - **Fracaso:** Agotar ventana temporal o caer en zona de reinicio.
-- **Pista opcional:** Emis sugiere revisar el color de cada nodo.
+- **Pista opcional:** Hemis sugiere revisar el color de cada nodo.
 - **Tiempo objetivo (provisional):** 3-5 min.
 - **Recompensa:** Desbloqueo oficial de `color`.
 - **Aplicación inmediata:** Puerta de zona siguiente con lógica cromática.
@@ -55,7 +55,7 @@ coverImage: ""
 - **Regla:** Ajustar bala para entrar por ventanas angulares.
 - **Éxito:** Impactar núcleo 3 veces consecutivas.
 - **Fracaso:** Fallar secuencia y reiniciar fase.
-- **Pista opcional:** Emis marca una ventana segura por ciclo.
+- **Pista opcional:** Hemis marca una ventana segura por ciclo.
 - **Tiempo objetivo (provisional):** 8-12 min.
 - **Recompensa:** Desbloqueo oficial de `transform`.
 - **Aplicación inmediata:** Combate de élite en la misma zona.

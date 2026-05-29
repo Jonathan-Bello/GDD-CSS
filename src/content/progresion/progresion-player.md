@@ -5,7 +5,7 @@ description: "Descripción de cómo crece el jugador a lo largo de la partida en
 date: 2026-04-23
 author: "jonathan-bello"
 order: 3
-coverImage: ""
+coverImage: "/gdd-covers/progresion.png"
 ---
 
 La progresión del jugador en _Citadel of Solar Souls (CSS)_ no se mide únicamente en términos de avance por el mapa, sino en la expansión gradual de su dominio sobre el juego. A lo largo de la partida, el jugador se vuelve más competente en cuatro dimensiones principales: movimiento, combate, comprensión del sistema CSS y lectura del mundo. Esta progresión debe sentirse natural y acumulativa, de forma que cada nueva etapa del juego aproveche lo aprendido en las anteriores.

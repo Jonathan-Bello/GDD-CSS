@@ -5,7 +5,7 @@ description: "Clasificación funcional de enemigos para diseño de combate, prog
 date: 2026-04-23
 author: "jonathan-bello"
 order: 4
-coverImage: ""
+coverImage: "/gdd-covers/contenido.png"
 ---
 
 ## Clases principales

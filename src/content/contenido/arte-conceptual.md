@@ -5,7 +5,7 @@ description: "Guía visual inicial de mood, atmósfera y composición para itera
 date: 2026-04-28
 author: "jonathan-bello"
 order: 3
-coverImage: ""
+coverImage: "/gdd-covers/contenido.png"
 ---
 
 # Arte conceptual
@@ -38,12 +38,12 @@ Su objetivo es servir como base para storyboard, exploración de mood, pruebas d
 
 **Uso:** apoyo para explorar silueta, proporciones y lenguaje visual del protagonista dentro del marco geométrico del juego.
 
-## Referencia de androide Emis
+## Referencia visual de Hemis
 
-![Logo SVG de referencia para Emis](@assets/svgs/arte-conceptual/Hemis.svg)
-![Logo SVG de referencia para Emis](@assets/svgs/arte-conceptual/usoHemis.svg)
+![Logo SVG de referencia para Hemis](@assets/svgs/arte-conceptual/Hemis.svg)
+![Logo SVG de referencia para Hemis](@assets/svgs/arte-conceptual/usoHemis.svg)
 
-**Uso:** base para iterar la presencia visual asociada a Emis y su coherencia con la interfaz tecnológica del universo.
+**Uso:** base para iterar la presencia visual asociada a Hemis y su coherencia con la interfaz tecnológica del universo.
 
 ## Hub central
 

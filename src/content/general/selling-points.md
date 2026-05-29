@@ -5,7 +5,7 @@ description: "Puntos clave que distinguen al juego y resumen sus principales ele
 date: 2026-04-23
 author: "jonathan-bello"
 order: 3
-coverImage: ""
+coverImage: "/gdd-covers/general.png"
 ---
 ## Aprendizaje integrado directamente en la acción del juego
 
@@ -21,7 +21,7 @@ El juego está diseñado bajo la idea de que el aprendizaje es más efectivo cua
 
 ## Acompañamiento permanente mediante una inteligencia artificial
 
-El jugador cuenta con la ayuda constante de **Emis**, una inteligencia artificial integrada como personaje dentro del juego. Su presencia no solo cumple una función narrativa, sino también pedagógica, ya que permite resolver dudas, solicitar orientación y recibir apoyo durante el proceso de aprendizaje de CSS. Esto reduce la frustración, mejora la autonomía del jugador y hace que incluso una tecnología que puede parecer compleja se vuelva más accesible.
+El jugador cuenta con la ayuda constante de **Hemis**, una inteligencia artificial integrada como personaje dentro del juego. Su presencia no solo cumple una función narrativa, sino también pedagógica, ya que permite resolver dudas, solicitar orientación y recibir apoyo durante el proceso de aprendizaje de CSS. Esto reduce la frustración, mejora la autonomía del jugador y hace que incluso una tecnología que puede parecer compleja se vuelva más accesible.
 
 ## Fusión entre aventura, combate y conocimiento técnico
 

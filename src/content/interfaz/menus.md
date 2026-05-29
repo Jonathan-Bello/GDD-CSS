@@ -5,7 +5,7 @@ description: "Descripción de los menús principales y secundarios del juego, su
 date: 2026-04-23
 author: "jonathan-bello"
 order: 2
-coverImage: ""
+coverImage: "/gdd-covers/interfaz.png"
 ---
 
 # Menús
@@ -61,7 +61,7 @@ flowchart TD
     H --> B
     H --> I
 
-    L --> O[Reintentar desde punto de control]
+    L --> O[Reintentar desde pilar solar]
     L --> B
     O --> G
 ```
@@ -382,7 +382,7 @@ Gestiona el estado posterior a la derrota del jugador y ofrece una salida clara 
 
 ### Qué opciones contiene
 
-- **Reintentar desde último punto de control**
+- **Reintentar desde último pilar solar**
 - **Volver al menú principal**
 
 ### Cómo se controla

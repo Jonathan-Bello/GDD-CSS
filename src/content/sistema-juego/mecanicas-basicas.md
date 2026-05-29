@@ -5,7 +5,7 @@ description: "Descripción de las mecánicas principales del juego, incluyendo m
 date: 2026-04-23
 author: "jonathan-bello"
 order: 2
-coverImage: ""
+coverImage: "/gdd-covers/sistema-juego.png"
 ---
 ## Movimiento
 
@@ -49,7 +49,7 @@ Con esto se evita que el jugador se beneficie de conocimiento externo al progres
 
 ### Slots de munición y gestión en tiempo real
 
-El jugador no puede reescribir ni modificar su munición en cualquier lugar del mapa: la edición de balas está restringida exclusivamente a los **Puntos de control**. Fuera de esos puntos, la configuración de cada bala queda bloqueada hasta volver a un Punto de control.
+El jugador no puede reescribir ni modificar su munición en cualquier lugar del mapa: la edición de balas está restringida exclusivamente a los **Pilares solares**. Fuera de esos puntos, la configuración de cada bala queda bloqueada hasta volver a un Pilar solar.
 
 Durante la progresión, el jugador desbloquea espacios adicionales de equipamiento de munición hasta un máximo de **3 slots**:
 
@@ -61,9 +61,9 @@ Cada slot puede almacenar una bala distinta (con propiedades CSS diferentes). En
 
 ## Creación de munición mediante CSS
 
-La mecánica central y más distintiva del juego es la posibilidad de crear munición personalizada utilizando propiedades de CSS. Esta acción no se realiza directamente en medio del combate, sino únicamente en **Puntos de control** que funcionan como espacios seguros de preparación (similares a una hoguera o punto de descanso). Al interactuar con una de estas zonas, el jugador abre una interfaz especial donde puede diseñar la bala que utilizará después en el mapa.
+La mecánica central y más distintiva del juego es la posibilidad de crear munición personalizada utilizando propiedades de CSS. Esta acción no se realiza directamente en medio del combate, sino únicamente en **Pilares solares** que funcionan como espacios seguros de preparación (similares a una hoguera o punto de descanso). Al interactuar con una de estas zonas, el jugador abre una interfaz especial donde puede diseñar la bala que utilizará después en el mapa.
 
-La interfaz de creación de munición se divide en tres áreas principales. El espacio más grande, que ocupa aproximadamente dos tercios de la pantalla, corresponde al **lienzo**, donde el jugador visualiza en tiempo real la munición que está construyendo. En el tercio restante de la pantalla se ubican dos paneles: en la parte superior, un **editor de código** donde el jugador escribe las propiedades CSS que desea aplicar; en la parte inferior, un **chat con Emis**, la inteligencia artificial acompañante.
+La interfaz de creación de munición se divide en tres áreas principales. El espacio más grande, que ocupa aproximadamente dos tercios de la pantalla, corresponde al **lienzo**, donde el jugador visualiza en tiempo real la munición que está construyendo. En el tercio restante de la pantalla se ubican dos paneles: en la parte superior, un **editor de código** donde el jugador escribe las propiedades CSS que desea aplicar; en la parte inferior, un **chat con Hemis**, la inteligencia artificial acompañante.
 
 El editor de código permite escribir y modificar propiedades desbloqueadas dentro del juego. Si el jugador conoce una propiedad por experiencia externa pero todavía no la ha obtenido durante la partida, no podrá usarla, aunque la escriba correctamente. En esos casos, la interfaz debe marcar dicha propiedad como inválida, por ejemplo subrayándola o resaltándola en color rojo. Esto convierte la progresión del conocimiento en una parte del sistema jugable y no solo en una barrera artificial.
 
@@ -91,9 +91,9 @@ El inventario no está pensado como un menú de gestión compleja ni como un esp
 
 ## Curación y recurso de recuperación
 
-La recuperación de vida se realiza mediante un recurso limitado llamado **Luz Solar**, presentado como una cápsula de energía utilizable por el jugador. Su lógica se inspira en sistemas como el estus de _Dark Souls_: el jugador cuenta con una cantidad determinada de cargas antes de llegar al siguiente punto de control, y estas se recargan completamente al descansar o interactuar con un Punto de control.
+La recuperación de vida se realiza mediante un recurso limitado llamado **Luz Solar**, presentado como una cápsula de energía utilizable por el jugador. Su lógica se inspira en sistemas como el estus de _Dark Souls_: el jugador cuenta con una cantidad determinada de cargas antes de llegar al siguiente pilar solar, y estas se recargan completamente al descansar o interactuar con un Pilar solar.
 
-El uso de la curación no depende del inventario ni del consumo manual de objetos desde menús, sino de un botón específico asignado a esta acción. Esto permite mantener el ritmo del combate y evita interrumpir innecesariamente la partida con navegación de interfaces. La gestión de la Luz Solar introduce una capa de administración del riesgo y refuerza la importancia de los puntos de control en la estructura del juego.
+El uso de la curación no depende del inventario ni del consumo manual de objetos desde menús, sino de un botón específico asignado a esta acción. Esto permite mantener el ritmo del combate y evita interrumpir innecesariamente la partida con navegación de interfaces. La gestión de la Luz Solar introduce una capa de administración del riesgo y refuerza la importancia de los pilares solares en la estructura del juego.
 
 ## Registro de propiedades desbloqueadas
 

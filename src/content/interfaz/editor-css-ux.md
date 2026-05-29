@@ -1,20 +1,20 @@
 ---
 id: "3"
 title: "Editor CSS UX"
-description: "Especificación de experiencia de usuario para el editor de munición CSS en Punto de control."
+description: "Especificación de experiencia de usuario para el editor de munición CSS en Pilar solar."
 date: 2026-04-23
 author: "jonathan-bello"
 order: 3
-coverImage: ""
+coverImage: "/gdd-covers/interfaz.png"
 ---
 
 ## Estructura general
 
-Interfaz activa al entrar a un **Punto de control**:
+Interfaz activa al entrar a un **Pilar solar**:
 
 1. **Lienzo** (preview visual de munición).
 2. **Editor de código** (entrada CSS).
-3. **Chat de Emis** (apoyo contextual/pedagógico).
+3. **Chat de Hemis** (apoyo contextual/pedagógico).
 
 ## Validación en tiempo real
 
@@ -42,8 +42,8 @@ Interfaz activa al entrar a un **Punto de control**:
 - **Preview estimado:** rango de daño esperado según matches conocidos.
 - Debe explicar por qué se gana bono (propiedad, valor, sinergia mayor).
 
-## Relación entre lienzo, editor y Emis
+## Relación entre lienzo, editor y Hemis
 
 - El editor es la fuente de verdad.
 - El lienzo traduce el resultado en feedback visual inmediato.
-- Emis ofrece sugerencias cuando hay errores repetidos o configuración subóptima.
+- Hemis ofrece sugerencias cuando hay errores repetidos o configuración subóptima.

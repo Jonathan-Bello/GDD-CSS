@@ -5,7 +5,7 @@ description: "Descripción del esquema de control del juego, las acciones princi
 date: 2026-04-23
 author: "jonathan-bello"
 order: 5
-coverImage: ""
+coverImage: "/gdd-covers/sistema-juego.png"
 ---
 El esquema de control de _Citadel of Solar Souls (CSS)_ está diseñado principalmente para **teclado y ratón**, ya que una de las mecánicas centrales del juego consiste en escribir y editar código CSS dentro de una interfaz integrada. Aunque a futuro podría contemplarse compatibilidad parcial con mando para el desplazamiento y el combate, la experiencia base y recomendada del juego está pensada para jugarse con teclado y ratón.
 
@@ -53,7 +53,7 @@ El disparo base siempre se proyecta al frente. Las variantes direccionales permi
 - **2:** equipar slot de munición 2 (si está desbloqueado)
 - **3:** equipar slot de munición 3 (si está desbloqueado)
 
-El jugador inicia la partida con un único slot de munición y puede desbloquear hasta un máximo de tres durante la progresión. El cambio entre slots está permitido en tiempo real durante exploración y combate, pero su contenido solo puede editarse al interactuar con un punto de control.
+El jugador inicia la partida con un único slot de munición y puede desbloquear hasta un máximo de tres durante la progresión. El cambio entre slots está permitido en tiempo real durante exploración y combate, pero su contenido solo puede editarse al interactuar con un pilar solar.
 
 ### Fijado de enemigo
 
@@ -67,7 +67,7 @@ Si el enemigo fijado sale del rango, muere o deja de ser un objetivo válido, el
 
 - **E:** interactuar
 
-La tecla de interacción se utiliza para hablar con entidades, activar puntos de control, abrir zonas de edición de munición, leer elementos del entorno y ejecutar acciones contextuales similares.
+La tecla de interacción se utiliza para hablar con entidades, activar pilares solares, abrir zonas de edición de munición, leer elementos del entorno y ejecutar acciones contextuales similares.
 
 ### Curación
 
@@ -90,9 +90,9 @@ Desde este menú el jugador puede reanudar la partida, consultar opciones, revis
 
 El inventario permite consultar objetos importantes y sus descripciones. El registro de propiedades funciona como un compendio de habilidades y conceptos desbloqueados durante la aventura.
 
-## Controles dentro del Punto de control
+## Controles dentro del Pilar solar
 
-Cuando el jugador interactúa con un **Punto de control**, entra en la interfaz de creación de munición. Esta es la única instancia donde puede modificar el contenido de sus balas/slots. En esta pantalla el control deja de centrarse en movimiento y combate, y pasa a enfocarse en escritura, edición y consulta.
+Cuando el jugador interactúa con un **Pilar solar**, entra en la interfaz de creación de munición. Esta es la única instancia donde puede modificar el contenido de sus balas/slots. En esta pantalla el control deja de centrarse en movimiento y combate, y pasa a enfocarse en escritura, edición y consulta.
 
 ### Navegación general en la interfaz
 
@@ -109,13 +109,13 @@ Cuando el jugador interactúa con un **Punto de control**, entra en la interfaz 
 
 El editor de código es el núcleo del sistema de creación de munición. El jugador escribe aquí las propiedades CSS que desea aplicar a la bala. Si una propiedad no ha sido desbloqueada todavía en la progresión del juego, debe mostrarse como inválida dentro del sistema visual del editor.
 
-### Chat con Emis
+### Chat con Hemis
 
 - **Clic en el panel de chat:** activar entrada de texto
 - **Teclado alfanumérico:** escribir preguntas o mensajes
 - **Enter:** enviar mensaje
 
-El chat con Emis funciona como apoyo tanto pedagógico como contextual. El jugador puede consultarle dudas sobre CSS o pedir ayuda relacionada con la aventura.
+El chat con Hemis funciona como apoyo tanto pedagógico como contextual. El jugador puede consultarle dudas sobre CSS o pedir ayuda relacionada con la aventura.
 
 ### Confirmación de munición
 

@@ -5,19 +5,19 @@ description: "Estructura narrativa para producción integrada al gameplay, sin d
 date: 2026-04-23
 author: "jonathan-bello"
 order: 4
-coverImage: ""
+coverImage: "/gdd-covers/narrativa.png"
 ---
 
 ## Macroetapas (actos)
 
-1. **Acto I — Despertar (Mansión):** Xanat despierta, Emis entra en contacto, se presenta el vacío humano.
-2. **Acto II — Reconocimiento (Ciudad en ruinas):** se entiende el estado de la ciudad y sus sistemas persistentes.
+1. **Acto I — Despertar (Mansión):** Xanat despierta, Hemis entra en contacto, se presenta el vacío humano.
+2. **Acto II — Reconocimiento (Ciudadela/Citadel):** se entiende el estado de la Ciudadela y sus sistemas persistentes.
 3. **Acto III — Descenso (Cloacas / zonas bajas):** se revela el costo de sostener la infraestructura.
 4. **Acto IV — Confrontación (Torre):** se enfrenta el núcleo de verdad del mundo y de Xanat.
 
 ## Hitos narrativos obligatorios
 
-- Primer diálogo funcional con Emis.
+- Primer diálogo funcional con Hemis.
 - Confirmación de ausencia humana activa.
 - Descubrimiento de la función histórica de al menos dos facciones robóticas.
 - Revelación parcial de identidad de Xanat antes del tramo final.
@@ -41,7 +41,7 @@ coverImage: ""
 
 | Zona | Información clave revelada |
 |---|---|
-| Mansión | Estado inicial de Xanat y rol básico de Emis. |
-| Ciudad en ruinas | Cómo operaba la ciudad y por qué persiste sin humanos. |
+| Mansión | Estado inicial de Xanat y rol básico de Hemis. |
+| Ciudadela/Citadel | Cómo operaba la Ciudadela y por qué persiste sin humanos. |
 | Cloacas / zonas bajas | Coste sistémico y deterioro del soporte energético. |
 | Torre | Verdad operativa del sistema y papel real de Xanat. |

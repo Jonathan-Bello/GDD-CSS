@@ -5,7 +5,7 @@ description: "Ciclos secundarios de progresión que sostienen la experiencia de 
 date: 2026-04-23
 author: "jonathan-bello"
 order: 2
-coverImage: ""
+coverImage: "/gdd-covers/progresion.png"
 ---
 
 Además del loop principal de progresión por zonas, _Citadel of Solar Souls (CSS)_ se sostiene sobre varios ciclos secundarios que operan de forma constante durante la partida. Estos loops son más cortos, más específicos y están ligados a aspectos concretos de la experiencia, como el combate, el aprendizaje, la edición de munición o la exploración metroidvania.
@@ -44,14 +44,14 @@ Este loop convierte cada nuevo concepto de CSS en una herramienta viva y no en i
 
 ## Loop de edición de munición
 
-La creación de balas personalizadas es uno de los núcleos del juego. Este loop ocurre cuando el jugador llega a una Punto de control y decide preparar o ajustar su munición antes de volver al mapa.
+La creación de balas personalizadas es uno de los núcleos del juego. Este loop ocurre cuando el jugador llega a un Pilar solar y decide preparar o ajustar su munición antes de volver al mapa.
 
 ```mermaid
 flowchart LR
-    A[Llegar a Punto de control] --> B[Abrir editor]
+    A[Llegar al Pilar solar] --> B[Abrir editor]
     B --> C[Escribir propiedades CSS]
     C --> D[Visualizar resultado]
-    D --> E[Consultar a Emis si es necesario]
+    D --> E[Consultar a Hemis si es necesario]
     E --> C
     D --> F[Guardar y equipar munición]
     F --> G[Regresar al mapa]
@@ -77,11 +77,11 @@ Este loop hace que el mapa se sienta conectado y que las habilidades adquiridas 
 
 ## Loop de descanso y recuperación
 
-Los puntos de control cumplen una función de respiro, preparación y reinicio parcial de recursos. El jugador llega a ellos después de superar una serie de riesgos y los utiliza para reorganizarse antes de volver al peligro.
+Los pilares solares cumplen una función de respiro, preparación y reinicio parcial de recursos. El jugador llega a ellos después de superar una serie de riesgos y los utiliza para reorganizarse antes de volver al peligro.
 
 ```mermaid
 flowchart LR
-    A[Exploración o combate] --> B[Llegar a punto de control]
+    A[Exploración o combate] --> B[Llegar a pilar solar]
     B --> C[Recuperar cargas de Luz Solar]
     C --> D[Editar munición si es necesario]
     D --> E[Retomar exploración]

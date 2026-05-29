@@ -5,7 +5,7 @@ description: "Principios de diseño que definen la identidad del juego y sirven 
 date: 2026-04-23
 author: "jonathan-bello"
 order: 4
-coverImage: ""
+coverImage: "/gdd-covers/general.png"
 ---
 ## Primero es juego, después aprendizaje
 
@@ -41,7 +41,7 @@ La experiencia se apoya en tres formas principales de interacción: explorar, co
 
 ## La inteligencia artificial es compañía, no sustitución
 
-**Emis** debe funcionar como una presencia útil y constante, integrada tanto en la ficción como en la experiencia de aprendizaje. Su propósito no es resolver el juego por el jugador, sino acompañarlo, orientarlo y darle autonomía para entender mejor CSS y tomar decisiones por cuenta propia. Toda implementación relacionada con la IA debe reforzar la idea de apoyo contextual, accesible y no intrusivo. Emis existe para reducir la frustración, reforzar la comprensión y hacer que el jugador nunca se sienta abandonado frente a una tecnología que puede parecer compleja.
+**Hemis** debe funcionar como una presencia útil y constante, integrada tanto en la ficción como en la experiencia de aprendizaje. Su propósito no es resolver el juego por el jugador, sino acompañarlo, orientarlo y darle autonomía para entender mejor CSS y tomar decisiones por cuenta propia. Toda implementación relacionada con la IA debe reforzar la idea de apoyo contextual, accesible y no intrusivo. Hemis existe para reducir la frustración, reforzar la comprensión y hacer que el jugador nunca se sienta abandonado frente a una tecnología que puede parecer compleja.
 
 ## Identidad visual simple, sólida y factible
 

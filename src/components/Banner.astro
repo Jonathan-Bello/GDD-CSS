@@ -1,12 +1,14 @@
 ---
-
+import heroGameImage from "@assets/imgs/main.png";
 ---
 
 <section
   class="relative overflow-hidden bg-gradient-to-b from-bg-overlay via-bg-base to-bg-elevated"
 >
   <div class="container mx-auto px-4 py-16 md:px-6 lg:py-24">
-    <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+    <div
+      class="grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(320px,0.9fr)] lg:gap-16"
+    >
       <div class="space-y-6">
         <span
           class="ds-panel
@@ -44,6 +46,22 @@
           >
             Conocer más
           </a>
+        </div>
+      </div>
+      <div class="relative">
+        <div
+          class="absolute -inset-4 rounded-[2rem] bg-[radial-gradient(circle_at_top,#f29e0728,transparent_60%)] blur-2xl"
+        >
+        </div>
+        <div
+          class="relative overflow-hidden rounded-[2rem] border border-border-organic/20 bg-bg-overlay/70 p-6 shadow-[0_28px_90px_rgba(26,26,26,0.35)] backdrop-blur"
+        >
+          <img
+            src={heroGameImage.src}
+            alt="Logo principal de Citadel of Solar Souls"
+            class="h-full w-full rounded-[1.4rem] object-contain"
+            loading="eager"
+          />
         </div>
       </div>
     </div>

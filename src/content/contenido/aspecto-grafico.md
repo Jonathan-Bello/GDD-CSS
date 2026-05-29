@@ -5,7 +5,7 @@ description: "Definición del estilo visual general del juego, sus principios fo
 date: 2026-04-23
 author: "jonathan-bello"
 order: 1
-coverImage: ""
+coverImage: "/gdd-covers/contenido.png"
 ---
 
 _Citadel of Solar Souls (CSS)_ utiliza una dirección de arte basada en un estilo de **dibujo vectorial minimalista**, construido con **líneas puramente rectas**, **formas geométricas claras** y **colores sólidos**. La intención visual del proyecto es transmitir un mundo futurista, limpio, tecnológico y melancólico, donde la naturaleza ha invadido una civilización avanzada sin destruir por completo su belleza ni su sentido de armonía.
@@ -105,13 +105,26 @@ La interfaz debe sentirse parte del mismo universo visual. Debe compartir:
 - jerarquía visual clara
 - integración con el lenguaje tecnológico del mundo
 
-El botón de Emis, por ejemplo, debe reforzar esta identidad mediante un diseño simple, reconocible y consistente con la estética general.
+El botón de Hemis, por ejemplo, debe reforzar esta identidad mediante un diseño simple, reconocible y consistente con la estética general.
 
 ## Función del estilo gráfico dentro del proyecto
 
 El estilo visual no solo responde a una búsqueda estética, sino también a una necesidad de producción. La decisión de usar dibujo vectorial, líneas rectas y composición minimalista ayuda a mantener la factibilidad del desarrollo, facilita la consistencia entre assets y refuerza la identidad única del juego.
 
 La dirección de arte debe servir al gameplay, a la narrativa y a la producción al mismo tiempo. Todo lo visual debe sentirse coherente con el mundo, con sus sistemas y con la filosofía general del proyecto.
+
+## Arte SVG nativo integrado en Godot
+
+Una decisión técnica y visual central del prototipo fue construir el arte del juego con archivos **SVG nativos**. Personajes, elementos de HUD, referencias de Hemis y piezas de escenario se trabajan como vectores escalables para conservar nitidez, consistencia formal y rapidez de iteración.
+
+Esta integración es un logro técnico del proyecto porque el flujo base de Godot no está orientado a usar SVG como lenguaje visual completo de personajes y elementos jugables. Para sostenerlo se definió un pipeline propio de importación, organización de assets y adaptación de nodos, de modo que los recursos vectoriales pudieran convivir con escenas, animaciones, HUD y elementos interactivos.
+
+En términos de producción, este enfoque permite:
+
+- mantener coherencia entre arte conceptual, UI y assets del juego;
+- reducir dependencia de sprites rasterizados;
+- conservar escalabilidad visual en web y escritorio;
+- conectar la identidad del juego con la naturaleza técnica de CSS y SVG.
 
 ## Referencias internas para futuros storyboards
 

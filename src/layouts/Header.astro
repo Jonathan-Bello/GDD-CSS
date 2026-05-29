@@ -3,6 +3,16 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Image } from "astro:assets";
 
 import imgWordmark from "../assets/svgs/Wordmark.svg";
+
+const currentPath = Astro.url.pathname;
+
+const navItems = [
+  { href: "/", label: "Inicio", match: (path: string) => path === "/" },
+  { href: "/gdd", label: "GDD", match: (path: string) => path === "/gdd" || path.startsWith("/gdd/") },
+  { href: "/sobre-nosotros", label: "Sobre Nosotros", match: (path: string) => path === "/sobre-nosotros" || path.startsWith("/sobre-nosotros/") },
+  { href: "/demo", label: "Demo", match: (path: string) => path === "/demo" || path.startsWith("/demo/") },
+  { href: "/contacto", label: "Contacto", match: (path: string) => path === "/contacto" || path.startsWith("/contacto/") },
+];
 ---
 
 <header
@@ -38,22 +48,19 @@ import imgWordmark from "../assets/svgs/Wordmark.svg";
       <ul
         class="container flex h-full flex-col items-start justify-end gap-8 font-text text-xl font-medium lg:flex-row lg:gap-8 lg:text-lg [&>li]:text-neutral-950 [&>li>a]:relative dark:[&>li]:text-neutral-50 lg:[&>li]:text-center"
       >
-        <li>
-          <a href="/">Inicio</a>
-        </li>
-        <li>
-          <a href="/gdd">GDD</a>
-        </li>
-        <li>
-          <a href="/sobre-nosotros">Sobre Nosotros</a>
-        </li>
-        <li>
-          <a href="/demo">Demo</a>
-        </li>
-
-        <li>
-          <a href="/contacto">Contacto</a>
-        </li>
+        {
+          navItems.map((item) => (
+            <li>
+              <a
+                href={item.href}
+                class:list={{ active: item.match(currentPath) }}
+                aria-current={item.match(currentPath) ? "page" : undefined}
+              >
+                {item.label}
+              </a>
+            </li>
+          ))
+        }
       </ul>
     </nav>
   </div>
@@ -95,14 +102,6 @@ import imgWordmark from "../assets/svgs/Wordmark.svg";
         navigatorMenu.classList.toggle("top-16");
       });
 
-      const path = window.location.pathname;
-      const links = navigatorLinks?.querySelectorAll("a");
-
-      links?.forEach((link) => {
-        if (link.pathname === path) {
-          link.classList.add("active");
-        }
-      });
     });
   </script>
 </header>

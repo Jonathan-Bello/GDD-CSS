@@ -5,7 +5,7 @@ description: "Versión mínima de economía para sostener progresión sin romper
 date: 2026-04-23
 author: "jonathan-bello"
 order: 6
-coverImage: ""
+coverImage: "/gdd-covers/general.png"
 ---
 
 ## Alcance de versión mínima (**provisional**)

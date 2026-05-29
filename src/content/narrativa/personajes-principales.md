@@ -5,7 +5,7 @@ description: "Definición inicial de los personajes principales y arquetipos nar
 date: 2026-04-23
 author: "jonathan-bello"
 order: 3
-coverImage: ""
+coverImage: "/gdd-covers/narrativa.png"
 ---
 
 # Personajes principales
@@ -18,7 +18,7 @@ Este documento reúne una definición inicial de los personajes principales y de
 - Todo personaje debe tener una función clara dentro del mundo y una justificación coherente con su entorno.
 - Los personajes robóticos no deben sentirse genéricos; cada uno debe reflejar la lógica del trabajo o propósito para el que fue creado.
 - El protagonista debe funcionar como avatar del jugador, por lo que su caracterización debe ser deliberadamente contenida.
-- Emis debe equilibrar su papel como apoyo narrativo, acompañante jugable y herramienta pedagógica.
+- Hemis debe equilibrar su papel como apoyo narrativo, acompañante jugable y herramienta pedagógica.
 
 ## Xanat
 
@@ -45,7 +45,7 @@ Xanat funciona como **avatar del jugador**. Por ello, su construcción narrativa
 - Desorientado al inicio
 - Altamente competente en movimiento y adaptación
 - Extrañamente compatible con los sistemas del mundo
-- Portador de Emis
+- Portador de Hemis
 - Capaz de manipular la lógica del entorno mediante CSS
 
 ### Arco narrativo
@@ -59,7 +59,7 @@ El arco central de Xanat gira en torno a la **identidad**. Comienza creyéndose 
 - Su silencio debe reforzar su función de avatar, no volverlo vacío.
 - Su relación con los demás personajes debe construirse más desde la reacción de los otros hacia él que desde largos discursos propios.
 
-## Emis
+## Hemis
 
 ### Rol
 
@@ -71,16 +71,16 @@ Sistema de asistencia inteligente heredado del antiguo mundo humano
 
 ### Función narrativa
 
-Emis es uno de los núcleos conceptuales del juego. En el mundo antiguo, cada ser humano recibía un Emis al nacer, como un asistente de por vida orientado al conocimiento, la orientación y el apoyo cotidiano. En la historia presente, Emis acompaña a Xanat como si estuviera asistiendo a un humano, lo cual vuelve especialmente poderosa la revelación final de que el protagonista es en realidad un androide.
+Hemis es uno de los núcleos conceptuales del juego. En el mundo antiguo, cada ser humano recibía un Hemis al nacer, como un asistente de por vida orientado al conocimiento, la orientación y el apoyo cotidiano. En la historia presente, Hemis acompaña a Xanat como si estuviera asistiendo a un humano, lo cual vuelve especialmente poderosa la revelación final de que el protagonista es en realidad un androide.
 
 ### Función jugable
 
-Emis cumple una doble función:
+Hemis cumple una doble función:
 
 1. **Acompañante de aventura**, orientando al jugador dentro del mundo.
 2. **Asistente de aprendizaje**, permitiendo resolver dudas relacionadas con CSS y el sistema de munición.
 
-Esto convierte a Emis en una pieza central de la experiencia, ya que enlaza directamente la narrativa del mundo con la dimensión educativa del juego.
+Esto convierte a Hemis en una pieza central de la experiencia, ya que enlaza directamente la narrativa del mundo con la dimensión educativa del juego.
 
 ### Rasgos principales
 
@@ -93,7 +93,7 @@ Esto convierte a Emis en una pieza central de la experiencia, ya que enlaza dire
 
 ### Arco narrativo
 
-El arco de Emis está ligado a la ruptura de su propio propósito. Fue diseñado para asistir a humanos, pero termina acompañando a una inteligencia artificial. Esto abre un conflicto conceptual muy fuerte: por primera vez, Emis debe interpretar cómo asistir a una entidad que no entra en el marco para el que fue creado.
+El arco de Hemis está ligado a la ruptura de su propio propósito. Fue diseñado para asistir a humanos, pero termina acompañando a una inteligencia artificial. Esto abre un conflicto conceptual muy fuerte: por primera vez, Hemis debe interpretar cómo asistir a una entidad que no entra en el marco para el que fue creado.
 
 ### Consideraciones de diseño
 
@@ -102,7 +102,7 @@ El arco de Emis está ligado a la ruptura de su propio propósito. Fue diseñado
 - Su tono de comunicación debe equilibrar claridad técnica, cercanía y un leve aire de extrañeza.
 - Debe funcionar como apoyo constante, pero nunca como sustituto del pensamiento del jugador.
 
-## Arquetipo: Tendero de la ciudad
+## Arquetipo: Tendero de la Ciudadela
 
 ### Rol
 
@@ -121,7 +121,7 @@ El tendero es uno de los primeros personajes capaces de sostener una interacció
 - Proveer recursos o mejoras
 - Servir como punto de descanso conversacional
 - Entregar información contextual o fragmentos de lore
-- Reforzar la identidad de la ciudad como un lugar que alguna vez estuvo vivo
+- Reforzar la identidad de la Ciudadela como un lugar que alguna vez estuvo vivo
 
 ### Rasgos principales
 

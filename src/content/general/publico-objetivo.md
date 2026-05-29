@@ -5,7 +5,7 @@ description: "Perfil del público principal del juego, sus intereses, nivel espe
 date: 2026-04-23
 author: "jonathan-bello"
 order: 5
-coverImage: "/figma.jpg"
+coverImage: "/gdd-covers/general.png"
 ---
 El público objetivo principal de _Citadel of Solar Souls (CSS)_ está conformado por jugadores jóvenes y adultos con afinidad por experiencias de exploración, reto y descubrimiento progresivo, especialmente aquellos interesados en videojuegos que combinan dificultad, ambientación marcada y sistemas que recompensan la observación, la práctica y la experimentación. Aunque el juego tiene una finalidad educativa, su propuesta busca atraer también a jugadores que normalmente no consumirían productos formativos tradicionales, presentando el aprendizaje como una consecuencia natural de la acción dentro del mundo.
 

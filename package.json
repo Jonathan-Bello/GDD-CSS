@@ -1,10 +1,10 @@
 {
-  "name": "itst-blog",
+  "name": "gdd-css",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "prebuild": "node scripts/ensure-emis-web-config.mjs",
+    "prebuild": "node scripts/ensure-hemis-web-config.mjs",
     "build": "npx playwright install chromium && astro build",
     "preview": "astro preview",
     "astro": "astro"

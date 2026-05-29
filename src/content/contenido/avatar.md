@@ -5,7 +5,7 @@ description: "Definición visual y conceptual de Xanat, protagonista y avatar de
 date: 2026-04-23
 author: "jonathan-bello"
 order: 2
-coverImage: ""
+coverImage: "/gdd-covers/contenido.png"
 ---
 
 # Personaje principal
@@ -158,7 +158,7 @@ Al momento de producir storyboard o arte conceptual de Xanat, deben cuidarse est
 - debe destacar claramente del fondo
 - debe leerse bien en pose neutral, movimiento y combate
 - su diseño debe funcionar en escenarios solarpunk abandonados
-- debe verse compatible con Emis y con la interfaz tecnológica del mundo
+- debe verse compatible con Hemis y con la interfaz tecnológica del mundo
 - debe transmitir misterio sin perder sencillez
 
 ## Síntesis del personaje

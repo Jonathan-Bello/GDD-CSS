@@ -5,7 +5,7 @@ description: "Esquema general de cómo transiciona el juego entre exploración, 
 date: 2026-04-23
 author: "jonathan-bello"
 order: 3
-coverImage: ""
+coverImage: "/gdd-covers/sistema-juego.png"
 ---
 El flujo principal de _Citadel of Solar Souls (CSS)_ se basa en una progresión por zonas. El jugador explora una parte del mapa, descubre rutas, enemigos y puntos de interés, encuentra cápsulas de desafío donde desbloquea nuevas propiedades de CSS y utiliza esas nuevas herramientas para superar tanto los obstáculos de la zona como a sus enemigos. Al final de cada área se enfrenta a un jefe, diseñado como una prueba integradora de las mecánicas y propiedades aprendidas durante ese tramo. Una vez derrotado, se desbloquea el acceso a una nueva parte del mapa y el ciclo se repite con nuevos retos, enemigos y conceptos.
 
@@ -59,13 +59,13 @@ flowchart TD
 
 ## Transiciones principales durante la partida
 
-Durante la partida, el jugador alterna entre diferentes estados de interacción que forman el ritmo general del juego. La mayor parte del tiempo se encontrará explorando y combatiendo, pero también podrá acceder a Puntos de control para editar su munición, entrar en cápsulas de desafío para desbloquear propiedades, interactuar con entidades mediante diálogos y enfrentarse a jefes al final de cada zona. Estas transiciones deben sentirse naturales y rápidas, evitando romper el ritmo de exploración y aprendizaje.
+Durante la partida, el jugador alterna entre diferentes estados de interacción que forman el ritmo general del juego. La mayor parte del tiempo se encontrará explorando y combatiendo, pero también podrá acceder a Pilares solares para editar su munición, entrar en cápsulas de desafío para desbloquear propiedades, interactuar con entidades mediante diálogos y enfrentarse a jefes al final de cada zona. Estas transiciones deben sentirse naturales y rápidas, evitando romper el ritmo de exploración y aprendizaje.
 
 ```mermaid
 flowchart LR
     A[Exploración] --> B[Combate]
     B --> A
-    A --> C[Punto de control]
+    A --> C[Pilar solar]
     C --> D[Editor de munición CSS]
     D --> A
     A --> E[Diálogo con entidad]
