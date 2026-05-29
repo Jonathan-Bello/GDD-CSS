@@ -5,10 +5,8 @@ description: "Definición visual y conceptual de Xanat, protagonista y avatar de
 date: 2026-04-23
 author: "jonathan-bello"
 order: 2
-coverImage: "../../assets/imgs/arte-conceptual/concepto.png"
+coverImage: "../../assets/imgs/arte-conceptual/androideme.png"
 ---
-
-# Personaje principal
 
 Este documento define al personaje principal del juego desde una perspectiva de contenido visual, funcional y conceptual. Su finalidad es servir como referencia para arte conceptual, model sheets, storyboards, animación y consistencia general del diseño del protagonista.
 
@@ -88,7 +86,7 @@ Como Xanat funciona como avatar, sus expresiones deben ser moderadas. No necesit
 
 Si se opta por un rostro muy simplificado, eso puede reforzar tanto el estilo minimalista como su función de avatar.
 
-![Xanat](@assets/svgs/arte-conceptual/xanat.svg)
+![Xanat](@assets/imgs/arte-conceptual/androideme.png)
 
 ## Movimiento
 

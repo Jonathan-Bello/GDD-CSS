@@ -8,9 +8,7 @@ order: 1
 coverImage: "../../assets/imgs/arte-conceptual/mundo.png"
 ---
 
-# Trasfondo
-
-El entorno narrativo parte de un lore base escrito por **Jhonnatan López Aguilar**, conservado como referencia documental en `lore.pdf`. El GDD no transcribe todo ese material: lo sintetiza en una base operativa para diseño de mundo, personajes, zonas y tono. Las futuras iteraciones narrativas deberán mantener esta línea de continuidad.
+El entorno narrativo parte del lore escrito por **Jhonnatan López Aguilar**, conservado como referencia documental en [Biblia del mundo](/gdd/narrativa/biblia-del-mundo/). El GDD no transcribe todo ese material en cada entrada: lo sintetiza en una base operativa para diseño de mundo, personajes, zonas y tono. Las futuras iteraciones narrativas deberán mantener esta línea de continuidad.
 
 La historia de _Citadel of Solar Souls (CSS)_ se sitúa en un futuro muy lejano en el que la humanidad alcanzó uno de sus momentos de mayor esplendor. Lejos de los escenarios distópicos tradicionales, este mundo logró resolver gran parte de los conflictos entre progreso, sostenibilidad y calidad de vida. La tecnología y la naturaleza dejaron de estar enfrentadas y pasaron a coexistir en equilibrio dentro de una civilización de estética y filosofía solarpunk: ciudades verdes, energía sustentable, automatización avanzada, robótica integrada a la vida cotidiana y una inteligencia artificial plenamente incorporada al desarrollo humano.
 

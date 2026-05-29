@@ -8,8 +8,6 @@ order: 3
 coverImage: "../../assets/imgs/arte-conceptual/mundo.png"
 ---
 
-# Personajes principales
-
 Este documento reúne una definición inicial de los personajes principales y de algunos arquetipos narrativos que pueden sostener la experiencia de _Citadel of Solar Souls (CSS)_. Su función es establecer una base clara para dirección, narrativa, diseño de diálogo, arte conceptual y construcción de contenido, dejando abierto el espacio para futuras iteraciones conforme se refine la escritura final del juego.
 
 ## Principios generales de los personajes

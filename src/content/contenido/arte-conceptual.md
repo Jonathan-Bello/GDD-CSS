@@ -69,3 +69,9 @@ Su objetivo es servir como base para storyboard, exploración de mood, pruebas d
 
 **Uso:** referencia para el diseño de enemigos fuertes, guardianes defensores de zonas clave, proporción, silueta característica y armadura tecnológica avanzada.
 
+## Pelea con el jefe final
+
+![Concept art de la pelea con el jefe final](@assets/imgs/arte-conceptual/jefe-final.png)
+
+**Uso:** referencia para la puesta en escena del combate mayor, composición del enfrentamiento, escala del antagonista y tono visual del clímax de batalla.
+
