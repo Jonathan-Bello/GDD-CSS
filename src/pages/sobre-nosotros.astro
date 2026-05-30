@@ -1,7 +1,27 @@
 ---
 import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
-import imgAndroide from "@assets/imgs/arte-conceptual/androideme.png";
+import imgJonathan from "@assets/imgs/team/yo.png";
+import imgJhonna from "@assets/imgs/team/jhonna.png";
+import imgRobert from "@assets/imgs/team/robert.png";
+import imgJorge from "@assets/imgs/team/jorge.png";
+
+const collaborators = [
+  {
+    name: "Roberto Coronasimbrón",
+    role: "Ingeniero en Sistemas",
+    description:
+      "Colaborador técnico del proyecto, con apoyo en revisión, validación y acompañamiento de sistemas para fortalecer la base funcional del GDD y del desarrollo.",
+    image: imgRobert,
+  },
+  {
+    name: "Jorge",
+    role: "Apoyo académico y desarrollo",
+    description:
+      "Colaborador en el área de apoyo académico y de desarrollo. Participó en la construcción del apartado de Hubs, aportando estructura y continuidad a esa sección del proyecto.",
+    image: imgJorge,
+  },
+];
 ---
 
 <Layout title="Sobre Nosotros | Citadel of Solar Souls">
@@ -70,15 +90,13 @@ import imgAndroide from "@assets/imgs/arte-conceptual/androideme.png";
           </div>
 
           <div
-            class="flex items-center justify-center rounded-[1.75rem] border border-dashed border-border-organic/25 bg-bg-overlay/80 p-8 text-center"
+            class="flex items-center justify-center rounded-[1.75rem] border border-border-organic/25  p-4 text-center"
           >
-            <div class="space-y-3">
-              <Image
-                src={imgAndroide}
-                alt="Retrato del equipo"
-                class="mx-auto rounded-lg border border-border-organic/20"
-              />
-            </div>
+            <Image
+              src={imgJonathan}
+              alt="Retrato de Jonathan Alexis Bello Lopez"
+              class="aspect-[3/4] w-full max-w-sm rounded-3xl border  object-cover shadow-[0_18px_45px_rgba(26,26,26,0.24)]"
+            />
           </div>
         </div>
       </section>
@@ -87,34 +105,40 @@ import imgAndroide from "@assets/imgs/arte-conceptual/androideme.png";
         class="overflow-hidden rounded-4xl border border-border-organic/20 bg-bg-elevated/70 shadow-[0_28px_90px_rgba(26,26,26,0.25)] backdrop-blur"
       >
         <div
-          class="border-b border-border-organic/15 px-6 py-6 md:px-8 md:py-7"
+          class="grid gap-6 p-6 md:p-8 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:p-10"
         >
-          <span
-            class="inline-flex rounded-full border border-border-organic/20 bg-bg-overlay/70 px-3 py-1 font-text text-xs font-semibold uppercase tracking-[0.22em] text-accent-strong"
-          >
-            Guionista
-          </span>
-          <h2 class="mt-3 font-title text-3xl font-bold text-text-primary">
-            Jhonnatan López Aguilar
-          </h2>
-          <p
-            class="mt-2 font-text text-sm font-semibold uppercase tracking-[0.24em] text-accent-strong"
-          >
-            Guionista y Narrativa
-          </p>
-        </div>
-        <div class="space-y-4 px-6 py-6 md:px-8 md:py-7">
-          <p class="font-text text-base leading-8 text-text-secondary/90">
-            Pieza fundamental en la construcción del universo del proyecto.
-            Jhonnatan aporta la profundidad literaria necesaria para transformar
-            las mecánicas de juego en una experiencia narrativa cohesiva.
-          </p>
-          <p class="font-text text-base leading-8 text-text-secondary/90">
-            Su labor se centra en la escritura de guion, el desarrollo de lore y
-            la creación de diálogos, asegurando que la progresión del jugador
-            esté intrínsecamente ligada a una historia significativa y
-            envolvente.
-          </p>
+          <Image
+            src={imgJhonna}
+            alt="Retrato de Jhonnatan Lopez Aguilar"
+            class="aspect-[3/4] w-full max-w-md justify-self-center rounded-3xl border border-border-organic/20 object-cover object-[50%_18%] shadow-[0_18px_45px_rgba(26,26,26,0.24)]"
+          />
+
+          <div class="space-y-4">
+            <span
+              class="inline-flex rounded-full border border-border-organic/20 bg-bg-overlay/70 px-3 py-1 font-text text-xs font-semibold uppercase tracking-[0.22em] text-accent-strong"
+            >
+              Guionista
+            </span>
+            <h2 class="font-title text-3xl font-bold text-text-primary">
+              Jhonnatan López Aguilar
+            </h2>
+            <p
+              class="font-text text-sm font-semibold uppercase tracking-[0.24em] text-accent-strong"
+            >
+              Guionista y Narrativa
+            </p>
+            <p class="font-text text-base leading-8 text-text-secondary/90">
+              Pieza fundamental en la construcción del universo del proyecto.
+              Jhonnatan aporta la profundidad literaria necesaria para transformar
+              las mecánicas de juego en una experiencia narrativa cohesiva.
+            </p>
+            <p class="font-text text-base leading-8 text-text-secondary/90">
+              Su labor se centra en la escritura de guion, el desarrollo de lore y
+              la creación de diálogos, asegurando que la progresión del jugador
+              esté intrínsecamente ligada a una historia significativa y
+              envolvente.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -128,7 +152,31 @@ import imgAndroide from "@assets/imgs/arte-conceptual/androideme.png";
             Colaboradores y apoyo académico
           </h2>
         </div>
-        <div class="px-6 py-6 md:px-8 md:py-7">
+        <div class="space-y-6 px-6 py-6 md:px-8 md:py-7">
+          <div class="grid gap-5 sm:grid-cols-2">
+            {
+              collaborators.map((member) => (
+                <article class="flex h-full flex-col overflow-hidden rounded-3xl border border-border-organic/20 bg-bg-overlay/80">
+                  <Image
+                    src={member.image}
+                    alt={`Retrato de ${member.name}`}
+                    class="aspect-[4/5] w-full object-cover"
+                  />
+                  <div class="flex flex-1 flex-col gap-3 p-5">
+                    <h3 class="font-title text-2xl font-bold text-text-primary">
+                      {member.name}
+                    </h3>
+                    <p class="font-text text-xs font-semibold uppercase tracking-[0.22em] text-accent-strong">
+                      {member.role}
+                    </p>
+                    <p class="font-text text-sm leading-7 text-text-secondary/90">
+                      {member.description}
+                    </p>
+                  </div>
+                </article>
+              ))
+            }
+          </div>
           <p class="font-text text-base leading-8 text-text-secondary/90">
             El desarrollo de este proyecto de tesis cuenta con el respaldo
             técnico y metodológico del Instituto Tecnológico Superior de
