@@ -4,7 +4,11 @@ import Layout from "../layouts/Layout.astro";
 const gameUrl = "/css-game/index.html";
 ---
 
-<Layout title="Demo jugable | Citadel of Solar Souls">
+<Layout
+  title="Demo de Citadel of the Solar Souls | Juego educativo de CSS"
+  description="Juega la demo de Citadel of the Solar Souls, un videojuego educativo de CSS donde aprendes jugando con exploración, retos y editor de código."
+  pageType="VideoGame"
+>
   <section
     class="min-h-[calc(100vh-4rem)] bg-neutral-950 text-neutral-50 py-12 px-4 lg:px-0"
   >
@@ -45,6 +49,14 @@ const gameUrl = "/css-game/index.html";
         >
         <span>Recomendado: jugar en escritorio con teclado y mouse.</span>
       </div>
+      <section class="mt-8 max-w-3xl border-t border-white/15 pt-6 text-blue-50/80">
+        <p class="text-xs font-bold uppercase tracking-widest text-[#ffb762]">Prototipo de tesis en desarrollo</p>
+        <h2 class="font-poppins text-2xl font-bold text-white">Aprende CSS jugando</h2>
+        <p class="mt-3 leading-7">
+          Esta demo presenta el enfoque de Citadel of the Solar Souls: un serious game de CSS que convierte propiedades, estilos y decisiones de código en herramientas de exploración y progreso. Está diseñado como una experiencia educativa para practicar CSS de forma activa.
+        </p>
+        <p class="mt-3 leading-7">La demo conecta una experiencia construida en Godot, su publicacion en web y el acompanamiento contextual de Hemis. Su alcance actual es parcial y continuara evolucionando durante la investigacion.</p>
+      </section>
     </div>
   </section>
 </Layout>

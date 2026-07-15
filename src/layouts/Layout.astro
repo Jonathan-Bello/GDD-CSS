@@ -7,9 +7,42 @@ import "../styles/global.css";
 
 interface Props {
   title?: string;
+  description?: string;
+  pageType?: "WebPage" | "VideoGame";
 }
 
-const { title = "Citadel of Solar Souls" } = Astro.props;
+const {
+  title = "Citadel of the Solar Souls | Videojuego educativo de CSS",
+  description = "Citadel of the Solar Souls es un proyecto de tesis en desarrollo: un videojuego educativo de CSS que integra Godot, web e inteligencia artificial para aprender jugando.",
+  pageType = "WebPage",
+} = Astro.props;
+const canonicalUrl = new URL(Astro.url.pathname, "https://css.jonathanbello.com");
+const socialImage = new URL("/figma.jpg", canonicalUrl).href;
+const authors = [
+  "Jonathan Alexis Bello L\u00f3pez",
+  "Jhonnatan L\u00f3pez Aguilar",
+  "Roberto Corona Simbron",
+  "Jorge Eduardo V\u00e1zquez Vicente",
+];
+const schema = {
+  "@context": "https://schema.org",
+  "@type": pageType,
+  name: title,
+  description,
+  url: canonicalUrl.href,
+  image: socialImage,
+  inLanguage: "es-MX",
+  ...(pageType === "VideoGame"
+    ? {
+        applicationCategory: "EducationalApplication",
+        genre: ["Educational game", "Serious game", "Adventure"],
+        operatingSystem: "Web",
+        creator: { "@type": "Person", name: authors[0], alternateName: "Jonathan Bello" },
+        contributor: authors.slice(1).map((name) => ({ "@type": "Person", name })),
+        developmentStatus: "In development",
+      }
+    : {}),
+};
 ---
 
 <!doctype html>
@@ -21,6 +54,20 @@ const { title = "Citadel of Solar Souls" } = Astro.props;
     <link rel="icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={socialImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImage} />
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
     <ClientRouter />
   </head>
   <body

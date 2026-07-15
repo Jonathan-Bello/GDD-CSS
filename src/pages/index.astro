@@ -5,8 +5,27 @@ import WhyCssQuest from "../components/WhyCssQuest.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout>
+<Layout
+  title="Citadel of the Solar Souls | Aprende CSS jugando"
+  description="Citadel of the Solar Souls es un videojuego educativo y serious game de CSS: aprende jugando con retos, exploración e inteligencia artificial."
+  pageType="VideoGame"
+>
   <Banner />
   <WhyCssQuest />
+  <section class="bg-bg-elevated px-4 py-20 md:px-6">
+    <div class="container mx-auto grid max-w-6xl gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+      <div>
+        <p class="font-text text-sm font-semibold uppercase tracking-[0.24em] text-accent-strong">Proyecto de tesis en desarrollo</p>
+        <h2 class="mt-3 font-title text-3xl font-bold text-text-primary md:text-4xl">Un videojuego educativo de CSS que une Godot, web e inteligencia artificial</h2>
+        <p class="mt-5 font-text text-base leading-8 text-text-secondary/90">Citadel of the Solar Souls es un prototipo en desarrollo para aprender CSS jugando. El proyecto transforma propiedades de estilo en decisiones de exploracion, combate y progresion, mientras Hemis acompana al jugador con orientacion contextual.</p>
+        <p class="mt-4 font-text text-base leading-8 text-text-secondary/90">El alcance actual evalua <code>fill</code>, <code>stroke</code>, <code>opacity</code>, <code>width</code> y <code>height</code>. Las demas mecanicas y contenidos forman parte de etapas futuras del proyecto de tesis.</p>
+      </div>
+      <div class="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
+        <article class="rounded-3xl border border-border-organic/20 bg-bg-overlay/70 p-5"><h3 class="font-title text-xl font-bold text-text-primary">Godot</h3><p class="mt-2 font-text text-sm leading-7 text-text-secondary/90">Construye la experiencia jugable, los retos y la progresion.</p></article>
+        <article class="rounded-3xl border border-border-organic/20 bg-bg-overlay/70 p-5"><h3 class="font-title text-xl font-bold text-text-primary">Web</h3><p class="mt-2 font-text text-sm leading-7 text-text-secondary/90">Publica la demo y conecta la documentacion tecnica del juego.</p></article>
+        <article class="rounded-3xl border border-border-organic/20 bg-bg-overlay/70 p-5"><h3 class="font-title text-xl font-bold text-text-primary">Hemis e IA</h3><p class="mt-2 font-text text-sm leading-7 text-text-secondary/90">Acompana el aprendizaje sin sustituir la exploracion del jugador.</p></article>
+      </div>
+    </div>
+  </section>
   <HomeCta />
 </Layout>

@@ -9,9 +9,12 @@ import netlify from "@astrojs/netlify";
 
 import rehypeMermaid from "rehype-mermaid";
 
+import sitemap from "@astrojs/sitemap";
+
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react()],
+  site: "https://css.jonathanbello.com",
+  integrations: [react(), sitemap()],
   output: "static",
   vite: {
     plugins: [tailwindcss()],

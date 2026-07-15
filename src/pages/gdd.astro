@@ -11,7 +11,11 @@ const generalEntries = await getSortedCollectionEntries("general");
 const featuredEntry = generalEntries[0];
 ---
 
-<Layout title="GDD | Citadel of Solar Souls">
+<Layout
+  title="GDD de Citadel of the Solar Souls | Videojuego educativo de CSS"
+  description="Consulta el Game Design Document de Citadel of the Solar Souls: sistemas, narrativa y diseño del serious game para aprender CSS jugando."
+  pageType="VideoGame"
+>
   <section class="bg-bg-base px-4 py-10 md:px-6 md:py-14">
     <div
       class="container mx-auto grid gap-6 xl:grid-cols-[320px_minmax(0,1fr)] xl:items-start"
@@ -94,5 +98,11 @@ const featuredEntry = generalEntries[0];
         }
       </section>
     </div>
+    <section class="container mx-auto mt-6 rounded-4xl border border-border-organic/20 bg-bg-overlay/70 p-6 md:p-8">
+      <p class="font-text text-sm font-semibold uppercase tracking-[0.24em] text-accent-strong">Proyecto de tesis en desarrollo</p>
+      <h2 class="mt-3 font-title text-2xl font-bold text-text-primary">Integracion de Godot, web e inteligencia artificial</h2>
+      <p class="mt-3 max-w-4xl font-text leading-8 text-text-secondary/90">Este GDD documenta un prototipo de videojuego educativo de CSS. Godot sostiene la experiencia jugable, la web publica la demo y la documentacion, y Hemis funciona como acompanante de IA contextual y pedagogica. La IA orienta sin sustituir la practica ni las decisiones del estudiante.</p>
+      <a href="/uso-academico" class="mt-5 inline-flex rounded-xl bg-accent px-5 py-3 font-text font-semibold text-text-inverse">Conocer uso academico</a>
+    </section>
   </section>
 </Layout>
