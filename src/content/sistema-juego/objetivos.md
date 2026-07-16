@@ -1,7 +1,7 @@
 ---
 id: "1"
 title: "Objetivo del juego"
-description: "Descripción del objetivo principal del juego, las acciones del jugador y la forma en que la progresión se articula entre exploración, combate y aprendizaje."
+description: "Objetivos, acciones y progresión de Citadel of the Solar Souls: un videojuego educativo de CSS en desarrollo."
 date: 2026-04-23
 author: "jonathan-bello"
 order: 1
