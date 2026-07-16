@@ -5,7 +5,7 @@ description: "Puntos clave que distinguen al juego y resumen sus principales ele
 date: 2026-04-23
 author: "jonathan-bello"
 order: 3
-coverImage: "../../assets/imgs/arte-conceptual/portada.png"
+coverImage: "../../assets/imgs/arte-conceptual/portada.webp"
 ---
 ## Aprendizaje integrado directamente en la acción del juego
 

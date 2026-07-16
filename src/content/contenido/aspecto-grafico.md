@@ -5,7 +5,7 @@ description: "Definición del estilo visual general del juego, sus principios fo
 date: 2026-04-23
 author: "jonathan-bello"
 order: 1
-coverImage: "../../assets/imgs/arte-conceptual/concepto.png"
+coverImage: "../../assets/imgs/arte-conceptual/concepto.webp"
 ---
 
 _Citadel of Solar Souls (CSS)_ utiliza una dirección de arte basada en un estilo de **dibujo vectorial minimalista**, construido con **líneas puramente rectas**, **formas geométricas claras** y **colores sólidos**. La intención visual del proyecto es transmitir un mundo futurista, limpio, tecnológico y melancólico, donde la naturaleza ha invadido una civilización avanzada sin destruir por completo su belleza ni su sentido de armonía.
@@ -143,25 +143,25 @@ Las siguientes referencias fueron cuidadosamente seleccionadas para establecer y
 
 ## Figuras geométricas simples
 
-![Referencia de figuras geométricas simples](@assets/imgs/referencias/figuras.png)
+![Referencia de figuras geométricas simples](@assets/imgs/referencias/figuras.webp)
 
 **¿Por qué?** Esta referencia define el punto de partida del apartado visual: demostrar que un dibujo vectorial puede construirse de forma simple y, aun así, verse detallado y bien resuelto. Nos interesa que el jugador perciba orden, claridad y estructura desde formas básicas, sin depender de recursos complejos. Como el proyecto aún se encuentra en etapa de prototipo, esta guía permite mantener una producción realista y coherente mientras se consolida la identidad gráfica.
 
 ## Arte vectorial minimalista
 
-![Referencia de arte vectorial minimalista](@assets/imgs/referencias/svg.png)
+![Referencia de arte vectorial minimalista](@assets/imgs/referencias/svg.webp)
 
 **¿Por qué?** Esta referencia se utiliza para reforzar que los colores sólidos pueden sostener tanto el fondo como los detalles visuales sin necesidad de degradados. El objetivo es conservar un estilo limpio, legible y consistente con el enfoque minimalista del juego. También funciona como guía de producción: menos complejidad técnica, mayor control de estilo y una lectura visual inmediata.
 
 ## Referencia emocional minimalista: Gris
 
-![Referencia de paleta neutral en blanco y gris](@assets/imgs/referencias/gris.png)
+![Referencia de paleta neutral en blanco y gris](@assets/imgs/referencias/gris.webp)
 
 **¿Por qué?** _Gris_ se toma como referencia para mostrar cómo un estilo minimalista puede transmitir emociones profundas, especialmente sensaciones de soledad y vacío. No se trata solo de paleta o composición, sino de atmósfera: queremos que el apartado gráfico comunique estados emocionales mediante simplicidad visual, silencio cromático y dirección artística contenida.
 
 ## Referencia de diseño y cámara: Hollow Knight
 
-![Referencia de diseño de personajes y escenarios](@assets/imgs/referencias/hollow.png)
+![Referencia de diseño de personajes y escenarios](@assets/imgs/referencias/hollow.webp)
 
 **¿Por qué?** _Hollow Knight_ se incorpora principalmente como referencia de mecánicas narrativas y del uso de cámara dentro de un entorno 2D. Nos interesa cómo articula exploración, ritmo y lectura espacial sin romper la inmersión. Esta referencia guía la forma en que conectaremos atmósfera, narrativa ambiental y desplazamiento visual del jugador en pantalla.
 
@@ -173,7 +173,7 @@ Las siguientes referencias fueron cuidadosamente seleccionadas para establecer y
 
 ## Referencia de progresión y hostilidad: Blasphemous
 
-![Referencia de atmósfera visual y detalle minimalista](@assets/imgs/referencias/blasfemous.png)
+![Referencia de atmósfera visual y detalle minimalista](@assets/imgs/referencias/blasfemous.webp)
 
 **¿Por qué?** _Blasphemous_ funciona como referencia para la progresión del mapa, el aumento de dificultad y la construcción de entornos visualmente hostiles. Nos interesa en particular cómo escenarios que deberían percibirse bellos —como espacios de arquitectura religiosa— pueden comunicar tensión, peligro y decadencia al mismo tiempo. Esta dualidad entre belleza formal y agresividad del mundo es clave para el tono del proyecto.
 

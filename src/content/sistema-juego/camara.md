@@ -5,7 +5,7 @@ description: "Descripción del comportamiento de la cámara durante la partida, 
 date: 2026-04-23
 author: "jonathan-bello"
 order: 4
-coverImage: "../../assets/imgs/arte-conceptual/guardianes-ciudadela.png"
+coverImage: "../../assets/imgs/arte-conceptual/guardianes-ciudadela.webp"
 ---
 La cámara de _Citadel of Solar Souls (CSS)_ es una cámara lateral fija con seguimiento continuo al jugador, pensada para acompañar la exploración, el combate y el plataformeo sin introducir complejidad innecesaria. Su comportamiento general toma como referencia la claridad y estabilidad de cámara presente en juegos como _Hollow Knight_, donde el encuadre se mantiene centrado en la acción y permite al jugador leer con facilidad el espacio que lo rodea.
 

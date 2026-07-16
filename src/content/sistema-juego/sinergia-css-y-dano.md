@@ -5,7 +5,7 @@ description: "Modelo provisional de cálculo de daño para munición CSS contra 
 date: 2026-04-23
 author: "jonathan-bello"
 order: 7
-coverImage: "../../assets/imgs/arte-conceptual/guardianes-ciudadela.png"
+coverImage: "../../assets/imgs/arte-conceptual/guardianes-ciudadela.webp"
 ---
 
 ## Parámetros base (**provisionales**)

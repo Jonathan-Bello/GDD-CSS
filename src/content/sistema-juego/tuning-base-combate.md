@@ -5,7 +5,7 @@ description: "Parámetros iniciales provisionales para combate, curación, movil
 date: 2026-04-23
 author: "jonathan-bello"
 order: 8
-coverImage: "../../assets/imgs/arte-conceptual/guardianes-ciudadela.png"
+coverImage: "../../assets/imgs/arte-conceptual/guardianes-ciudadela.webp"
 ---
 
 ## Tabla base (**provisional**)

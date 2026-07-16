@@ -5,7 +5,7 @@ description: "Definición inicial de los personajes principales y arquetipos nar
 date: 2026-04-23
 author: "jonathan-bello"
 order: 3
-coverImage: "../../assets/imgs/arte-conceptual/mundo.png"
+coverImage: "../../assets/imgs/arte-conceptual/mundo.webp"
 ---
 
 Este documento reúne una definición inicial de los personajes principales y de algunos arquetipos narrativos que pueden sostener la experiencia de _Citadel of Solar Souls (CSS)_. Su función es establecer una base clara para dirección, narrativa, diseño de diálogo, arte conceptual y construcción de contenido, dejando abierto el espacio para futuras iteraciones conforme se refine la escritura final del juego.

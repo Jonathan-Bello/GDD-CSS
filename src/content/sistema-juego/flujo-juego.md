@@ -5,7 +5,7 @@ description: "Esquema general de cómo transiciona el juego entre exploración, 
 date: 2026-04-23
 author: "jonathan-bello"
 order: 3
-coverImage: "../../assets/imgs/arte-conceptual/guardianes-ciudadela.png"
+coverImage: "../../assets/imgs/arte-conceptual/guardianes-ciudadela.webp"
 ---
 El flujo principal de _Citadel of Solar Souls (CSS)_ se basa en una progresión por zonas. El jugador explora una parte del mapa, descubre rutas, enemigos y puntos de interés, encuentra cápsulas de desafío donde desbloquea nuevas propiedades de CSS y utiliza esas nuevas herramientas para superar tanto los obstáculos de la zona como a sus enemigos. Al final de cada área se enfrenta a un jefe, diseñado como una prueba integradora de las mecánicas y propiedades aprendidas durante ese tramo. Una vez derrotado, se desbloquea el acceso a una nueva parte del mapa y el ciclo se repite con nuevos retos, enemigos y conceptos.
 

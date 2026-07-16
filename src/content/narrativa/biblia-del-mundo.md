@@ -5,7 +5,7 @@ description: "Documento base de lore escrito por Jhonnatan López Aguilar, integ
 date: 2026-05-29
 author: "jhonnatan-lopez-aguilar"
 order: 5
-coverImage: "../../assets/imgs/arte-conceptual/mundo.png"
+coverImage: "../../assets/imgs/arte-conceptual/mundo.webp"
 ---
 
 Jhonnatan López Aguilar es el autor del lore base que da origen al trasfondo amplio de _Citadel of Solar Souls_. Esta entrada conserva el espíritu principal de ese documento para usarlo como referencia narrativa dentro del GDD, sin reemplazar las versiones operativas orientadas a gameplay.

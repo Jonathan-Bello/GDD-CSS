@@ -8,6 +8,7 @@ import tailwindcss from "@tailwindcss/vite";
 import netlify from "@astrojs/netlify";
 
 import rehypeMermaid from "rehype-mermaid";
+import rehypeLazyImages from "./scripts/rehype-lazy-images.mjs";
 
 import sitemap from "@astrojs/sitemap";
 
@@ -27,6 +28,6 @@ export default defineConfig({
       type: "shiki",
       excludeLangs: ["mermaid"],
     },
-    rehypePlugins: [rehypeMermaid],
+    rehypePlugins: [rehypeMermaid, rehypeLazyImages],
   },
 });

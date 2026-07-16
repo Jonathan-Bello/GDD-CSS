@@ -5,7 +5,7 @@ description: "Muestra de assets vectoriales finales creados para el juego y util
 date: 2026-05-29
 author: "jonathan-bello"
 order: 6
-coverImage: "../../assets/imgs/arte-conceptual/concepto.png"
+coverImage: "../../assets/imgs/arte-conceptual/concepto.webp"
 ---
 
 # Arte SVG del juego

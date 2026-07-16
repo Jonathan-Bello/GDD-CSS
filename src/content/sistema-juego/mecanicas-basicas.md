@@ -5,7 +5,7 @@ description: "Descripción de las mecánicas principales del juego, incluyendo m
 date: 2026-04-23
 author: "jonathan-bello"
 order: 2
-coverImage: "../../assets/imgs/arte-conceptual/guardianes-ciudadela.png"
+coverImage: "../../assets/imgs/arte-conceptual/guardianes-ciudadela.webp"
 ---
 ## Movimiento
 

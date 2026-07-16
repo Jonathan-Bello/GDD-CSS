@@ -5,7 +5,7 @@ description: "Guía visual inicial de mood, atmósfera y composición para itera
 date: 2026-04-28
 author: "jonathan-bello"
 order: 3
-coverImage: "../../assets/imgs/arte-conceptual/concepto.png"
+coverImage: "../../assets/imgs/arte-conceptual/concepto.webp"
 ---
 
 # Arte conceptual
@@ -16,25 +16,25 @@ Su objetivo es servir como base para storyboard, exploración de mood, pruebas d
 
 ## Portada conceptual
 
-![Portada conceptual](@assets/imgs/arte-conceptual/portada.png)
+![Portada conceptual](@assets/imgs/arte-conceptual/portada.webp)
 
 **Uso:** referencia macro de identidad visual, composición general y primera impresión estética del proyecto.
 
 ## Mundo y atmósfera
 
-![Mundo conceptual](@assets/imgs/arte-conceptual/mundo.png)
+![Mundo conceptual](@assets/imgs/arte-conceptual/mundo.webp)
 
 **Uso:** guía para dirección de escenarios, profundidad espacial y mezcla entre ruina tecnológica y recuperación natural.
 
 ## Estilo minimalista
 
-![Estilo minimalista](@assets/imgs/arte-conceptual/estilo-minimalista.png)
+![Estilo minimalista](@assets/imgs/arte-conceptual/estilo-minimalista.webp)
 
 **Uso:** referencia para mantener lectura clara, formas limpias y economía de detalle sin perder intención artística.
 
 ## Concepto de personaje
 
-![Concepto de personaje](@assets/imgs/arte-conceptual/concepto.png)
+![Concepto de personaje](@assets/imgs/arte-conceptual/concepto.webp)
 
 **Uso:** apoyo para explorar silueta, proporciones y lenguaje visual del protagonista dentro del marco geométrico del juego.
 
@@ -47,31 +47,31 @@ Su objetivo es servir como base para storyboard, exploración de mood, pruebas d
 
 ## Hub central
 
-![Hub conceptual](@assets/imgs/arte-conceptual/hub.png)
+![Hub conceptual](@assets/imgs/arte-conceptual/hub.webp)
 
 **Uso:** referencia para la zona central de convergencia, punto de encuentro clave y distribución espacial de sistemas de navegación principales.
 
 ## Comerciante
 
-![Comerciante conceptual](@assets/imgs/arte-conceptual/comerciante.png)
+![Comerciante conceptual](@assets/imgs/arte-conceptual/comerciante.webp)
 
 **Uso:** guía de diseño de personaje secundario, lenguaje visual de comercio y elementos de interacción económica en el mundo.
 
 ## Zona de tienda
 
-![Zona de tienda conceptual](@assets/imgs/arte-conceptual/zona-tienda.png)
+![Zona de tienda conceptual](@assets/imgs/arte-conceptual/zona-tienda.webp)
 
 **Uso:** referencia para la arquitectura comercial, disposición de espacios de venta y atmósfera de intercambio dentro del mundo del juego.
 
 ## Guardianes de la ciudadela
 
-![Guardianes conceptual](@assets/imgs/arte-conceptual/guardianes-ciudadela.png)
+![Guardianes conceptual](@assets/imgs/arte-conceptual/guardianes-ciudadela.webp)
 
 **Uso:** referencia para el diseño de enemigos fuertes, guardianes defensores de zonas clave, proporción, silueta característica y armadura tecnológica avanzada.
 
 ## Pelea con el jefe final
 
-![Concept art de la pelea con el jefe final](@assets/imgs/arte-conceptual/jefe-final.png)
+![Concept art de la pelea con el jefe final](@assets/imgs/arte-conceptual/jefe-final.webp)
 
 **Uso:** referencia para la puesta en escena del combate mayor, composición del enfrentamiento, escala del antagonista y tono visual del clímax de batalla.
 

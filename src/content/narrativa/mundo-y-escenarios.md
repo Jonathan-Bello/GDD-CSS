@@ -5,7 +5,7 @@ description: "Resumen narrativo del juego, sus ejes temáticos, tono general y d
 date: 2026-04-23
 author: "jonathan-bello"
 order: 2
-coverImage: "../../assets/imgs/arte-conceptual/mundo.png"
+coverImage: "../../assets/imgs/arte-conceptual/mundo.webp"
 ---
 
 # Descripciones

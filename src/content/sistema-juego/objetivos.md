@@ -5,7 +5,7 @@ description: "Descripción del objetivo principal del juego, las acciones del ju
 date: 2026-04-23
 author: "jonathan-bello"
 order: 1
-coverImage: "../../assets/imgs/arte-conceptual/guardianes-ciudadela.png"
+coverImage: "../../assets/imgs/arte-conceptual/guardianes-ciudadela.webp"
 ---
 En _Citadel of Solar Souls (CSS)_ el jugador debe avanzar a través de una Ciudadela solarpunk abandonada, explorando sus distintos sectores, enfrentando enemigos mecánicos y superando obstáculos mediante el uso estratégico de propiedades de CSS. El objetivo general es progresar dentro del mundo mientras se descubren sus secretos, se restauran o alteran sistemas del entorno y se adquieren nuevas capacidades que permiten acceder a zonas, resolver situaciones y derrotar amenazas cada vez más complejas.
 

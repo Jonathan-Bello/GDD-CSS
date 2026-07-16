@@ -5,7 +5,7 @@ description: "Descripción general del juego, el rol del jugador y la base narra
 date: 2026-04-23
 author: "jonathan-bello"
 order: 2
-coverImage: "../../assets/imgs/arte-conceptual/portada.png"
+coverImage: "../../assets/imgs/arte-conceptual/portada.webp"
 ---
 _Citadel of Solar Souls (CSS)_ es un videojuego de aventura y aprendizaje ambientado en una Ciudadela abandonada de estilo solarpunk, donde la naturaleza y la tecnología conviven en armonía entre ruinas, estructuras automatizadas y sistemas que aún continúan funcionando sin intervención humana. El jugador despierta misteriosamente en este lugar sin comprender del todo quién es ni por qué está ahí, y pronto descubre que la Ciudadela está habitada únicamente por robots: algunos se limitan a repetir tareas de forma mecánica, otros han dejado de funcionar y algunos más pueden representar una amenaza. En este mundo no hay humanos visibles, por lo que el jugador parece ser el único de su especie en medio de una civilización detenida, silenciosa y todavía activa en fragmentos.
 

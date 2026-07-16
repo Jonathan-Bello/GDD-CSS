@@ -5,7 +5,7 @@ description: "Estructura macro de progresión por zonas con objetivos narrativos
 date: 2026-04-23
 author: "jonathan-bello"
 order: 5
-coverImage: "../../assets/imgs/arte-conceptual/hub.png"
+coverImage: "../../assets/imgs/arte-conceptual/hub.webp"
 ---
 
 ## Estado implementado del demo vertical slice

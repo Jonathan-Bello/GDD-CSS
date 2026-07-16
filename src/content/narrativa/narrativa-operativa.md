@@ -5,7 +5,7 @@ description: "Estructura narrativa para producción integrada al gameplay, sin d
 date: 2026-04-23
 author: "jonathan-bello"
 order: 4
-coverImage: "../../assets/imgs/arte-conceptual/mundo.png"
+coverImage: "../../assets/imgs/arte-conceptual/mundo.webp"
 ---
 
 ## Macroetapas (actos)

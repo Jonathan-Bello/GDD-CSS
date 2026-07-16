@@ -27,6 +27,8 @@ const { id, title, description, coverImage, order } = Astro.props;
           transition:name={`card-image-${id}`}
           width={coverImage.width}
           height={coverImage.height}
+          loading="lazy"
+          decoding="async"
           class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
         />
         <div class="absolute inset-0 bg-gradient-to-t from-bg-overlay to-transparent opacity-60" />

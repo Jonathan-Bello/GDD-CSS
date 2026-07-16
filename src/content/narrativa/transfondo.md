@@ -5,7 +5,7 @@ description: "Contexto histórico y conceptual del mundo de Citadel of Solar Sou
 date: 2026-04-23
 author: "jonathan-bello"
 order: 1
-coverImage: "../../assets/imgs/arte-conceptual/mundo.png"
+coverImage: "../../assets/imgs/arte-conceptual/mundo.webp"
 ---
 
 El entorno narrativo parte del lore escrito por **Jhonnatan López Aguilar**, conservado como referencia documental en [Biblia del mundo](/gdd/narrativa/biblia-del-mundo/). El GDD no transcribe todo ese material en cada entrada: lo sintetiza en una base operativa para diseño de mundo, personajes, zonas y tono. Las futuras iteraciones narrativas deberán mantener esta línea de continuidad.

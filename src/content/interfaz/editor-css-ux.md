@@ -5,7 +5,7 @@ description: "Especificación de experiencia de usuario para el editor de munici
 date: 2026-04-23
 author: "jonathan-bello"
 order: 3
-coverImage: "../../assets/imgs/arte-conceptual/jefe-final.png"
+coverImage: "../../assets/imgs/arte-conceptual/jefe-final.webp"
 ---
 
 ## Estructura general

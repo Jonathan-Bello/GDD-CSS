@@ -5,7 +5,7 @@ description: "Mapa de aplicación de propiedades CSS por combate, exploración, 
 date: 2026-04-23
 author: "jonathan-bello"
 order: 4
-coverImage: "../../assets/imgs/arte-conceptual/hub.png"
+coverImage: "../../assets/imgs/arte-conceptual/hub.webp"
 ---
 
 > La evaluación del prototipo se concentra en `fill`, `stroke`, `opacity`, `width` y `height`. Las demás propiedades se mantienen como expansión futura.

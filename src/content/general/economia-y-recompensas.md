@@ -5,7 +5,7 @@ description: "Versión mínima de economía para sostener progresión sin romper
 date: 2026-04-23
 author: "jonathan-bello"
 order: 6
-coverImage: "../../assets/imgs/arte-conceptual/portada.png"
+coverImage: "../../assets/imgs/arte-conceptual/portada.webp"
 ---
 
 ## Alcance de versión mínima (**provisional**)

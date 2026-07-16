@@ -5,7 +5,7 @@ description: "Definiciones operativas de términos clave del GDD para mantener c
 date: 2026-04-23
 author: "jonathan-bello"
 order: 5
-coverImage: "../../assets/imgs/arte-conceptual/portada.png"
+coverImage: "../../assets/imgs/arte-conceptual/portada.webp"
 ---
 
 ## Objetivo

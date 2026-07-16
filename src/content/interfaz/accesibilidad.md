@@ -5,7 +5,7 @@ description: "Checklist operativo de accesibilidad para combate, lectura de UI y
 date: 2026-04-23
 author: "jonathan-bello"
 order: 4
-coverImage: "../../assets/imgs/arte-conceptual/jefe-final.png"
+coverImage: "../../assets/imgs/arte-conceptual/jefe-final.webp"
 ---
 
 ## Checklist base (**provisional**)

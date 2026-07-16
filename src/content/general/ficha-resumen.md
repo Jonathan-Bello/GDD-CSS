@@ -5,7 +5,7 @@ description: "Vista rápida de las características generales del videojuego y s
 date: 2026-04-23
 author: "jonathan-bello"
 order: 1
-coverImage: "../../assets/imgs/arte-conceptual/portada.png"
+coverImage: "../../assets/imgs/arte-conceptual/portada.webp"
 ---
 - **Nombre:** Citadel of Solar Souls (IA)
 - **Plataforma:** PC y navegador web

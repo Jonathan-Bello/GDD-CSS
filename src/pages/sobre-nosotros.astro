@@ -1,10 +1,10 @@
 ---
 import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
-import imgJonathan from "@assets/imgs/team/yo.png";
-import imgJhonna from "@assets/imgs/team/jhonna.png";
-import imgRobert from "@assets/imgs/team/robert.png";
-import imgJorge from "@assets/imgs/team/jorge.png";
+import imgJonathan from "@assets/imgs/team/yo.webp";
+import imgJhonna from "@assets/imgs/team/jhonna.webp";
+import imgRobert from "@assets/imgs/team/robert.webp";
+import imgJorge from "@assets/imgs/team/jorge.webp";
 
 const team = [
   { name: "Jonathan Alexis Bello L\u00f3pez", role: "Autor, director de proyecto y desarrollador principal", description: "Con la marca Jonathan Bello, dirige el proyecto de tesis y articula Godot, tecnologias web e inteligencia artificial para construir un videojuego educativo de CSS.", image: imgJonathan },
@@ -25,7 +25,7 @@ const team = [
       <div class="grid gap-6 md:grid-cols-2">
         {team.map((member) => (
           <article class="overflow-hidden rounded-4xl border border-border-organic/20 bg-bg-elevated/70 shadow-[0_20px_60px_rgba(26,26,26,0.18)]">
-            <Image src={member.image} alt={`Retrato de ${member.name}`} class="aspect-[4/3] w-full object-cover object-top" />
+            <Image src={member.image} alt={`Retrato de ${member.name}`} loading="lazy" decoding="async" class="aspect-[4/3] w-full object-cover object-top" />
             <div class="p-6">
               <h2 class="font-title text-2xl font-bold text-text-primary">{member.name}</h2>
               <p class="mt-2 font-text text-xs font-semibold uppercase tracking-[0.18em] text-accent-strong">{member.role}</p>

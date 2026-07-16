@@ -5,7 +5,7 @@ description: "Principios de diseño que definen la identidad del juego y sirven 
 date: 2026-04-23
 author: "jonathan-bello"
 order: 4
-coverImage: "../../assets/imgs/arte-conceptual/portada.png"
+coverImage: "../../assets/imgs/arte-conceptual/portada.webp"
 ---
 ## Primero es juego, después aprendizaje
 
