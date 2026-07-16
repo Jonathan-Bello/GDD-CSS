@@ -8,11 +8,11 @@ const currentPath = Astro.url.pathname;
 
 const navItems = [
   { href: "/", label: "Inicio", match: (path: string) => path === "/" },
-  { href: "/gdd", label: "GDD", match: (path: string) => path === "/gdd" || path.startsWith("/gdd/") },
-  { href: "/sobre-nosotros", label: "Sobre Nosotros", match: (path: string) => path === "/sobre-nosotros" || path.startsWith("/sobre-nosotros/") },
-  { href: "/demo", label: "Demo", match: (path: string) => path === "/demo" || path.startsWith("/demo/") },
-  { href: "/uso-academico", label: "Uso academico", match: (path: string) => path === "/uso-academico" || path.startsWith("/uso-academico/") },
-  { href: "/contacto", label: "Contacto", match: (path: string) => path === "/contacto" || path.startsWith("/contacto/") },
+  { href: "/gdd/", label: "GDD", match: (path: string) => path === "/gdd" || path.startsWith("/gdd/") },
+  { href: "/sobre-nosotros/", label: "Sobre Nosotros", match: (path: string) => path === "/sobre-nosotros" || path.startsWith("/sobre-nosotros/") },
+  { href: "/demo/", label: "Demo", match: (path: string) => path === "/demo" || path.startsWith("/demo/") },
+  { href: "/uso-academico/", label: "Uso academico", match: (path: string) => path === "/uso-academico" || path.startsWith("/uso-academico/") },
+  { href: "/contacto/", label: "Contacto", match: (path: string) => path === "/contacto" || path.startsWith("/contacto/") },
 ];
 ---
 
