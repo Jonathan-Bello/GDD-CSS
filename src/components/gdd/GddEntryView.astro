@@ -80,7 +80,6 @@ const { entry, collectionLabel = "General" } = Astro.props;
         entry.data.coverImage ? (
           <div class="relative h-full min-h-[280px] xl:min-h-full">
             <Image
-              transition:name="img1"
               src={entry.data.coverImage}
               alt={`Imagen principal de ${entry.data.title}`}
               loading="eager"

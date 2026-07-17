@@ -1,0 +1,55 @@
+---
+interface Props {
+  gameUrl: string;
+  title: string;
+  label?: string;
+}
+
+const { gameUrl, title, label = "Iniciar demo" } = Astro.props;
+---
+
+<div
+  class="overflow-hidden border border-[rgba(118,225,169,0.42)] bg-black shadow-2xl aspect-video mb-4"
+  data-lazy-demo
+  data-game-url={gameUrl}
+  data-game-title={title}
+  aria-label="Demo jugable integrada"
+>
+  <div
+    class="flex h-full flex-col items-center justify-center gap-5 bg-[radial-gradient(circle_at_center,rgba(118,225,169,0.17),transparent_60%)] px-6 text-center"
+    data-demo-placeholder
+  >
+    <p class="max-w-lg text-base text-blue-50/85">
+      La demo se prepara al iniciarla para no descargar el motor del juego antes
+      de que decidas jugar.
+    </p>
+    <button
+      type="button"
+      class="border border-[rgba(255,183,98,0.56)] bg-[rgba(240,127,21,0.16)]
+      px-5 py-3 font-bold text-[#ffb762] transition
+      hover:cursor-pointer hover:bg-[rgba(240,127,21,0.25)]"
+      data-load-demo>{label}</button
+    >
+  </div>
+</div>
+
+<script>
+  document.querySelectorAll("[data-lazy-demo]").forEach((container) => {
+    const button = container.querySelector("[data-load-demo]");
+    if (!button) return;
+
+    button.addEventListener(
+      "click",
+      () => {
+        const iframe = document.createElement("iframe");
+        iframe.src = container.dataset.gameUrl || "";
+        iframe.title = container.dataset.gameTitle || "Demo jugable";
+        iframe.allow = "autoplay; fullscreen; gamepad";
+        iframe.allowFullscreen = true;
+        iframe.className = "h-full w-full";
+        container.replaceChildren(iframe);
+      },
+      { once: true },
+    );
+  });
+</script>

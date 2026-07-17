@@ -7,6 +7,19 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
 
+# Los exportes web de Godot compilan WebAssembly y usan evaluación interna
+# del runtime. Esta excepción se limita a los archivos del juego.
+[[headers]]
+  for = "/css-game/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; base-uri 'self'; connect-src 'self' https://formspree.io; font-src 'self' data:; form-action 'self' https://formspree.io; frame-ancestors 'self'; frame-src 'self'; img-src 'self' data: blob:; media-src 'self'; object-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; upgrade-insecure-requests"
+
+# Carpeta estándar para los siguientes exportes web de Godot.
+[[headers]]
+  for = "/demos/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; base-uri 'self'; connect-src 'self' https://formspree.io; font-src 'self' data:; form-action 'self' https://formspree.io; frame-ancestors 'self'; frame-src 'self'; img-src 'self' data: blob:; media-src 'self'; object-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; upgrade-insecure-requests"
+
 [[redirects]]
   from = "/gdd/:id"
   to = "/gdd/general/:id/"

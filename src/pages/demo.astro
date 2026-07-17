@@ -1,5 +1,6 @@
 ﻿---
 import Layout from "../layouts/Layout.astro";
+import LazyDemo from "../components/LazyDemo.astro";
 
 const gameUrl = "/css-game/index.html";
 ---
@@ -26,18 +27,7 @@ const gameUrl = "/css-game/index.html";
         </p>
       </div>
 
-      <div
-        class="overflow-hidden border border-[rgba(118,225,169,0.42)] bg-black shadow-2xl aspect-video mb-4"
-        aria-label="Demo jugable integrada"
-      >
-        <iframe
-          src={gameUrl}
-          title="Demo jugable de Citadel of Solar Souls"
-          loading="eager"
-          allow="autoplay; fullscreen; gamepad"
-          allowfullscreen
-          class="w-full h-full"></iframe>
-      </div>
+      <LazyDemo gameUrl={gameUrl} title="Demo jugable de Citadel of Solar Souls" />
 
       <div class="flex flex-wrap items-center gap-4 text-blue-50/70 text-sm">
         <a

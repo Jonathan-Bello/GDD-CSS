@@ -167,7 +167,7 @@ Las siguientes referencias fueron cuidadosamente seleccionadas para establecer y
 
 ## Referencia de tono postapocalíptico esperanzador: Kipo (DreamWorks)
 
-![Referencia de Kipo and the Age of Wonderbeasts](https://i.redd.it/kipo-and-the-age-of-wonderbeasts-2020-v0-seqag1a2g0061.png?width=1920&format=png&auto=webp&s=d8d853d07ad22077df47c301f370aa56ab590c75)
+<img src="https://i.redd.it/kipo-and-the-age-of-wonderbeasts-2020-v0-seqag1a2g0061.png?width=1920&amp;format=png&amp;auto=webp&amp;s=d8d853d07ad22077df47c301f370aa56ab590c75" alt="Referencia de Kipo and the Age of Wonderbeasts" width="1920" height="1080" loading="lazy" decoding="async">
 
 **¿Por qué?** _Kipo and the Age of Wonderbeasts_ se suma como referencia directa porque propone un mundo postapocalíptico donde la naturaleza domina el paisaje, pero sin caer en la estética típica de destrucción total, gris o desesperanzada. Esta mirada conecta con el objetivo visual de _CSS_: presentar un entorno verde, vivo y bonito, en el que conviven ruina tecnológica, color y sensación de aventura. La referencia nos ayuda a justificar un tono más luminoso y orgánico dentro del género postapocalíptico.
 
